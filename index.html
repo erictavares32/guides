@@ -28,13 +28,9 @@
   <meta name="twitter:image" content="https://www.wheretowatch.stream/guides/guides-og.jpg">
   
   <!-- Favicon -->
-  <link rel="icon" href="https://www.wheretowatch.stream/guides/favicon.ico" sizes="any">
-  <link rel="icon" href="https://www.wheretowatch.stream/guides/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="https://www.wheretowatch.stream/guides/apple-touch-icon.png">
-  
-  <!-- Preload -->
-  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"></noscript>
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   
   <style>
     :root {
@@ -47,7 +43,7 @@
       --text-secondary: #b3b3b3;
     }
     body {
-      font-family: 'Roboto', system-ui, -apple-system, sans-serif;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', sans-serif;
       margin: 0;
       padding: 2rem;
       background-color: var(--bg);
@@ -418,6 +414,39 @@
               "genre": ["Psychological thriller", "Crime"],
               "publisher": "Netflix"
             }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Guide",
+              "name": "Best Amazon Prime Shows to Watch Now",
+              "url": "https://www.wheretowatch.stream/guides/top-amazon-prime-shows",
+              "genre": ["Prime Video", "Editor's picks"],
+              "datePublished": "2025-05-15"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "Guide",
+              "name": "Shows Similar to The Blacklist (2013)",
+              "url": "https://www.wheretowatch.stream/guides/series-like-the-blacklist",
+              "genre": ["Crime", "Mystery"],
+              "publisher": "NBC"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "Guide",
+              "name": "Movies Like Thunderbolts (2025)",
+              "url": "https://www.wheretowatch.stream/guides/movies-like-thunderbolts",
+              "genre": ["Marvel", "Superhero", "Action"],
+              "datePublished": "2025-05-10"
+            }
           }
         ]
       },
@@ -432,8 +461,13 @@
           "height": 60
         }
       },
-      "datePublished": "2025-04-15",
-      "dateModified": "2025-05-20"
+      "datePublished": "2025-01-01",
+      "dateModified": "2025-05-20",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.wheretowatch.stream/search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
     }
   </script>
 </body>
