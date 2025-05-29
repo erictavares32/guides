@@ -31,6 +31,34 @@
   <meta name="twitter:image" content="https://www.wheretowatch.stream/guides/mission-impossible-saga-og.jpg">
   <meta name="twitter:image:alt" content="Mission: Impossible movie series guide">
 
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.wheretowatch.stream"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Guides",
+        "item": "https://www.wheretowatch.stream/guides"
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "name": "Mission: Impossible Saga",
+        "item": "https://www.wheretowatch.stream/guides/mission-impossible-saga"
+      }
+    ]
+  }
+  </script>
+
   <!-- Google Tag Manager -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJJMFE5YXW"></script>
   <script>
@@ -54,6 +82,31 @@
       margin: 0 auto;
       padding: 2rem;
     }
+    
+    /* Breadcrumb Navigation */
+    .breadcrumb {
+      padding: 1rem 0;
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+      color: #999;
+    }
+    .breadcrumb a {
+      color: #bb86fc;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .breadcrumb a:hover {
+      color: #9a67ea;
+      text-decoration: underline;
+    }
+    .breadcrumb span {
+      color: #999;
+    }
+    .breadcrumb .separator {
+      margin: 0 0.5rem;
+      color: #999;
+    }
+    
     h1 {
       color: #ffffff;
       font-size: 2.2rem;
@@ -251,9 +304,64 @@
     ]
   }
   </script>
+
+  <!-- Article Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "Complete Mission: Impossible Saga Guide (1996-2025)",
+    "description": "The ultimate guide to all Mission: Impossible movies - from Brian De Palma's 1996 original to the 2025 finale. Plot summaries, directors, streaming info, and franchise analysis.",
+    "author": {
+      "@type": "Organization",
+      "name": "WhereToWatch.stream",
+      "url": "https://www.wheretowatch.stream"
+    },
+    "datePublished": "2025-05-22",
+    "dateModified": "2025-05-22",
+    "image": {
+      "@type": "ImageObject",
+      "url": "https://www.wheretowatch.stream/guides/mission-impossible-saga-og.jpg",
+      "width": 1200,
+      "height": 630
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "WhereToWatch.stream",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.wheretowatch.stream/guides/logo.png",
+        "width": 300,
+        "height": 60
+      }
+    }
+  }
+  </script>
 </head>
 <body>
   <div class="container">
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb" aria-label="Breadcrumb navigation">
+      <span itemscope itemtype="http://schema.org/ListItem">
+        <a itemprop="item" href="https://www.wheretowatch.stream">
+          <span itemprop="name">Home</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </span>
+      <span class="separator">></span>
+      <span itemscope itemtype="http://schema.org/ListItem">
+        <a itemprop="item" href="https://www.wheretowatch.stream/guides">
+          <span itemprop="name">Guides</span>
+        </a>
+        <meta itemprop="position" content="2" />
+      </span>
+      <span class="separator">></span>
+      <span itemscope itemtype="http://schema.org/ListItem">
+        <span itemprop="name">Mission: Impossible Saga</span>
+        <meta itemprop="position" content="3" />
+      </span>
+    </div>
+    
     <h1>The Complete Mission: Impossible Saga (1996-2025)</h1>
     
     <p class="intro">For nearly three decades, Tom Cruise's Ethan Hunt has defined the spy thriller genre with death-defying stunts and intricate espionage plots. This comprehensive guide covers all eight Mission: Impossible films - from Brian De Palma's 1996 original to Christopher McQuarrie's 2025 finale - with plot summaries, director insights, and streaming availability.</p>
