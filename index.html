@@ -32,6 +32,28 @@
   <link rel="icon" href="https://www.wheretowatch.stream/guides/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="https://www.wheretowatch.stream/guides/apple-touch-icon.png">
   
+  <!-- Breadcrumb Schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://www.wheretowatch.stream"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Guides",
+        "item": "https://www.wheretowatch.stream/guides"
+      }
+    ]
+  }
+  </script>
+  
   <style>
     :root {
       --primary: #1e90ff;
@@ -56,6 +78,31 @@
       margin: 0 auto;
       padding: 0 1rem;
     }
+    
+    /* Breadcrumb Navigation */
+    .breadcrumb {
+      padding: 1rem 0;
+      margin-bottom: 1.5rem;
+      font-size: 0.9rem;
+      color: var(--text-secondary);
+    }
+    .breadcrumb a {
+      color: var(--primary);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .breadcrumb a:hover {
+      color: var(--primary-hover);
+      text-decoration: underline;
+    }
+    .breadcrumb span {
+      color: var(--text-secondary);
+    }
+    .breadcrumb .separator {
+      margin: 0 0.5rem;
+      color: var(--text-secondary);
+    }
+    
     nav {
       text-align: center;
       margin-bottom: 2.5rem;
@@ -167,6 +214,21 @@
 </head>
 <body>
   <div class="container">
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb" aria-label="Breadcrumb navigation">
+      <span itemscope itemtype="http://schema.org/ListItem">
+        <a itemprop="item" href="https://www.wheretowatch.stream">
+          <span itemprop="name">Home</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </span>
+      <span class="separator">></span>
+      <span itemscope itemtype="http://schema.org/ListItem">
+        <span itemprop="name">Guides</span>
+        <meta itemprop="position" content="2" />
+      </span>
+    </div>
+    
     <nav>
       <a href="https://www.wheretowatch.stream" class="home-button">← Back to WhereToWatch Home</a>
     </nav>
@@ -332,10 +394,11 @@
           <span>Family</span>
         </div>
       </li>
-         <li class="guide-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      
+      <li class="guide-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
         <meta itemprop="position" content="14">
         <a href="/guides/prime-video-hidden-gems" itemprop="url">
-          <span itemprop="name"> Amazon Prime Hidden gems </span>
+          <span itemprop="name">Amazon Prime Hidden Gems</span>
         </a>
         <div class="guide-meta">
           <span itemprop="genre">Prime Video</span>
@@ -343,13 +406,14 @@
           <span>2025</span>
         </div>
       </li>
-        <li class="guide-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+      
+      <li class="guide-card" itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
         <meta itemprop="position" content="15">
         <a href="/guides/hbo-max-hidden-gems" itemprop="url">
-          <span itemprop="name"> Hbo Max Hidden gems </span>
+          <span itemprop="name">HBO Max Hidden Gems</span>
         </a>
         <div class="guide-meta">
-          <span itemprop="genre">Hbo Max</span>
+          <span itemprop="genre">HBO Max</span>
           <span>Editor's picks</span>
           <span>2025</span>
         </div>
@@ -398,6 +462,8 @@
       <li>Genre-specific suggestions</li>
       <li>Franchise watch orders</li>
       <li>New release highlights</li>
+      <li>Hidden gems discovery</li>
+      <li>Regional exclusives</li>
     </ul>
   </div>
   
