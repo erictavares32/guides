@@ -730,122 +730,223 @@
     </footer>
   </div>
 
-  <!-- ItemList Schema for Top 10 Movies -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "item": {
-          "@type": "Movie",
-          "name": "Das Boot",
-          "url": "https://www.wheretowatch.stream/movies/387/das-boot/in/de",
-          "image": "https://image.tmdb.org/t/p/w500/u8FhQPncOAkwcei2OI9orPWhV6K.jpg",
-          "description": "Kriegsdrama über ein deutsches U-Boot im Zweiten Weltkrieg.",
-          "genre": ["Kriegsdrama", "Historisch"],
-          "actor": "Jürgen Prochnow",
-          "dateCreated": "1981",
-          "rating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "bestRating": "5",
-            "ratingCount": "50000"
-          }
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "item": {
-          "@type": "Movie",
-          "name": "Das Leben der Anderen",
-          "url": "https://www.wheretowatch.stream/movies/582/the-lives-of-others/in/de",
-          "image": "https://image.tmdb.org/t/p/w500/cVUDMnskSc01rdbyH0tLATTJUdP.jpg",
-          "description": "Drama über einen Stasi-Offizier in der DDR.",
-          "genre": ["Drama", "Thriller"],
-          "actor": "Ulrich Mühe",
-          "dateCreated": "2006",
-          "rating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.7",
-            "bestRating": "5",
-            "ratingCount": "150000"
-          }
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "item": {
-          "@type": "Movie",
-          "name": "Toni Erdmann",
-          "url": "https://www.wheretowatch.stream/movies/374475/toni-erdmann/in/de",
-          "image": "https://image.tmdb.org/t/p/w500/v3gf7T8hb8aYv05X2jHmxJQWPZr.jpg",
-          "description": "Tragikomödie über Vater-Tochter-Beziehung.",
-          "genre": ["Komödie", "Drama"],
-          "dateCreated": "2016",
-          "rating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.6",
-            "bestRating": "5",
-            "ratingCount": "80000"
+<!-- ItemList Schema for Top 10 Movies -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Top 10 Deutsche Filme aller Zeiten",
+  "description": "Die besten deutschen Filme nach Bewertungen und kultureller Bedeutung",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Movie",
+        "name": "Das Boot",
+        "url": "https://www.wheretowatch.stream/movies/387/das-boot/in/de",
+        "image": "https://image.tmdb.org/t/p/w500/u8FhQPncOAkwcei2OI9orPWhV6K.jpg",
+        "description": "Kriegsdrama über ein deutsches U-Boot im Zweiten Weltkrieg.",
+        "genre": ["Kriegsdrama", "Historisch"],
+        "actor": "Jürgen Prochnow",
+        "dateCreated": "1981",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "bestRating": "5",
+          "ratingCount": "50000",
+          "itemReviewed": {
+            "@type": "Movie",
+            "name": "Das Boot",
+            "sameAs": "https://www.imdb.com/title/tt0082096/"
           }
         }
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Movie",
+        "name": "Das Leben der Anderen",
+        "url": "https://www.wheretowatch.stream/movies/582/the-lives-of-others/in/de",
+        "image": "https://image.tmdb.org/t/p/w500/cVUDMnskSc01rdbyH0tLATTJUdP.jpg",
+        "description": "Drama über einen Stasi-Offizier in der DDR.",
+        "genre": ["Drama", "Thriller"],
+        "actor": "Ulrich Mühe",
+        "dateCreated": "2006",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.7",
+          "bestRating": "5",
+          "ratingCount": "150000",
+          "itemReviewed": {
+            "@type": "Movie",
+            "name": "Das Leben der Anderen",
+            "sameAs": "https://www.imdb.com/title/tt0405094/"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Movie",
+        "name": "Toni Erdmann",
+        "url": "https://www.wheretowatch.stream/movies/374475/toni-erdmann/in/de",
+        "image": "https://image.tmdb.org/t/p/w500/v3gf7T8hb8aYv05X2jHmxJQWPZr.jpg",
+        "description": "Tragikomödie über Vater-Tochter-Beziehung.",
+        "genre": ["Komödie", "Drama"],
+        "dateCreated": "2016",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.6",
+          "bestRating": "5",
+          "ratingCount": "80000",
+          "itemReviewed": {
+            "@type": "Movie",
+            "name": "Toni Erdmann",
+            "sameAs": "https://www.imdb.com/title/tt4048272/"
+          }
+        }
+      }
+    }
+  ]
+}
+</script>
 
-  <!-- ItemList Schema for Top 10 Series -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "ItemList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "item": {
-          "@type": "TVSeries",
-          "name": "Babylon Berlin",
-          "url": "https://www.wheretowatch.stream/shows/66980/babylon-berlin/in/de",
-          "image": "https://image.tmdb.org/t/p/w500/weqm5kPURRPkfrAclLMjG2PlkKu.jpg",
-          "description": "Krimidrama im Berlin der 1920er Jahre.",
-          "genre": ["Krimi", "Drama", "Historisch"],
-          "dateCreated": "2017",
-          "rating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.8",
-            "bestRating": "5",
-            "ratingCount": "75000"
-          }
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "item": {
-          "@type": "TVSeries",
-          "name": "Dark",
-          "url": "https://www.wheretowatch.stream/shows/70523/dark/in/de",
-          "image": "https://image.tmdb.org/t/p/w500/apbrbWs8M9lyOpJYU5WXrpFbk1Z.jpg",
-          "description": "Zeitreise-Serie in der Kleinstadt Winden.",
-          "genre": ["Science-Fiction", "Thriller"],
-          "dateCreated": "2017",
-          "rating": {
-            "@type": "AggregateRating",
-            "ratingValue": "4.9",
-            "bestRating": "5",
-            "ratingCount": "300000"
+<!-- ItemList Schema for Top 10 Series -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Top 10 Deutsche Serien",
+  "description": "Die besten deutschen Serien nach Bewertungen und Popularität",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "TVSeries",
+        "name": "Babylon Berlin",
+        "url": "https://www.wheretowatch.stream/shows/66980/babylon-berlin/in/de",
+        "image": "https://image.tmdb.org/t/p/w500/weqm5kPURRPkfrAclLMjG2PlkKu.jpg",
+        "description": "Krimidrama im Berlin der 1920er Jahre.",
+        "genre": ["Krimi", "Drama", "Historisch"],
+        "dateCreated": "2017",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "bestRating": "5",
+          "ratingCount": "75000",
+          "itemReviewed": {
+            "@type": "TVSeries",
+            "name": "Babylon Berlin",
+            "sameAs": "https://www.imdb.com/title/tt4378376/"
           }
         }
       }
-    ]
-  }
-  </script>
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "TVSeries",
+        "name": "Dark",
+        "url": "https://www.wheretowatch.stream/shows/70523/dark/in/de",
+        "image": "https://image.tmdb.org/t/p/w500/apbrbWs8M9lyOpJYU5WXrpFbk1Z.jpg",
+        "description": "Zeitreise-Serie in der Kleinstadt Winden.",
+        "genre": ["Science-Fiction", "Thriller"],
+        "dateCreated": "2017",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.9",
+          "bestRating": "5",
+          "ratingCount": "300000",
+          "itemReviewed": {
+            "@type": "TVSeries",
+            "name": "Dark",
+            "sameAs": "https://www.imdb.com/title/tt5753856/"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "TVSeries",
+        "name": "Deutschland 83",
+        "url": "https://www.wheretowatch.stream/shows/62681/deutschland/in/de",
+        "image": "https://image.tmdb.org/t/p/w500/6N8H9As0ZvFHUhvJpwwm8EvzD4Y.jpg",
+        "description": "DDR-Spion in der Bundeswehr während des Kalten Krieges.",
+        "genre": ["Drama", "Thriller", "Historisch"],
+        "dateCreated": "2015",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.6",
+          "bestRating": "5",
+          "ratingCount": "45000",
+          "itemReviewed": {
+            "@type": "TVSeries",
+            "name": "Deutschland 83",
+            "sameAs": "https://www.imdb.com/title/tt4445154/"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "TVSeries",
+        "name": "4 Blocks",
+        "url": "https://www.wheretowatch.stream/shows/71641/4-blocks/in/de",
+        "image": "https://image.tmdb.org/t/p/w500/jVObyxtNxuPbG5czuKvm7pW56EV.jpg",
+        "description": "Gangsterdrama über einen libanesischen Clan in Berlin-Neukölln.",
+        "genre": ["Drama", "Krimi"],
+        "dateCreated": "2017",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.5",
+          "bestRating": "5",
+          "ratingCount": "35000",
+          "itemReviewed": {
+            "@type": "TVSeries",
+            "name": "4 Blocks",
+            "sameAs": "https://www.imdb.com/title/tt5868098/"
+          }
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "TVSeries",
+        "name": "Charité",
+        "url": "https://www.wheretowatch.stream/shows/70837/charit/in/de",
+        "image": "https://image.tmdb.org/t/p/w500/nxzbAZb4BbLt5AtYhvC0sn7ppBv.jpg",
+        "description": "Historisches Drama über das berühmte Berliner Krankenhaus.",
+        "genre": ["Drama", "Historisch"],
+        "dateCreated": "2017",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.4",
+          "bestRating": "5",
+          "ratingCount": "28000",
+          "itemReviewed": {
+            "@type": "TVSeries",
+            "name": "Charité",
+            "sameAs": "https://www.imdb.com/title/tt6423362/"
+          }
+        }
+      }
+    }
+  ]
+}
+</script>
 
   <!-- FAQ Schema -->
   <script type="application/ld+json">
