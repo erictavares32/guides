@@ -408,14 +408,30 @@
     </ul>
   </div>
   
-  <!-- Structured Data -->
+  <!-- Fixed Structured Data -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "WebPage",
+      "@type": "CollectionPage",
       "name": "2025 Ultimate Streaming Guides: Find Shows Like Your Favorites",
       "description": "Expert-curated recommendations for similar shows and movies across Netflix, HBO Max, Disney+, and Amazon Prime. Discover your next binge-watch with our comprehensive 2025 guides.",
       "url": "https://www.wheretowatch.stream/guides",
+      "datePublished": "2025-05-01T00:00:00Z",
+      "dateModified": "2025-05-30T00:00:00Z",
+      "inLanguage": "en-US",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "WhereToWatch",
+        "url": "https://www.wheretowatch.stream",
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": {
+            "@type": "EntryPoint",
+            "urlTemplate": "https://www.wheretowatch.stream/search?q={search_term_string}"
+          },
+          "query-input": "required name=search_term_string"
+        }
+      },
       "breadcrumb": {
         "@type": "BreadcrumbList",
         "itemListElement": [
@@ -433,137 +449,6 @@
           }
         ]
       },
-      "mainEntity": {
-        "@type": "ItemList",
-        "name": "TV Show Streaming Guides",
-        "description": "Curated collection of streaming guides for popular TV shows and movies",
-        "numberOfItems": 17,
-        "itemListElement": [
-          {
-            "@type": "ListItem",
-            "position": 1,
-            "item": {
-              "@type": "Article",
-              "name": "Top 10 Shows Like The Last of Us",
-              "url": "https://www.wheretowatch.stream/guides/top10showslikethelastofus",
-              "genre": ["Post-apocalyptic", "Drama"],
-              "publisher": {
-                "@type": "Organization",
-                "name": "HBO"
-              }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 2,
-            "item": {
-              "@type": "Article",
-              "name": "Series Like Netflix's You",
-              "url": "https://www.wheretowatch.stream/guides/serieslikenetflixsyou",
-              "genre": ["Psychological thriller", "Crime"],
-              "publisher": {
-                "@type": "Organization",
-                "name": "Netflix"
-              }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 3,
-            "item": {
-              "@type": "Article",
-              "name": "Best Amazon Prime Shows to Watch Now",
-              "url": "https://www.wheretowatch.stream/guides/top-amazon-prime-shows",
-              "genre": ["Prime Video", "Editor's picks"],
-              "datePublished": "2025-05-15"
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
-            "item": {
-              "@type": "Article",
-              "name": "Shows Similar to The Blacklist (2013)",
-              "url": "https://www.wheretowatch.stream/guides/series-like-the-blacklist",
-              "genre": ["Crime", "Mystery"],
-              "publisher": {
-                "@type": "Organization",
-                "name": "NBC"
-              }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 5,
-            "item": {
-              "@type": "Article",
-              "name": "Movies Like Thunderbolts (2025)",
-              "url": "https://www.wheretowatch.stream/guides/movies-like-thunderbolts",
-              "genre": ["Marvel", "Superhero", "Action"],
-              "datePublished": "2025-05-10"
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 6,
-            "item": {
-              "@type": "Article",
-              "name": "Complete Mission: Impossible Viewing Guide",
-              "url": "https://www.wheretowatch.stream/guides/mission-impossible-saga",
-              "genre": ["Action", "Spy", "Franchise"]
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 7,
-            "item": {
-              "@type": "Article",
-              "name": "How to Watch The Fast and Furious Saga",
-              "url": "https://www.wheretowatch.stream/guides/fast-and-furious-saga",
-              "genre": ["Action", "Cars", "Chronological order"]
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 8,
-            "item": {
-              "@type": "Article",
-              "name": "Where to Watch Shows Like Breaking Bad",
-              "url": "https://www.wheretowatch.stream/guides/series-like-breaking-bad",
-              "genre": ["Crime", "Drama"],
-              "publisher": {
-                "@type": "Organization",
-                "name": "AMC"
-              }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 9,
-            "item": {
-              "@type": "Article",
-              "name": "Top Series Similar to The Handmaid's Tale",
-              "url": "https://www.wheretowatch.stream/guides/shows-like-handmaids-tale",
-              "genre": ["Dystopian", "Drama"],
-              "publisher": {
-                "@type": "Organization",
-                "name": "Hulu"
-              }
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 10,
-            "item": {
-              "@type": "Article",
-              "name": "Best Movies Like Sinners (2025)",
-              "url": "https://www.wheretowatch.stream/guides/films-like-sinners",
-              "genre": ["Thriller", "Mystery"],
-              "datePublished": "2025-05-20"
-            }
-          }
-        ]
-      },
       "publisher": {
         "@type": "Organization",
         "name": "WhereToWatch",
@@ -575,12 +460,176 @@
           "height": 60
         }
       },
-      "datePublished": "2025-05-01",
-      "dateModified": "2025-05-30",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": "https://www.wheretowatch.stream/search?q={search_term_string}",
-        "query-input": "required name=search_term_string"
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Streaming Guide Collection",
+        "description": "Comprehensive collection of streaming guides for TV shows and movies across all major platforms",
+        "numberOfItems": 17,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "Guide",
+              "name": "Top 10 Shows Like The Last of Us",
+              "url": "https://www.wheretowatch.stream/guides/top10showslikethelastofus",
+              "description": "Discover post-apocalyptic dramas similar to HBO's The Last of Us",
+              "about": {
+                "@type": "TVSeries",
+                "name": "The Last of Us",
+                "genre": ["Post-apocalyptic", "Drama"],
+                "contentRating": "TV-MA"
+              },
+              "category": "TV Show Recommendations"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Guide",
+              "name": "Series Like Netflix's You",
+              "url": "https://www.wheretowatch.stream/guides/serieslikenetflixsyou",
+              "description": "Find psychological thrillers similar to Netflix's You series",
+              "about": {
+                "@type": "TVSeries",
+                "name": "You",
+                "genre": ["Psychological thriller", "Crime"],
+                "contentRating": "TV-MA"
+              },
+              "category": "TV Show Recommendations"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "Guide",
+              "name": "Best Amazon Prime Shows to Watch Now",
+              "url": "https://www.wheretowatch.stream/guides/top-amazon-prime-shows",
+              "description": "Top Amazon Prime Video original series and exclusive shows for 2025",
+              "datePublished": "2025-05-15T00:00:00Z",
+              "category": "Platform Recommendations"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "Guide",
+              "name": "Shows Similar to The Blacklist (2013)",
+              "url": "https://www.wheretowatch.stream/guides/series-like-the-blacklist",
+              "description": "Crime and mystery series similar to NBC's The Blacklist",
+              "about": {
+                "@type": "TVSeries",
+                "name": "The Blacklist",
+                "genre": ["Crime", "Mystery"],
+                "contentRating": "TV-14"
+              },
+              "category": "TV Show Recommendations"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "Guide",
+              "name": "Movies Like Thunderbolts (2025)",
+              "url": "https://www.wheretowatch.stream/guides/movies-like-thunderbolts",
+              "description": "Superhero action movies similar to Marvel's Thunderbolts",
+              "about": {
+                "@type": "Movie",
+                "name": "Thunderbolts",
+                "genre": ["Superhero", "Action"],
+                "datePublished": "2025"
+              },
+              "category": "Movie Recommendations"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 6,
+            "item": {
+              "@type": "Guide",
+              "name": "Complete Mission: Impossible Viewing Guide",
+              "url": "https://www.wheretowatch.stream/guides/mission-impossible-saga",
+              "description": "Complete chronological viewing order for the Mission: Impossible franchise",
+              "about": {
+                "@type": "MovieSeries",
+                "name": "Mission: Impossible",
+                "genre": ["Action", "Spy"]
+              },
+              "category": "Franchise Guide"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 7,
+            "item": {
+              "@type": "Guide",
+              "name": "How to Watch The Fast and Furious Saga",
+              "url": "https://www.wheretowatch.stream/guides/fast-and-furious-saga",
+              "description": "Complete chronological viewing order for Fast and Furious movies",
+              "about": {
+                "@type": "MovieSeries",
+                "name": "Fast & Furious",
+                "genre": ["Action", "Cars"]
+              },
+              "category": "Franchise Guide"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 8,
+            "item": {
+              "@type": "Guide",
+              "name": "Where to Watch Shows Like Breaking Bad",
+              "url": "https://www.wheretowatch.stream/guides/series-like-breaking-bad",
+              "description": "Crime dramas similar to AMC's Breaking Bad",
+              "about": {
+                "@type": "TVSeries",
+                "name": "Breaking Bad",
+                "genre": ["Crime", "Drama"],
+                "contentRating": "TV-MA"
+              },
+              "category": "TV Show Recommendations"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 9,
+            "item": {
+              "@type": "Guide",
+              "name": "Top Series Similar to The Handmaid's Tale",
+              "url": "https://www.wheretowatch.stream/guides/shows-like-handmaids-tale",
+              "description": "Dystopian dramas similar to Hulu's The Handmaid's Tale",
+              "about": {
+                "@type": "TVSeries",
+                "name": "The Handmaid's Tale",
+                "genre": ["Dystopian", "Drama"],
+                "contentRating": "TV-MA"
+              },
+              "category": "TV Show Recommendations"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 10,
+            "item": {
+              "@type": "Guide",
+              "name": "Best Movies Like Sinners (2025)",
+              "url": "https://www.wheretowatch.stream/guides/films-like-sinners",
+              "description": "Thriller and mystery movies similar to Sinners (2025)",
+              "about": {
+                "@type": "Movie",
+                "name": "Sinners",
+                "genre": ["Thriller", "Mystery"],
+                "datePublished": "2025"
+              },
+              "category": "Movie Recommendations"
+            }
+          }
+        ]
       }
     }
   </script>
