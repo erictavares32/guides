@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="robots" content="index, follow"/>
+  <meta name="robots" content="index, follow, max-image-preview:large"/>
   <meta name="theme-color" content="#121212"/>
   
   <!-- Primary Meta Tags -->
@@ -35,16 +35,23 @@
   <link rel="icon" href="/icon.svg" type="image/svg+xml"/>
   <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
 
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style"/>
+  <link rel="preload" as="image" href="https://www.wheretowatch.stream/guides/streaming-news-og.jpg"/>
+
   <style>
     :root {
       --primary: #00ffd1;
+      --primary-hover: #00e6bf;
       --secondary: #1db954;
       --dark-bg: #121212;
       --card-bg: #1e1e1e;
+      --card-hover: #2a2a2a;
       --text-primary: #f1f1f1;
       --text-secondary: #aaa;
-      --border-radius: 12px;
-      --box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+      --border-radius: 16px;
+      --box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
     }
     
     * {
@@ -54,85 +61,209 @@
     }
     
     body {
-      font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
       line-height: 1.6;
       background-color: var(--dark-bg);
       color: var(--text-primary);
-      padding: 2rem;
+      padding: 0;
       margin: 0;
+      min-height: 100vh;
     }
     
     .container {
       max-width: 1200px;
       margin: 0 auto;
+      padding: 2rem 1.5rem;
     }
     
     .breadcrumbs {
       font-size: 0.9rem;
       margin-bottom: 1.5rem;
       color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
     }
     
     .breadcrumbs a {
       color: var(--secondary);
       text-decoration: none;
+      transition: var(--transition);
     }
     
     .breadcrumbs a:hover {
+      color: var(--primary);
       text-decoration: underline;
     }
     
     h1 {
       color: var(--primary);
-      font-size: 2.2rem;
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.2;
       margin-bottom: 1rem;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
     }
     
-    .article {
-      margin-bottom: 2rem;
-      padding: 1.5rem;
+    .page-description {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-bottom: 2.5rem;
+      max-width: 800px;
+    }
+    
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 2rem;
+      margin: 3rem 0;
+    }
+    
+    .article-card {
       background: var(--card-bg);
       border-radius: var(--border-radius);
+      overflow: hidden;
+      transition: var(--transition);
       box-shadow: var(--box-shadow);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      position: relative;
     }
     
-    .article h2 {
-      margin-top: 0;
+    .article-card:hover {
+      transform: translateY(-5px);
+      background: var(--card-hover);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    }
+    
+    .article-image-container {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+    }
+    
+    .article-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+    
+    .article-card:hover .article-image {
+      transform: scale(1.03);
+    }
+    
+    .article-content {
+      padding: 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .article-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      line-height: 1.4;
+    }
+    
+    .article-title a {
       color: var(--text-primary);
-    }
-    
-    .article h2 a {
-      color: inherit;
       text-decoration: none;
+      transition: var(--transition);
     }
     
-    .article h2 a:hover {
+    .article-title a:hover {
       color: var(--primary);
     }
     
-    .article img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-      margin: 1rem 0;
+    .article-description {
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
     }
     
-    small {
+    .article-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
       color: var(--text-secondary);
+      margin-top: auto;
+    }
+    
+    .article-source {
+      background-color: rgba(29, 185, 84, 0.1);
+      color: var(--secondary);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+    
+    .loading-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 300px;
+      gap: 1.5rem;
     }
     
     .loading-spinner {
-      border: 4px solid rgba(255, 255, 255, 0.1);
+      width: 50px;
+      height: 50px;
+      border: 5px solid rgba(255, 255, 255, 0.1);
       border-radius: 50%;
       border-top-color: var(--primary);
-      width: 40px;
-      height: 40px;
-      animation: spin 1s linear infinite;
-      margin: 2rem auto;
+      animation: spin 1s ease-in-out infinite;
     }
     
     @keyframes spin {
       to { transform: rotate(360deg); }
+    }
+    
+    .pagination {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      margin: 3rem 0;
+      flex-wrap: wrap;
+    }
+    
+    .pagination-button {
+      background: var(--card-bg);
+      color: var(--text-primary);
+      border: none;
+      padding: 0.75rem 1.25rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: var(--transition);
+      font-weight: 500;
+      min-width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .pagination-button:hover {
+      background: var(--card-hover);
+    }
+    
+    .pagination-button.active {
+      background: var(--primary);
+      color: var(--dark-bg);
+      font-weight: 600;
+    }
+    
+    .pagination-button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
     }
     
     .error-message {
@@ -140,30 +271,54 @@
       padding: 2rem;
       border-radius: var(--border-radius);
       text-align: center;
+      margin: 2rem 0;
+      border-left: 4px solid #ff4d4d;
+    }
+    
+    .error-message h2 {
+      color: #ff4d4d;
+      margin-bottom: 1rem;
     }
     
     .retry-button {
-      background: var(--secondary);
-      color: white;
+      background: var(--primary);
+      color: var(--dark-bg);
       border: none;
-      padding: 0.5rem 1rem;
-      border-radius: 4px;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
       margin-top: 1rem;
       cursor: pointer;
+      transition: var(--transition);
     }
     
-    @media (max-width: 600px) {
-      body {
-        padding: 1rem;
+    .retry-button:hover {
+      background: var(--primary-hover);
+      transform: translateY(-2px);
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        padding: 1.5rem 1rem;
       }
       
       h1 {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
       
-      .article {
-        padding: 1rem;
+      .news-grid {
+        grid-template-columns: 1fr;
       }
+      
+      .article-image-container {
+        height: 180px;
+      }
+    }
+    
+    /* Accessibility focus styles */
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 2px;
     }
   </style>
 
@@ -178,75 +333,258 @@
     "publisher": {
       "@type": "Organization",
       "name": "WhereToWatch",
-      "url": "https://www.wheretowatch.stream"
+      "url": "https://www.wheretowatch.stream",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.wheretowatch.stream/logo.png",
+        "width": 300,
+        "height": 60
+      },
+      "sameAs": [
+        "https://twitter.com/WhereToWatch",
+        "https://facebook.com/WhereToWatch",
+        "https://instagram.com/WhereToWatch"
+      ]
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.wheretowatch.stream/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
     }
   }
   </script>
 </head>
 <body>
   <div class="container">
-    <nav class="breadcrumbs">
-      <a href="/">Home</a> → <a href="/guides">Guides</a> → <span>Streaming News</span>
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <svg viewBox="0 0 24 24" width="16" height="16"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+      <a href="/guides">Guides</a>
+      <svg viewBox="0 0 24 24" width="16" height="16"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+      <span>Streaming News</span>
     </nav>
 
-    <h1>Streaming News: Netflix, Prime Video, Disney+, Hulu & More</h1>
-    <p>Stay up to date with the latest in streaming — release dates, new shows, cancellations, renewals, and platform updates across Netflix, Prime Video, Disney+, Hulu, and others.</p>
+    <header>
+      <h1>Streaming News: Netflix, Prime Video, Disney+, Hulu & More</h1>
+      <p class="page-description">Stay up to date with the latest in streaming — release dates, new shows, cancellations, renewals, and platform updates across all major services.</p>
+    </header>
 
-    <div id="news">
-      <div class="loading-spinner"></div>
-      <p style="text-align: center;">Loading the latest streaming news...</p>
-    </div>
+    <main id="news">
+      <div class="loading-container">
+        <div class="loading-spinner" aria-hidden="true"></div>
+        <p>Loading the latest streaming news...</p>
+      </div>
+    </main>
+
+    <div id="pagination" class="pagination"></div>
   </div>
 
   <script>
-    // Simple working version with reliable API proxy
+    // Enhanced News API Implementation with Smart Filtering
     document.addEventListener('DOMContentLoaded', function() {
       const API_KEY = "9db22d19ef594e7594493ee58f74fa6c";
-      const query = encodeURIComponent('(Netflix OR "Prime Video" OR Disney+ OR Hulu) AND (show OR movie OR series)');
+      let currentPage = 1;
+      const seenArticles = new Set(); // Track seen articles to prevent duplicates
+      
+      // Focused search query with exclusions
+      const query = encodeURIComponent(
+        '(Netflix OR "Prime Video" OR Disney+ OR Hulu OR "HBO Max" OR "Apple TV+" OR Peacock OR Paramount+) ' +
+        'AND (show OR movie OR series OR streaming OR "original series" OR "new season" OR "coming soon") ' +
+        '-Trump -politics -election -sports -football -basketball'
+      );
       
       // Using reliable CORS proxy
-      const apiUrl = `https://newsapi.org/v2/everything?q=${query}&language=en&sortBy=publishedAt&pageSize=10&apiKey=${API_KEY}`;
-      const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(apiUrl)}`;
+      const getApiUrl = (page) => 
+        `https://newsapi.org/v2/everything?q=${query}&language=en&sortBy=publishedAt&pageSize=10&page=${page}&apiKey=${API_KEY}`;
       
-      const newsContainer = document.getElementById('news');
-      
-      fetch(proxyUrl)
-        .then(response => {
-          if (!response.ok) throw new Error('Network error');
-          return response.json();
-        })
-        .then(data => {
-          const articles = JSON.parse(data.contents).articles;
+      const fetchNews = async (page) => {
+        currentPage = page;
+        const newsContainer = document.getElementById('news');
+        newsContainer.innerHTML = `
+          <div class="loading-container">
+            <div class="loading-spinner" aria-hidden="true"></div>
+            <p>Loading page ${page}...</p>
+          </div>
+        `;
+        
+        try {
+          const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(getApiUrl(page))}`;
+          const response = await fetch(proxyUrl);
           
-          if (!articles || articles.length === 0) {
-            newsContainer.innerHTML = '<p>No streaming news found at this time. Please check back later.</p>';
-            return;
+          if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+          
+          const data = await response.json();
+          const newsData = JSON.parse(data.contents);
+          
+          if (!newsData.articles || newsData.articles.length === 0) {
+            throw new Error('No articles found');
           }
           
-          newsContainer.innerHTML = '';
-          
-          articles.forEach(article => {
-            const articleDiv = document.createElement('div');
-            articleDiv.className = 'article';
-            articleDiv.innerHTML = `
-              <h2><a href="${article.url}" target="_blank" rel="noopener noreferrer">${article.title}</a></h2>
-              ${article.urlToImage ? `<img src="${article.urlToImage}" alt="${article.title}" loading="lazy">` : ''}
-              <p>${article.description || 'Read more about this streaming news story.'}</p>
-              <p><small>Published: ${new Date(article.publishedAt).toLocaleString()} — Source: ${article.source.name}</small></p>
-            `;
-            newsContainer.appendChild(articleDiv);
+          // Filter out duplicates and irrelevant articles
+          const filteredArticles = newsData.articles.filter(article => {
+            const isDuplicate = seenArticles.has(article.url);
+            const isRelevant = /netflix|prime\s?video|disney\+|hulu|hbo\s?max|apple\s?tv\+|streaming|show|movie|series|season|episode|release/i.test(
+              `${article.title} ${article.description || ''}`
+            );
+            
+            if (!isDuplicate && isRelevant) {
+              seenArticles.add(article.url);
+              return true;
+            }
+            return false;
           });
-        })
-        .catch(error => {
-          console.error('Error:', error);
+          
+          if (filteredArticles.length === 0) {
+            throw new Error('No relevant articles found');
+          }
+          
+          // Render articles
           newsContainer.innerHTML = `
-            <div class="error-message">
-              <h3>Couldn't load news</h3>
-              <p>We're having trouble loading the latest streaming news.</p>
-              <button class="retry-button" onclick="window.location.reload()">Try Again</button>
+            <div class="news-grid">
+              ${filteredArticles.map(article => `
+                <article class="article-card" itemscope itemtype="https://schema.org/NewsArticle">
+                  <div class="article-image-container">
+                    <img 
+                      src="${article.urlToImage || 'https://via.placeholder.com/600x400/1e1e1e/00ffd1?text=Streaming+News'}" 
+                      alt="${article.title || 'Streaming news article'}" 
+                      class="article-image" 
+                      loading="lazy"
+                      itemprop="image"
+                    >
+                  </div>
+                  <div class="article-content">
+                    <h2 class="article-title" itemprop="headline">
+                      <a href="${article.url}" target="_blank" rel="noopener noreferrer" itemprop="url">${article.title}</a>
+                    </h2>
+                    <p class="article-description" itemprop="description">${article.description || 'Read more about this streaming news story.'}</p>
+                    <div class="article-meta">
+                      <time datetime="${article.publishedAt}" itemprop="datePublished">${formatDate(article.publishedAt)}</time>
+                      <span class="article-source" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                        <span itemprop="name">${article.source.name}</span>
+                      </span>
+                    </div>
+                  </div>
+                </article>
+              `).join('')}
             </div>
           `;
+          
+          // Update pagination
+          updatePagination(page, newsData.totalResults);
+          
+          // Add schema.org markup for each article
+          addArticleSchemaMarkup(filteredArticles);
+          
+        } catch (error) {
+          console.error('News fetch error:', error);
+          newsContainer.innerHTML = `
+            <div class="error-message">
+              <h2>News Loading Failed</h2>
+              <p>We're unable to load the latest streaming news right now.</p>
+              <p><strong>Error:</strong> ${error.message}</p>
+              <button class="retry-button" onclick="fetchNews(${page})">Try Again</button>
+            </div>
+          `;
+        }
+      };
+      
+      // Format date with timezone consideration
+      const formatDate = (dateString) => {
+        const date = new Date(dateString);
+        return date.toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'short',
+          day: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit'
         });
+      };
+      
+      // Update pagination controls
+      const updatePagination = (currentPage, totalResults) => {
+        const totalPages = Math.min(Math.ceil(totalResults / 10), 10); // Max 10 pages
+        const paginationContainer = document.getElementById('pagination');
+        paginationContainer.innerHTML = '';
+        
+        if (totalPages <= 1) return;
+        
+        // Previous button
+        const prevButton = document.createElement('button');
+        prevButton.className = 'pagination-button';
+        prevButton.innerHTML = '&larr; Previous';
+        prevButton.disabled = currentPage === 1;
+        prevButton.onclick = () => {
+          if (currentPage > 1) {
+            fetchNews(currentPage - 1);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+        };
+        paginationContainer.appendChild(prevButton);
+        
+        // Page numbers
+        const startPage = Math.max(1, currentPage - 2);
+        const endPage = Math.min(totalPages, currentPage + 2);
+        
+        for (let i = startPage; i <= endPage; i++) {
+          const pageButton = document.createElement('button');
+          pageButton.className = `pagination-button ${i === currentPage ? 'active' : ''}`;
+          pageButton.textContent = i;
+          pageButton.onclick = () => {
+            fetchNews(i);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          };
+          paginationContainer.appendChild(pageButton);
+        }
+        
+        // Next button
+        const nextButton = document.createElement('button');
+        nextButton.className = 'pagination-button';
+        nextButton.innerHTML = 'Next &rarr;';
+        nextButton.disabled = currentPage === totalPages;
+        nextButton.onclick = () => {
+          if (currentPage < totalPages) {
+            fetchNews(currentPage + 1);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          }
+        };
+        paginationContainer.appendChild(nextButton);
+      };
+      
+      // Add schema.org markup for articles
+      const addArticleSchemaMarkup = (articles) => {
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.innerHTML = JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "itemListElement": articles.map((article, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "item": {
+              "@type": "NewsArticle",
+              "headline": article.title,
+              "description": article.description,
+              "url": article.url,
+              "datePublished": article.publishedAt,
+              "image": article.urlToImage,
+              "publisher": {
+                "@type": "Organization",
+                "name": article.source.name
+              }
+            }
+          }))
+        });
+        document.head.appendChild(script);
+      };
+      
+      // Initial load
+      fetchNews(currentPage);
+      
+      // Refresh every 15 minutes
+      setInterval(() => {
+        seenArticles.clear(); // Clear duplicates cache
+        fetchNews(currentPage);
+      }, 15 * 60 * 1000);
     });
   </script>
 </body>
