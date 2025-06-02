@@ -146,6 +146,7 @@
       height: 200px;
       overflow: hidden;
       position: relative;
+      background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
     }
     
     .article-image {
@@ -155,7 +156,26 @@
       transition: var(--transition);
     }
     
-    .article-card:hover .article-image {
+    .article-image.broken {
+      opacity: 0;
+    }
+    
+    .article-image-container::after {
+      content: "Image not available";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      display: none;
+    }
+    
+    .article-image-container.broken::after {
+      display: block;
+    }
+    
+    .article-card:hover .article-image:not(.broken) {
       transform: scale(1.03);
     }
     
@@ -297,6 +317,12 @@
       transform: translateY(-2px);
     }
     
+    .pagination-error {
+      color: #ff6b6b;
+      text-align: center;
+      margin-top: 1rem;
+    }
+    
     @media (max-width: 768px) {
       .container {
         padding: 1.5rem 1rem;
@@ -342,8 +368,7 @@
       },
       "sameAs": [
         "https://x.com/wheretowatch25",
-        "https://www.youtube.com/@Wheretowatch.stream",
-        
+        "https://www.youtube.com/@Wheretowatch.stream"
       ]
     },
     "potentialAction": {
@@ -380,26 +405,28 @@
   </div>
 
   <script>
-    // Enhanced News API Implementation with Smart Filtering
+    // Enhanced News API Implementation with Complete Fixes
     document.addEventListener('DOMContentLoaded', function() {
       const API_KEY = "9db22d19ef594e7594493ee58f74fa6c";
       let currentPage = 1;
-      const seenArticles = new Set(); // Track seen articles to prevent duplicates
+      let totalPages = 10;
+      const seenArticles = new Set(); // Track seen articles by URL
       
-      // Focused search query with exclusions
+      // Comprehensive search query with exclusions
       const query = encodeURIComponent(
         '(Netflix OR "Prime Video" OR Disney+ OR Hulu OR "HBO Max" OR "Apple TV+" OR Peacock OR Paramount+) ' +
-        'AND (show OR movie OR series OR streaming OR "original series" OR "new season" OR "coming soon") ' +
-        '-Trump -politics -election -sports -football -basketball'
+        'AND (show OR movie OR series OR streaming OR "original series" OR "new season" OR "release date") ' +
+        '-Trump -politics -election -sports -football -basketball -government -president'
       );
       
-      // Using reliable CORS proxy
       const getApiUrl = (page) => 
         `https://newsapi.org/v2/everything?q=${query}&language=en&sortBy=publishedAt&pageSize=10&page=${page}&apiKey=${API_KEY}`;
       
       const fetchNews = async (page) => {
         currentPage = page;
         const newsContainer = document.getElementById('news');
+        
+        // Show loading state
         newsContainer.innerHTML = `
           <div class="loading-container">
             <div class="loading-spinner" aria-hidden="true"></div>
@@ -411,34 +438,43 @@
           const proxyUrl = `https://api.allorigins.win/get?url=${encodeURIComponent(getApiUrl(page))}`;
           const response = await fetch(proxyUrl);
           
-          if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+          if (!response.ok) throw new Error(`Network error (status ${response.status})`);
           
           const data = await response.json();
           const newsData = JSON.parse(data.contents);
           
           if (!newsData.articles || newsData.articles.length === 0) {
-            throw new Error('No articles found');
+            throw new Error('No articles found on this page');
           }
           
-          // Filter out duplicates and irrelevant articles
-          const filteredArticles = newsData.articles.filter(article => {
-            const isDuplicate = seenArticles.has(article.url);
-            const isRelevant = /netflix|prime\s?video|disney\+|hulu|hbo\s?max|apple\s?tv\+|streaming|show|movie|series|season|episode|release/i.test(
-              `${article.title} ${article.description || ''}`
-            );
+          // Calculate total pages (max 10 to prevent too many requests)
+          totalPages = Math.min(Math.ceil(newsData.totalResults / 10), 10);
+          
+          // Filter out duplicates and irrelevant articles more strictly
+          const filteredArticles = [];
+          const articleUrls = new Set();
+          
+          newsData.articles.forEach(article => {
+            // Skip if we've seen this URL before
+            if (seenArticles.has(article.url)) return;
             
-            if (!isDuplicate && isRelevant) {
+            // Skip if title contains excluded keywords
+            const lowerTitle = article.title.toLowerCase();
+            if (/trump|politics|election|sports|nfl|nba|mlb|government|president/i.test(lowerTitle)) return;
+            
+            // Only include if title contains streaming keywords
+            if (/netflix|prime\s?video|disney\+|hulu|hbo\s?max|apple\s?tv\+|streaming|show|movie|series|season|episode|release/i.test(lowerTitle)) {
+              filteredArticles.push(article);
               seenArticles.add(article.url);
-              return true;
+              articleUrls.add(article.url);
             }
-            return false;
           });
           
           if (filteredArticles.length === 0) {
-            throw new Error('No relevant articles found');
+            throw new Error('No relevant streaming articles found after filtering');
           }
           
-          // Render articles
+          // Render articles with image error handling
           newsContainer.innerHTML = `
             <div class="news-grid">
               ${filteredArticles.map(article => `
@@ -449,6 +485,7 @@
                       alt="${article.title || 'Streaming news article'}" 
                       class="article-image" 
                       loading="lazy"
+                      onerror="handleImageError(this)"
                       itemprop="image"
                     >
                   </div>
@@ -469,26 +506,35 @@
             </div>
           `;
           
-          // Update pagination
-          updatePagination(page, newsData.totalResults);
+          // Update pagination (even if we have fewer articles than requested)
+          updatePagination(page, totalPages);
           
           // Add schema.org markup for each article
           addArticleSchemaMarkup(filteredArticles);
           
         } catch (error) {
           console.error('News fetch error:', error);
-          newsContainer.innerHTML = `
-            <div class="error-message">
-              <h2>News Loading Failed</h2>
-              <p>We're unable to load the latest streaming news right now.</p>
-              <p><strong>Error:</strong> ${error.message}</p>
-              <button class="retry-button" onclick="fetchNews(${page})">Try Again</button>
-            </div>
-          `;
+          showError(error.message, page);
         }
       };
       
-      // Format date with timezone consideration
+      const showError = (message, page) => {
+        const newsContainer = document.getElementById('news');
+        newsContainer.innerHTML = `
+          <div class="error-message">
+            <h2>News Loading Failed</h2>
+            <p>${message}</p>
+            <div class="pagination-error">
+              ${page > 1 ? 'Try going back to previous pages or ' : ''}
+              <button class="retry-button" onclick="fetchNews(${page})">Try Again</button>
+            </div>
+          </div>
+        `;
+        
+        // Always show pagination even on error
+        updatePagination(page, totalPages);
+      };
+      
       const formatDate = (dateString) => {
         const date = new Date(dateString);
         return date.toLocaleDateString('en-US', {
@@ -500,10 +546,10 @@
         });
       };
       
-      // Update pagination controls
-      const updatePagination = (currentPage, totalResults) => {
-        const totalPages = Math.min(Math.ceil(totalResults / 10), 10); // Max 10 pages
+      const updatePagination = (currentPage, totalPages) => {
         const paginationContainer = document.getElementById('pagination');
+        if (!paginationContainer) return;
+        
         paginationContainer.innerHTML = '';
         
         if (totalPages <= 1) return;
@@ -514,43 +560,65 @@
         prevButton.innerHTML = '&larr; Previous';
         prevButton.disabled = currentPage === 1;
         prevButton.onclick = () => {
-          if (currentPage > 1) {
-            fetchNews(currentPage - 1);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }
+          if (currentPage > 1) fetchNews(currentPage - 1);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
         };
         paginationContainer.appendChild(prevButton);
         
-        // Page numbers
+        // Page numbers - show first, current-2 to current+2, and last
+        const showPage = (page) => {
+          const pageButton = document.createElement('button');
+          pageButton.className = `pagination-button ${page === currentPage ? 'active' : ''}`;
+          pageButton.textContent = page;
+          pageButton.onclick = () => {
+            fetchNews(page);
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+          };
+          paginationContainer.appendChild(pageButton);
+        };
+        
+        // Always show first page
+        if (currentPage > 3) {
+          showPage(1);
+          if (currentPage > 4) {
+            const ellipsis = document.createElement('span');
+            ellipsis.textContent = '...';
+            ellipsis.style.padding = '0 0.5rem';
+            paginationContainer.appendChild(ellipsis);
+          }
+        }
+        
+        // Show pages around current page
         const startPage = Math.max(1, currentPage - 2);
         const endPage = Math.min(totalPages, currentPage + 2);
         
         for (let i = startPage; i <= endPage; i++) {
-          const pageButton = document.createElement('button');
-          pageButton.className = `pagination-button ${i === currentPage ? 'active' : ''}`;
-          pageButton.textContent = i;
-          pageButton.onclick = () => {
-            fetchNews(i);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          };
-          paginationContainer.appendChild(pageButton);
+          showPage(i);
+        }
+        
+        // Always show last page
+        if (currentPage < totalPages - 2) {
+          if (currentPage < totalPages - 3) {
+            const ellipsis = document.createElement('span');
+            ellipsis.textContent = '...';
+            ellipsis.style.padding = '0 0.5rem';
+            paginationContainer.appendChild(ellipsis);
+          }
+          showPage(totalPages);
         }
         
         // Next button
         const nextButton = document.createElement('button');
         nextButton.className = 'pagination-button';
         nextButton.innerHTML = 'Next &rarr;';
-        nextButton.disabled = currentPage === totalPages;
+        nextButton.disabled = currentPage >= totalPages;
         nextButton.onclick = () => {
-          if (currentPage < totalPages) {
-            fetchNews(currentPage + 1);
-            window.scrollTo({ top: 0, behavior: 'smooth' });
-          }
+          if (currentPage < totalPages) fetchNews(currentPage + 1);
+          window.scrollTo({ top: 0, behavior: 'smooth' });
         };
         paginationContainer.appendChild(nextButton);
       };
       
-      // Add schema.org markup for articles
       const addArticleSchemaMarkup = (articles) => {
         const script = document.createElement('script');
         script.type = 'application/ld+json';
@@ -566,7 +634,7 @@
               "description": article.description,
               "url": article.url,
               "datePublished": article.publishedAt,
-              "image": article.urlToImage,
+              "image": article.urlToImage || 'https://www.wheretowatch.stream/guides/streaming-news-og.jpg',
               "publisher": {
                 "@type": "Organization",
                 "name": article.source.name
@@ -577,12 +645,23 @@
         document.head.appendChild(script);
       };
       
+      // Global function for image error handling
+      window.handleImageError = function(img) {
+        img.classList.add('broken');
+        img.parentElement.classList.add('broken');
+      };
+      
       // Initial load
       fetchNews(currentPage);
       
-      // Refresh every 15 minutes
+      // Refresh every 15 minutes but keep seen articles for 1 hour
       setInterval(() => {
-        seenArticles.clear(); // Clear duplicates cache
+        if (seenArticles.size > 1000) {
+          // Clear oldest half of articles to prevent memory issues
+          const array = Array.from(seenArticles);
+          seenArticles.clear();
+          array.slice(array.length / 2).forEach(url => seenArticles.add(url));
+        }
         fetchNews(currentPage);
       }, 15 * 60 * 1000);
     });
