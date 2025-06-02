@@ -571,7 +571,7 @@
   </div>
 
   <script>
-    // Enhanced News Manager with Advanced Duplicate Detection and Error Handling
+    // Enhanced News Manager with Advanced Error Handling and Pagination
     class StreamingNewsManager {
       constructor() {
         this.API_KEY = "9db22d19ef594e7594493ee58f74fa6c";
@@ -580,11 +580,11 @@
         this.maxRetries = 3;
         this.retryDelay = 2000;
         this.isLoading = false;
+        this.activeRequest = null;
         
         // Enhanced duplicate detection
-        this.seenArticles = new Map(); // URL -> article data
-        this.titleHashes = new Set(); // For similar title detection
-        this.contentHashes = new Set(); // For similar content detection
+        this.seenArticles = new Map();
+        this.titleHashes = new Set();
         
         // Error tracking
         this.errorCount = 0;
@@ -612,7 +612,7 @@
         this.refreshButton.addEventListener('click', () => this.handleRefresh());
         
         // Auto-refresh every 10 minutes with user notification
-        setInterval(() => {
+        this.autoRefreshInterval = setInterval(() => {
           if (!this.isLoading && document.visibilityState === 'visible') {
             this.updateStatus('loading', 'Checking for new articles...');
             this.fetchNews(this.currentPage, true);
@@ -620,10 +620,24 @@
         }, 10 * 60 * 1000);
         
         // Clean up old articles every hour
-        setInterval(() => this.cleanupOldArticles(), 60 * 60 * 1000);
+        this.cleanupInterval = setInterval(() => this.cleanupOldArticles(), 60 * 60 * 1000);
       }
       
-      // Advanced duplicate detection
+      // Abort any active requests
+      abortActiveRequest() {
+        if (this.activeRequest) {
+          this.activeRequest.abort();
+          this.activeRequest = null;
+        }
+      }
+      
+      // Clean up intervals when needed
+      cleanup() {
+        clearInterval(this.autoRefreshInterval);
+        clearInterval(this.cleanupInterval);
+        this.abortActiveRequest();
+      }
+      
       generateTitleHash(title) {
         // Normalize title for comparison
         const normalized = title.toLowerCase()
@@ -741,20 +755,31 @@
       }
       
       async startInitialLoad() {
-        await this.fetchNews(1);
-        
-        // Show refresh button after initial load
-        setTimeout(() => {
-          this.refreshButton.classList.add('visible');
-        }, 1000);
+        try {
+          await this.fetchNews(1);
+          
+          // Show refresh button after initial load
+          setTimeout(() => {
+            this.refreshButton.classList.add('visible');
+          }, 1000);
+        } catch (error) {
+          this.handleError(error, 1);
+        }
       }
       
       async handleRefresh() {
+        if (this.isLoading) return;
+        
         this.refreshButton.classList.add('spinning');
-        await this.fetchNews(this.currentPage, true);
-        setTimeout(() => {
-          this.refreshButton.classList.remove('spinning');
-        }, 1000);
+        try {
+          await this.fetchNews(this.currentPage, true);
+        } catch (error) {
+          this.handleError(error, this.currentPage);
+        } finally {
+          setTimeout(() => {
+            this.refreshButton.classList.remove('spinning');
+          }, 1000);
+        }
       }
       
       getSearchQuery() {
@@ -779,7 +804,14 @@
       }
       
       async fetchNews(page, isRefresh = false) {
-        if (this.isLoading) return;
+        // Validate page number
+        if (page < 1 || page > this.totalPages) {
+          console.error(`Invalid page requested: ${page}`);
+          return;
+        }
+        
+        // Cancel any active request
+        this.abortActiveRequest();
         
         this.isLoading = true;
         this.currentPage = page;
@@ -800,10 +832,19 @@
         }
         
         let lastError = null;
+        let attempt = 0;
         
-        for (let attempt = 0; attempt < this.maxRetries; attempt++) {
+        // Create new AbortController for this request
+        const controller = new AbortController();
+        this.activeRequest = controller;
+        
+        while (attempt < this.maxRetries) {
           try {
-            const data = await this.makeRequest(apiUrl, attempt);
+            const data = await this.makeRequest(apiUrl, attempt, controller.signal);
+            
+            if (controller.signal.aborted) {
+              throw new Error('Request was aborted');
+            }
             
             if (!data.articles || data.articles.length === 0) {
               throw new Error('No articles found');
@@ -815,14 +856,22 @@
               if (attempt === this.maxRetries - 1) {
                 throw new Error('No relevant streaming articles found after filtering');
               }
+              attempt++;
               continue;
             }
             
-            this.totalPages = Math.min(Math.ceil(data.totalResults / 12), 15);
+            // Update total pages with reasonable limits
+            const calculatedPages = Math.ceil(data.totalResults / 12);
+            this.totalPages = Math.min(Math.max(calculatedPages, 1), 15);
+            
+            // Ensure current page is within bounds
+            if (this.currentPage > this.totalPages) {
+              this.currentPage = this.totalPages;
+            }
             
             this.renderArticles(filteredArticles, isRefresh);
             this.updatePagination();
-            this.updateStatus('success', `Loaded ${filteredArticles.length} fresh articles`, `${this.seenArticles.size} total tracked`);
+            this.updateStatus('success', `Loaded ${filteredArticles.length} articles`, `Page ${this.currentPage} of ${this.totalPages}`);
             
             this.errorCount = 0;
             this.lastError = null;
@@ -832,14 +881,19 @@
             lastError = error;
             console.warn(`Attempt ${attempt + 1} failed:`, error.message);
             
-            if (attempt < this.maxRetries - 1) {
+            if (attempt < this.maxRetries - 1 && !controller.signal.aborted) {
               this.updateStatus('warning', `Retrying... (${attempt + 1}/${this.maxRetries})`, error.message);
               await this.delay(this.retryDelay * Math.pow(2, attempt));
+              attempt++;
+            } else {
+              break;
             }
           }
         }
         
-        if (lastError) {
+        this.activeRequest = null;
+        
+        if (lastError && !controller.signal.aborted) {
           this.handleError(lastError, page);
         }
         
@@ -847,17 +901,21 @@
         this.isLoading = false;
       }
       
-      async makeRequest(apiUrl, attempt = 0) {
+      async makeRequest(apiUrl, attempt = 0, signal = null) {
         const proxyUrl = `${this.fallbackSources[this.currentProxyIndex]}${encodeURIComponent(apiUrl)}`;
         
         try {
-          const response = await fetch(proxyUrl, {
+          const options = {
             method: 'GET',
-            headers: {
-              'Accept': 'application/json',
-            },
-            timeout: 15000
-          });
+            headers: { 'Accept': 'application/json' },
+            signal: signal
+          };
+          
+          const response = await fetch(proxyUrl, options);
+          
+          if (signal?.aborted) {
+            throw new Error('Request aborted');
+          }
           
           if (!response.ok) {
             throw new Error(`HTTP ${response.status}: ${response.statusText}`);
@@ -875,10 +933,14 @@
           }
           
         } catch (error) {
+          if (error.name === 'AbortError') {
+            throw new Error('Request was aborted');
+          }
+          
           // Try next proxy on failure
           if (attempt === 0 && this.currentProxyIndex < this.fallbackSources.length - 1) {
             this.currentProxyIndex++;
-            return this.makeRequest(apiUrl, attempt + 1);
+            return this.makeRequest(apiUrl, attempt + 1, signal);
           }
           
           // Reset proxy index for next time
@@ -966,8 +1028,19 @@
           return;
         }
         
-        const articlesHtml = articles.map((article, index) => `
-          <article class="article-card" itemscope itemtype="https://schema.org/NewsArticle" style="animation-delay: ${index * 0.1}s">
+        // Create document fragment for better performance
+        const fragment = document.createDocumentFragment();
+        const grid = document.createElement('div');
+        grid.className = 'news-grid';
+        
+        articles.forEach((article, index) => {
+          const articleEl = document.createElement('article');
+          articleEl.className = 'article-card';
+          articleEl.style.animationDelay = `${index * 0.1}s`;
+          articleEl.setAttribute('itemscope', '');
+          articleEl.setAttribute('itemtype', 'https://schema.org/NewsArticle');
+          
+          articleEl.innerHTML = `
             <div class="article-image-container">
               <img 
                 src="${article.urlToImage || 'https://via.placeholder.com/600x400/1e1e1e/00ffd1?text=📺+Streaming+News'}" 
@@ -996,10 +1069,16 @@
                 </span>
               </div>
             </div>
-          </article>
-        `).join('');
+          `;
+          
+          grid.appendChild(articleEl);
+        });
         
-        this.newsContainer.innerHTML = `<div class="news-grid">${articlesHtml}</div>`;
+        fragment.appendChild(grid);
+        
+        // Clear existing content and append new content
+        this.newsContainer.innerHTML = '';
+        this.newsContainer.appendChild(fragment);
         
         // Add structured data
         this.addStructuredData(articles);
@@ -1011,70 +1090,92 @@
           return;
         }
         
-        const buttons = [];
+        // Create document fragment for better performance
+        const fragment = document.createDocumentFragment();
         
         // Previous button
-        buttons.push(`
-          <button class="pagination-button" ${this.currentPage === 1 ? 'disabled' : ''} 
-                  onclick="newsManager.goToPage(${this.currentPage - 1})" 
-                  aria-label="Previous page">
-            ← Previous
-          </button>
-        `);
+        const prevButton = document.createElement('button');
+        prevButton.className = 'pagination-button';
+        prevButton.disabled = this.currentPage === 1;
+        prevButton.textContent = '← Previous';
+        prevButton.setAttribute('aria-label', 'Previous page');
+        prevButton.onclick = () => this.goToPage(this.currentPage - 1);
+        fragment.appendChild(prevButton);
         
         // Page numbers
         const startPage = Math.max(1, this.currentPage - 2);
         const endPage = Math.min(this.totalPages, this.currentPage + 2);
         
         if (startPage > 1) {
-          buttons.push(`
-            <button class="pagination-button" onclick="newsManager.goToPage(1)">1</button>
-          `);
+          const firstButton = document.createElement('button');
+          firstButton.className = 'pagination-button';
+          firstButton.textContent = '1';
+          firstButton.onclick = () => this.goToPage(1);
+          fragment.appendChild(firstButton);
+          
           if (startPage > 2) {
-            buttons.push(`<span style="padding: 0 0.5rem; color: var(--text-secondary)">...</span>`);
+            const ellipsis = document.createElement('span');
+            ellipsis.style.padding = '0 0.5rem';
+            ellipsis.style.color = 'var(--text-secondary)';
+            ellipsis.textContent = '...';
+            fragment.appendChild(ellipsis);
           }
         }
         
         for (let i = startPage; i <= endPage; i++) {
-          buttons.push(`
-            <button class="pagination-button ${i === this.currentPage ? 'active' : ''}" 
-                    onclick="newsManager.goToPage(${i})" 
-                    aria-label="Page ${i}"${i === this.currentPage ? ' aria-current="page"' : ''}>
-              ${i}
-            </button>
-          `);
+          const button = document.createElement('button');
+          button.className = `pagination-button ${i === this.currentPage ? 'active' : ''}`;
+          button.textContent = i;
+          button.setAttribute('aria-label', `Page ${i}`);
+          if (i === this.currentPage) {
+            button.setAttribute('aria-current', 'page');
+          }
+          button.onclick = () => this.goToPage(i);
+          fragment.appendChild(button);
         }
         
         if (endPage < this.totalPages) {
           if (endPage < this.totalPages - 1) {
-            buttons.push(`<span style="padding: 0 0.5rem; color: var(--text-secondary)">...</span>`);
+            const ellipsis = document.createElement('span');
+            ellipsis.style.padding = '0 0.5rem';
+            ellipsis.style.color = 'var(--text-secondary)';
+            ellipsis.textContent = '...';
+            fragment.appendChild(ellipsis);
           }
-          buttons.push(`
-            <button class="pagination-button" onclick="newsManager.goToPage(${this.totalPages})">
-              ${this.totalPages}
-            </button>
-          `);
+          
+          const lastButton = document.createElement('button');
+          lastButton.className = 'pagination-button';
+          lastButton.textContent = this.totalPages;
+          lastButton.onclick = () => this.goToPage(this.totalPages);
+          fragment.appendChild(lastButton);
         }
         
         // Next button
-        buttons.push(`
-          <button class="pagination-button" ${this.currentPage >= this.totalPages ? 'disabled' : ''} 
-                  onclick="newsManager.goToPage(${this.currentPage + 1})" 
-                  aria-label="Next page">
-            Next →
-          </button>
-        `);
+        const nextButton = document.createElement('button');
+        nextButton.className = 'pagination-button';
+        nextButton.disabled = this.currentPage >= this.totalPages;
+        nextButton.textContent = 'Next →';
+        nextButton.setAttribute('aria-label', 'Next page');
+        nextButton.onclick = () => this.goToPage(this.currentPage + 1);
+        fragment.appendChild(nextButton);
         
-        this.paginationContainer.innerHTML = buttons.join('');
+        // Clear and update
+        this.paginationContainer.innerHTML = '';
+        this.paginationContainer.appendChild(fragment);
       }
       
       async goToPage(page) {
+        // Validate page number
         if (page < 1 || page > this.totalPages || page === this.currentPage || this.isLoading) {
           return;
         }
         
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        await this.fetchNews(page);
+        try {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          await this.fetchNews(page);
+        } catch (error) {
+          this.handleError(error, page);
+        }
       }
       
       handleError(error, page) {
@@ -1198,7 +1299,22 @@
       newsManager = new StreamingNewsManager();
     });
     
+    // Clean up when page is unloaded
+    window.addEventListener('beforeunload', function() {
+      if (newsManager) {
+        newsManager.cleanup();
+      }
+    });
+    
     // Global error handler
+    window.addEventListener('error', function(event) {
+      console.error('Global error:', event.error);
+      if (newsManager) {
+        newsManager.updateStatus('error', 'An unexpected error occurred', 'Please refresh the page');
+      }
+      return true; // Prevent default error handling
+    });
+    
     window.addEventListener('unhandledrejection', function(event) {
       console.error('Unhandled promise rejection:', event.reason);
       if (newsManager) {
@@ -1208,13 +1324,17 @@
     
     // Handle visibility changes to pause/resume updates
     document.addEventListener('visibilitychange', function() {
-      if (newsManager && document.visibilityState === 'visible' && newsManager.errorCount > 0) {
-        // Auto-retry when user returns to page after errors
-        setTimeout(() => {
-          if (newsManager.errorCount > 0) {
-            newsManager.handleRefresh();
-          }
-        }, 2000);
+      if (newsManager) {
+        if (document.visibilityState === 'hidden') {
+          newsManager.abortActiveRequest();
+        } else if (newsManager.errorCount > 0) {
+          // Auto-retry when user returns to page after errors
+          setTimeout(() => {
+            if (newsManager.errorCount > 0) {
+              newsManager.handleRefresh();
+            }
+          }, 2000);
+        }
       }
     });
   </script>
