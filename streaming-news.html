@@ -11,7 +11,7 @@
 
   <!-- Open Graph -->
   <meta property="og:title" content="Streaming News: Netflix, Prime Video, Disney+, Hulu & More (Updated Daily)"/>
-  <meta property="og:description" content="Fresh streaming updates and release news across all major platforms. Check what’s coming next."/>
+  <meta property="og:description" content="Fresh streaming updates and release news across all major platforms. Check what's coming next."/>
   <meta property="og:type" content="article"/>
   <meta property="og:url" content="https://www.wheretowatch.stream/guides/streaming-news.html"/>
   <meta property="og:image" content="https://www.wheretowatch.stream/guides/guides-og.jpg"/>
@@ -61,6 +61,18 @@
     }
     small {
       color: #aaa;
+    }
+    .loading {
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border: 3px solid rgba(255,255,255,.3);
+      border-radius: 50%;
+      border-top-color: #1db954;
+      animation: spin 1s ease-in-out infinite;
+    }
+    @keyframes spin {
+      to { transform: rotate(360deg); }
     }
     @media (max-width: 600px) {
       body { padding: 1rem; }
@@ -123,35 +135,87 @@
   <h1>Streaming News: Netflix, Prime Video, Disney+, Hulu & More</h1>
   <p>Stay up to date with the latest in streaming — release dates, new shows, cancellations, renewals, and platform updates across Netflix, Prime Video, Disney+, Hulu, and others.</p>
 
-  <div id="news"></div>
+  <div id="news">
+    <p><span class="loading"></span> Loading latest news...</p>
+  </div>
 
   <script>
-    const API_KEY = "9db22d19ef594e7594493ee58f74fa6c"; // 
-    const url = `https://newsapi.org/v2/everything?q=streaming+Netflix+%22Prime+Video%22+Disney%2B+Hulu&language=en&sortBy=publishedAt&pageSize=10&apiKey=${API_KEY}`;
-
-    fetch(url)
-      .then(res => res.json())
-      .then(data => {
-        const container = document.getElementById('news');
-        if (!data.articles || !data.articles.length) {
-          container.innerHTML = '<p>No current news available.</p>';
+    // Using a CORS proxy to bypass restrictions on GitHub Pages
+    const API_KEY = "9db22d19ef594e7594493ee58f74fa6c";
+    const query = encodeURIComponent('streaming Netflix "Prime Video" Disney+ Hulu');
+    const proxyUrl = 'https://api.allorigins.win/get?url=';
+    const apiUrl = `https://newsapi.org/v2/everything?q=${query}&language=en&sortBy=publishedAt&pageSize=10&apiKey=${API_KEY}`;
+    
+    // Cache DOM element
+    const newsContainer = document.getElementById('news');
+    
+    // Format date function
+    const formatDate = (dateString) => {
+      const options = { 
+        year: 'numeric', 
+        month: 'short', 
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit'
+      };
+      return new Date(dateString).toLocaleString('en-US', options);
+    };
+    
+    // Fetch with timeout
+    const fetchWithTimeout = (url, timeout = 8000) => {
+      return Promise.race([
+        fetch(url),
+        new Promise((_, reject) =>
+          setTimeout(() => reject(new Error('Request timed out')), timeout)
+        )
+      ]);
+    };
+    
+    // Main fetch function
+    const fetchNews = async () => {
+      try {
+        const response = await fetchWithTimeout(proxyUrl + encodeURIComponent(apiUrl));
+        
+        if (!response.ok) {
+          throw new Error(`HTTP error! status: ${response.status}`);
+        }
+        
+        const data = await response.json();
+        const newsData = JSON.parse(data.contents);
+        
+        if (!newsData.articles || !newsData.articles.length) {
+          newsContainer.innerHTML = '<p>No current news available. Check back later.</p>';
           return;
         }
-
-        data.articles.forEach(article => {
-          const div = document.createElement('div');
-          div.className = 'article';
-          div.innerHTML = `
-            <h2><a href="${article.url}" target="_blank" rel="noopener">${article.title}</a></h2>
-            <p>${article.description || ''}</p>
-            <p><small>Published: ${new Date(article.publishedAt).toLocaleString()} — Source: ${article.source.name}</small></p>
+        
+        // Clear loading message
+        newsContainer.innerHTML = '';
+        
+        // Add articles to DOM
+        newsData.articles.forEach(article => {
+          const articleDiv = document.createElement('div');
+          articleDiv.className = 'article';
+          articleDiv.innerHTML = `
+            <h2><a href="${article.url}" target="_blank" rel="noopener noreferrer">${article.title}</a></h2>
+            ${article.description ? `<p>${article.description}</p>` : ''}
+            ${article.urlToImage ? `<img src="${article.urlToImage}" alt="${article.title}" style="max-width:100%; height:auto; margin:10px 0; border-radius:4px;">` : ''}
+            <p><small>Published: ${formatDate(article.publishedAt)} — Source: ${article.source.name}</small></p>
           `;
-          container.appendChild(div);
+          newsContainer.appendChild(articleDiv);
         });
-      })
-      .catch(() => {
-        document.getElementById('news').innerHTML = '<p>Error fetching the latest articles.</p>';
-      });
+        
+      } catch (error) {
+        console.error('Error fetching news:', error);
+        newsContainer.innerHTML = `
+          <p>Couldn't load the latest news at this time.</p>
+          <p><small>Error: ${error.message}</small></p>
+          <p>Try refreshing the page or check back later.</p>
+        `;
+      }
+    };
+    
+    // Initialize
+    document.addEventListener('DOMContentLoaded', fetchNews);
   </script>
 </body>
 </html>
