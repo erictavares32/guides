@@ -3,111 +3,283 @@
 <head>
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="robots" content="index, follow"/>
+  <meta name="robots" content="index, follow, max-image-preview:large"/>
   <meta name="theme-color" content="#121212"/>
+  
+  <!-- Primary Meta Tags -->
   <title>Streaming News: Netflix, Prime Video, Disney+, Hulu & More (Updated Daily)</title>
   <meta name="description" content="Breaking streaming news from Netflix, Prime Video, Disney+, Hulu, and more. Stay updated on release dates, upcoming shows, and platform exclusives."/>
+  <meta name="keywords" content="Netflix news, Prime Video updates, Disney+ releases, Hulu shows, streaming news, where to watch, entertainment news"/>
+  
+  <!-- Canonical URL -->
   <link rel="canonical" href="https://www.wheretowatch.stream/guides/streaming-news.html"/>
 
-  <!-- Open Graph -->
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://www.wheretowatch.stream/guides/streaming-news.html"/>
   <meta property="og:title" content="Streaming News: Netflix, Prime Video, Disney+, Hulu & More (Updated Daily)"/>
   <meta property="og:description" content="Fresh streaming updates and release news across all major platforms. Check what's coming next."/>
-  <meta property="og:type" content="article"/>
-  <meta property="og:url" content="https://www.wheretowatch.stream/guides/streaming-news.html"/>
-  <meta property="og:image" content="https://www.wheretowatch.stream/guides/guides-og.jpg"/>
+  <meta property="og:image" content="https://www.wheretowatch.stream/guides/streaming-news-og.jpg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:site_name" content="WhereToWatch"/>
 
-  <!-- Twitter Card -->
+  <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:site" content="@WhereToWatch"/>
+  <meta name="twitter:creator" content="@WhereToWatch"/>
   <meta name="twitter:title" content="Streaming News: Netflix, Prime Video, Disney+, Hulu & More"/>
   <meta name="twitter:description" content="Stay ahead with breaking streaming updates from every major platform — updated daily."/>
-  <meta name="twitter:image" content="https://www.wheretowatch.stream/guides/guides-og.jpg"/>
+  <meta name="twitter:image" content="https://www.wheretowatch.stream/guides/streaming-news-og.jpg"/>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/favicon.ico" sizes="any"/>
+  <link rel="icon" href="/icon.svg" type="image/svg+xml"/>
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png"/>
+
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style"/>
+  <link rel="preload" as="image" href="https://www.wheretowatch.stream/guides/streaming-news-og.jpg"/>
 
   <style>
-    body {
-      margin: 0;
-      padding: 2rem;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #121212;
-      color: #f1f1f1;
+    :root {
+      --primary: #00ffd1;
+      --secondary: #1db954;
+      --dark-bg: #121212;
+      --card-bg: #1e1e1e;
+      --text-primary: #f1f1f1;
+      --text-secondary: #aaa;
+      --border-radius: 12px;
+      --box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
     }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      background-color: var(--dark-bg);
+      color: var(--text-primary);
+      padding: 0;
+      margin: 0;
+      min-height: 100vh;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    
     .breadcrumbs {
       font-size: 0.9rem;
       margin-bottom: 1.5rem;
-      color: #aaa;
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
     }
+    
     .breadcrumbs a {
-      color: #1db954;
+      color: var(--secondary);
       text-decoration: none;
+      transition: color 0.2s;
     }
+    
     .breadcrumbs a:hover {
+      color: var(--primary);
       text-decoration: underline;
     }
+    
+    .breadcrumbs span {
+      color: var(--text-secondary);
+    }
+    
+    .breadcrumbs svg {
+      width: 16px;
+      height: 16px;
+      fill: currentColor;
+    }
+    
     h1 {
-      color: #00ffd1;
-      font-size: 2.2rem;
-      margin-bottom: 1rem;
+      color: var(--primary);
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1.5rem;
+      background: linear-gradient(90deg, #00ffd1, #1db954);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
     }
-    .article {
-      margin-bottom: 2rem;
-      border-bottom: 1px solid #333;
-      padding-bottom: 1rem;
+    
+    .page-description {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-bottom: 2.5rem;
+      max-width: 800px;
     }
-    a {
-      color: #1db954;
+    
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 2rem;
+      margin-top: 2rem;
+    }
+    
+    .article-card {
+      background: var(--card-bg);
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      box-shadow: var(--box-shadow);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+    }
+    
+    .article-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 12px 28px rgba(0, 0, 0, 0.4);
+    }
+    
+    .article-image {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+    }
+    
+    .article-content {
+      padding: 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .article-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      line-height: 1.4;
+    }
+    
+    .article-title a {
+      color: var(--text-primary);
       text-decoration: none;
+      transition: color 0.2s;
     }
-    a:hover {
-      text-decoration: underline;
+    
+    .article-title a:hover {
+      color: var(--primary);
     }
-    small {
-      color: #aaa;
+    
+    .article-description {
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
     }
-    .loading {
-      display: inline-block;
-      width: 20px;
-      height: 20px;
-      border: 3px solid rgba(255,255,255,.3);
+    
+    .article-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-top: auto;
+    }
+    
+    .article-source {
+      background-color: rgba(29, 185, 84, 0.1);
+      color: var(--secondary);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+    
+    .loading-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 300px;
+      gap: 1rem;
+    }
+    
+    .loading-spinner {
+      width: 50px;
+      height: 50px;
+      border: 5px solid rgba(255, 255, 255, 0.1);
       border-radius: 50%;
-      border-top-color: #1db954;
+      border-top-color: var(--primary);
       animation: spin 1s ease-in-out infinite;
     }
+    
     @keyframes spin {
       to { transform: rotate(360deg); }
     }
-    @media (max-width: 600px) {
-      body { padding: 1rem; }
-      h1 { font-size: 1.6rem; }
+    
+    .error-message {
+      background-color: rgba(255, 0, 0, 0.1);
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      text-align: center;
+      margin: 2rem 0;
+    }
+    
+    .error-message h2 {
+      color: #ff4d4d;
+      margin-bottom: 1rem;
+    }
+    
+    /* Dark mode toggle (optional) */
+    .dark-mode-toggle {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: var(--card-bg);
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+      z-index: 100;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        padding: 1.5rem 1rem;
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+      
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .article-image {
+        height: 180px;
+      }
+    }
+    
+    /* Accessibility focus styles */
+    a:focus-visible, button:focus-visible {
+      outline: 2px solid var(--primary);
+      outline-offset: 2px;
     }
   </style>
 
   <!-- JSON-LD Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {
-        "@type": "ListItem",
-        "position": 1,
-        "name": "Home",
-        "item": "https://www.wheretowatch.stream/"
-      },
-      {
-        "@type": "ListItem",
-        "position": 2,
-        "name": "Guides",
-        "item": "https://www.wheretowatch.stream/guides"
-      },
-      {
-        "@type": "ListItem",
-        "position": 3,
-        "name": "Streaming News",
-        "item": "https://www.wheretowatch.stream/guides/streaming-news.html"
-      }
-    ]
-  }
-  </script>
-
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -121,101 +293,204 @@
       "url": "https://www.wheretowatch.stream",
       "logo": {
         "@type": "ImageObject",
-        "url": "https://www.wheretowatch.stream/guides/logo.png"
-      }
+        "url": "https://www.wheretowatch.stream/guides/logo.png",
+        "width": 300,
+        "height": 60
+      },
+      "sameAs": [
+        "https://x.com/wheretowatch25",
+        "https://facebook.com/WhereToWatch",
+        "https://www.youtube.com/@Wheretowatch.stream",
+      ]
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.wheretowatch.stream/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
     }
   }
   </script>
 </head>
 <body>
-  <nav class="breadcrumbs">
-    <a href="/">Home</a> → <a href="/guides">Guides</a> → <span>Streaming News</span>
-  </nav>
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <svg viewBox="0 0 24 24" width="16" height="16"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+      <a href="/guides">Guides</a>
+      <svg viewBox="0 0 24 24" width="16" height="16"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+      <span>Streaming News</span>
+    </nav>
 
-  <h1>Streaming News: Netflix, Prime Video, Disney+, Hulu & More</h1>
-  <p>Stay up to date with the latest in streaming — release dates, new shows, cancellations, renewals, and platform updates across Netflix, Prime Video, Disney+, Hulu, and others.</p>
+    <header>
+      <h1>Streaming News: Netflix, Prime Video, Disney+, Hulu & More</h1>
+      <p class="page-description">Stay up to date with the latest in streaming — release dates, new shows, cancellations, renewals, and platform updates across all major services.</p>
+    </header>
 
-  <div id="news">
-    <p><span class="loading"></span> Loading latest news...</p>
+    <main id="news">
+      <div class="loading-container">
+        <div class="loading-spinner" aria-hidden="true"></div>
+        <p>Loading the latest streaming news...</p>
+      </div>
+    </main>
   </div>
 
   <script>
-    // Using a CORS proxy to bypass restrictions on GitHub Pages
-    const API_KEY = "9db22d19ef594e7594493ee58f74fa6c";
-    const query = encodeURIComponent('streaming Netflix "Prime Video" Disney+ Hulu');
-    const proxyUrl = 'https://api.allorigins.win/get?url=';
-    const apiUrl = `https://newsapi.org/v2/everything?q=${query}&language=en&sortBy=publishedAt&pageSize=10&apiKey=${API_KEY}`;
-    
-    // Cache DOM element
-    const newsContainer = document.getElementById('news');
-    
-    // Format date function
-    const formatDate = (dateString) => {
-      const options = { 
-        year: 'numeric', 
-        month: 'short', 
-        day: 'numeric',
-        hour: '2-digit',
-        minute: '2-digit'
-      };
-      return new Date(dateString).toLocaleString('en-US', options);
-    };
-    
-    // Fetch with timeout
-    const fetchWithTimeout = (url, timeout = 8000) => {
-      return Promise.race([
-        fetch(url),
-        new Promise((_, reject) =>
-          setTimeout(() => reject(new Error('Request timed out')), timeout)
-        )
-      ]);
-    };
-    
-    // Main fetch function
-    const fetchNews = async () => {
-      try {
-        const response = await fetchWithTimeout(proxyUrl + encodeURIComponent(apiUrl));
-        
-        if (!response.ok) {
-          throw new Error(`HTTP error! status: ${response.status}`);
-        }
-        
-        const data = await response.json();
-        const newsData = JSON.parse(data.contents);
-        
-        if (!newsData.articles || !newsData.articles.length) {
-          newsContainer.innerHTML = '<p>No current news available. Check back later.</p>';
-          return;
-        }
-        
-        // Clear loading message
-        newsContainer.innerHTML = '';
-        
-        // Add articles to DOM
-        newsData.articles.forEach(article => {
-          const articleDiv = document.createElement('div');
-          articleDiv.className = 'article';
-          articleDiv.innerHTML = `
-            <h2><a href="${article.url}" target="_blank" rel="noopener noreferrer">${article.title}</a></h2>
-            ${article.description ? `<p>${article.description}</p>` : ''}
-            ${article.urlToImage ? `<img src="${article.urlToImage}" alt="${article.title}" style="max-width:100%; height:auto; margin:10px 0; border-radius:4px;">` : ''}
-            <p><small>Published: ${formatDate(article.publishedAt)} — Source: ${article.source.name}</small></p>
-          `;
-          newsContainer.appendChild(articleDiv);
+    // Enhanced News API Implementation
+    document.addEventListener('DOMContentLoaded', function() {
+      const API_KEY = "9db22d19ef594e7594493ee58f74fa6c";
+      const query = encodeURIComponent('streaming OR Netflix OR "Prime Video" OR Disney+ OR Hulu OR HBO Max OR Apple TV+');
+      const proxyUrl = 'https://corsproxy.io/?';
+      const apiUrl = `https://newsapi.org/v2/everything?q=${query}&language=en&sortBy=publishedAt&pageSize=12&apiKey=${API_KEY}`;
+      
+      const newsContainer = document.getElementById('news');
+      const retryCount = 0;
+      const maxRetries = 2;
+      
+      // Format date with timezone consideration
+      const formatDate = (dateString) => {
+        const date = new Date(dateString);
+        return date.toLocaleDateString('en-US', {
+          year: 'numeric',
+          month: 'long',
+          day: 'numeric',
+          hour: '2-digit',
+          minute: '2-digit',
+          timeZoneName: 'short'
         });
-        
-      } catch (error) {
-        console.error('Error fetching news:', error);
-        newsContainer.innerHTML = `
-          <p>Couldn't load the latest news at this time.</p>
-          <p><small>Error: ${error.message}</small></p>
-          <p>Try refreshing the page or check back later.</p>
+      };
+      
+      // Fallback image if none is provided
+      const getImageUrl = (url) => {
+        return url || 'https://via.placeholder.com/600x400/1e1e1e/00ffd1?text=Streaming+News';
+      };
+      
+      // Create article card HTML
+      const createArticleCard = (article) => {
+        return `
+          <article class="article-card" itemscope itemtype="https://schema.org/NewsArticle">
+            <img 
+              src="${getImageUrl(article.urlToImage)}" 
+              alt="${article.title || 'Streaming news article'}" 
+              class="article-image" 
+              loading="lazy"
+              itemprop="image"
+            >
+            <div class="article-content">
+              <h2 class="article-title" itemprop="headline">
+                <a href="${article.url}" target="_blank" rel="noopener noreferrer" itemprop="url">${article.title}</a>
+              </h2>
+              <p class="article-description" itemprop="description">${article.description || 'Read more about this streaming news story.'}</p>
+              <div class="article-meta">
+                <time datetime="${article.publishedAt}" itemprop="datePublished">${formatDate(article.publishedAt)}</time>
+                <span class="article-source" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                  <span itemprop="name">${article.source.name}</span>
+                </span>
+              </div>
+            </div>
+          </article>
         `;
-      }
-    };
-    
-    // Initialize
-    document.addEventListener('DOMContentLoaded', fetchNews);
+      };
+      
+      // Fetch news with retry logic
+      const fetchNews = async (retryCount) => {
+        try {
+          const response = await fetch(`${proxyUrl}${encodeURIComponent(apiUrl)}`, {
+            headers: {
+              'X-Requested-With': 'XMLHttpRequest'
+            }
+          });
+          
+          if (!response.ok) throw new Error(`HTTP error! status: ${response.status}`);
+          
+          const data = await response.json();
+          
+          // Handle API errors
+          if (data.status === 'error') {
+            throw new Error(data.message || 'News API error');
+          }
+          
+          if (!data.articles || data.articles.length === 0) {
+            newsContainer.innerHTML = `
+              <div class="error-message">
+                <h2>No News Found</h2>
+                <p>We couldn't find any streaming news articles at this time.</p>
+                <p>Please check back later or try refreshing the page.</p>
+              </div>
+            `;
+            return;
+          }
+          
+          // Create news grid
+          newsContainer.innerHTML = `
+            <div class="news-grid">
+              ${data.articles.map(article => createArticleCard(article)).join('')}
+            </div>
+            <p style="text-align: center; margin-top: 2rem; color: var(--text-secondary);">
+              Last updated: ${new Date().toLocaleString()}
+            </p>
+          `;
+          
+          // Add schema.org markup for each article
+          const script = document.createElement('script');
+          script.type = 'application/ld+json';
+          script.innerHTML = JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "ItemList",
+            "itemListElement": data.articles.map((article, index) => ({
+              "@type": "ListItem",
+              "position": index + 1,
+              "item": {
+                "@type": "NewsArticle",
+                "headline": article.title,
+                "description": article.description,
+                "url": article.url,
+                "datePublished": article.publishedAt,
+                "image": article.urlToImage,
+                "publisher": {
+                  "@type": "Organization",
+                  "name": article.source.name
+                }
+              }
+            }))
+          });
+          document.head.appendChild(script);
+          
+        } catch (error) {
+          console.error('News fetch error:', error);
+          
+          if (retryCount < maxRetries) {
+            // Exponential backoff retry
+            const delay = Math.pow(2, retryCount) * 1000;
+            setTimeout(() => fetchNews(retryCount + 1), delay);
+            return;
+          }
+          
+          // Final error display
+          newsContainer.innerHTML = `
+            <div class="error-message">
+              <h2>News Loading Failed</h2>
+              <p>We're unable to load the latest streaming news right now.</p>
+              <p><strong>Error:</strong> ${error.message}</p>
+              <button onclick="window.location.reload()" style="
+                background: var(--secondary);
+                color: white;
+                border: none;
+                padding: 0.5rem 1rem;
+                border-radius: 4px;
+                margin-top: 1rem;
+                cursor: pointer;
+              ">Try Again</button>
+            </div>
+          `;
+        }
+      };
+      
+      // Initial fetch
+      fetchNews(retryCount);
+      
+      // Refresh every 15 minutes
+      setInterval(() => fetchNews(0), 15 * 60 * 1000);
+    });
   </script>
 </body>
 </html>
