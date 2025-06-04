@@ -869,7 +869,7 @@
             
             // Update total pages with reasonable limits
             const calculatedPages = Math.ceil(data.totalResults / 12);
-            this.totalPages = Math.min(Math.max(calculatedPages, 1), 15);
+            this.totalPages = Math.min(Math.max(calculatedPages, 1), 8);
             
             // Ensure current page is within bounds
             if (this.currentPage > this.totalPages) {
