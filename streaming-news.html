@@ -616,7 +616,7 @@
       }
       
       setupEventListeners() {
-        this.refreshButton.addEventListener('click', () => this.handleRefresh());
+        this.refreshButton.addEventListener('click', () => window.location.reload());
         
         // Auto-refresh every 10 minutes with user notification
         this.autoRefreshInterval = setInterval(() => {
