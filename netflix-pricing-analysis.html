@@ -348,164 +348,178 @@
             {country: "Jamaica", movies: 4690, tvShows: 3016, totalTitles: 7706, price: 3.62, costPerTitle: 0.00047, region: "North America"},
             {country: "Trinidad and Tobago", movies: 4643, tvShows: 3017, totalTitles: 7660, price: 3.62, costPerTitle: 0.00047, region: "North America"}
         ];
+    // Set up visualization
+    const margin = {top: 50, right: 80, bottom: 80, left: 80};
+    const width = 1000 - margin.left - margin.right;
+    const height = 600 - margin.top - margin.bottom;
 
-        // Set up visualization
-        const margin = {top: 50, right: 80, bottom: 80, left: 80};
-        const width = 1000 - margin.left - margin.right;
-        const height = 600 - margin.top - margin.bottom;
+    // Create SVG
+    const svg = d3.select("#scatter-plot")
+        .append("svg")
+        .attr("width", width + margin.left + margin.right)
+        .attr("height", height + margin.top + margin.bottom)
+        .append("g")
+        .attr("transform", `translate(${margin.left},${margin.top})`);
 
-        // Create SVG
-        const svg = d3.select("#scatter-plot")
-            .append("svg")
-            .attr("width", width + margin.left + margin.right)
-            .attr("height", height + margin.top + margin.bottom)
-            .append("g")
-            .attr("transform", `translate(${margin.left},${margin.top})`);
+    // Create scales
+    const xScale = d3.scaleLinear()
+        .domain([4000, 11000])
+        .range([0, width]);
 
-        // Create scales
-        const xScale = d3.scaleLinear()
-            .domain([4000, 11000])
-            .range([0, width]);
+    const yScale = d3.scaleLinear()
+        .domain([0, 25])
+        .range([height, 0]);
 
-        const yScale = d3.scaleLinear()
-            .domain([0, 25])
-            .range([height, 0]);
+    const colorScale = d3.scaleOrdinal()
+        .domain(["Budget", "Emerging", "Mid-tier", "Premium"])
+        .range(["#6bcf7f", "#4ecdc4", "#ffd93d", "#ff6b6b"]);
 
-        const colorScale = d3.scaleOrdinal()
-            .domain(["Budget", "Emerging", "Mid-tier", "Premium"])
-            .range(["#6bcf7f", "#4ecdc4", "#ffd93d", "#ff6b6b"]);
+    const sizeScale = d3.scaleSqrt()
+        .domain([0, d3.max(data, d => d.costPerTitle)])
+        .range([3, 20]);
 
-        const sizeScale = d3.scaleSqrt()
-            .domain([0, d3.max(data, d => d.costPerTitle)])
-            .range([3, 20]);
+    // Add grid lines
+    svg.append("g")
+        .attr("class", "grid")
+        .attr("transform", `translate(0,${height})`)
+        .call(d3.axisBottom(xScale)
+            .tickSize(-height)
+            .tickFormat(""))
+        .style("stroke", "rgba(255,255,255,0.08)");
 
-        // Add grid lines
-        svg.append("g")
-            .attr("class", "grid")
-            .attr("transform", `translate(0,${height})`)
-            .call(d3.axisBottom(xScale)
-                .tickSize(-height)
-                .tickFormat(""))
-            .style("stroke", "rgba(255,255,255,0.08)");
+    svg.append("g")
+        .attr("class", "grid")
+        .call(d3.axisLeft(yScale)
+            .tickSize(-width)
+            .tickFormat(""))
+        .style("stroke", "rgba(255,255,255,0.08)");
 
-        svg.append("g")
-            .attr("class", "grid")
-            .call(d3.axisLeft(yScale)
-                .tickSize(-width)
-                .tickFormat(""))
-            .style("stroke", "rgba(255,255,255,0.08)");
+    // Add axes
+    svg.append("g")
+        .attr("transform", `translate(0,${height})`)
+        .call(d3.axisBottom(xScale))
+        .style("color", "#ffffff");
 
-        // Add axes
-        svg.append("g")
-            .attr("transform", `translate(0,${height})`)
-            .call(d3.axisBottom(xScale))
-            .style("color", "#ffffff");
+    svg.append("g")
+        .call(d3.axisLeft(yScale))
+        .style("color", "#ffffff");
 
-        svg.append("g")
-            .call(d3.axisLeft(yScale))
-            .style("color", "#ffffff");
+    // Add axis labels
+    svg.append("text")
+        .attr("class", "axis-label")
+        .attr("transform", "rotate(-90)")
+        .attr("y", 0 - margin.left)
+        .attr("x", 0 - (height / 2))
+        .attr("dy", "1em")
+        .style("text-anchor", "middle")
+        .style("fill", "#ffffff")
+        .text("Basic Plan Price (USD)");
 
-        // Add axis labels
-        svg.append("text")
-            .attr("class", "axis-label")
-            .attr("transform", "rotate(-90)")
-            .attr("y", 0 - margin.left)
-            .attr("x", 0 - (height / 2))
-            .attr("dy", "1em")
-            .style("text-anchor", "middle")
-            .style("fill", "#ffffff")
-            .text("Basic Plan Price (USD)");
+    svg.append("text")
+        .attr("class", "axis-label")
+        .attr("transform", `translate(${width / 2}, ${height + margin.bottom - 10})`)
+        .style("text-anchor", "middle")
+        .style("fill", "#ffffff")
+        .text("Total Content Titles");
 
-        svg.append("text")
-            .attr("class", "axis-label")
-            .attr("transform", `translate(${width / 2}, ${height + margin.bottom - 10})`)
-            .style("text-anchor", "middle")
-            .style("fill", "#ffffff")
-            .text("Total Content Titles");
+    // Create tooltip
+    const tooltip = d3.select("#tooltip");
 
-        // Create tooltip
-        const tooltip = d3.select("#tooltip");
+    // Function to categorize price tiers
+    function getPriceCategory(price) {
+        if (price < 5) return "Budget";
+        if (price < 8) return "Emerging";
+        if (price < 15) return "Mid-tier";
+        return "Premium";
+    }
 
-        // Function to categorize price tiers
-        function getPriceCategory(price) {
-            if (price < 5) return "Budget";
-            if (price < 8) return "Emerging";
-            if (price < 15) return "Mid-tier";
-            return "Premium";
-        }
+    // Draw circles
+    const circles = svg.selectAll(".dot")
+        .data(data)
+        .enter().append("circle")
+        .attr("class", "dot")
+        .attr("cx", d => xScale(d.totalTitles))
+        .attr("cy", d => yScale(d.price))
+        .attr("r", 6) // Default size
+        .style("fill", d => colorScale(getPriceCategory(d.price)))
+        .style("opacity", 0.85)
+        .style("stroke", "rgba(255,255,255,0.3)")
+        .style("stroke-width", 1)
+        .on("mouseover", async function(event, d) {
+            d3.select(this).style("opacity", 1).style("stroke-width", 2);
+            
+            // Get country flag emoji
+            let flag = "";
+            try {
+                const flags = await fetch("https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/by-code.json")
+                    .then(response => response.json());
+                // Create country code from country name (simple approach)
+                const code = d.country === "United States" ? "US" : 
+                              d.country === "United Kingdom" ? "GB" :
+                              d.country.split(" ").map(word => word[0]).join("").toUpperCase();
+                flag = flags[code]?.emoji || "";
+            } catch (e) {
+                console.log("Couldn't load flags");
+            }
+            
+            tooltip.transition()
+                .duration(200)
+                .style("opacity", 0.95);
+            
+            tooltip.html(`
+                <strong><span class="flag">${flag}</span>${d.country}</strong>
+                <div>Region: ${d.region}</div>
+                <div>Total Titles: ${d.totalTitles.toLocaleString()}</div>
+                <div>Price: $${d.price.toFixed(2)}/month</div>
+                <div>Cost per Title: $${d.costPerTitle.toFixed(5)}</div>
+                <div>Movies: ${d.movies.toLocaleString()}</div>
+                <div>TV Shows: ${d.tvShows.toLocaleString()}</div>
+            `)
+            .style("left", (event.pageX + 15) + "px")
+            .style("top", (event.pageY - 28) + "px");
+        })
+        .on("mouseout", function() {
+            d3.select(this).style("opacity", 0.85).style("stroke-width", 1);
+            tooltip.transition()
+                .duration(500)
+                .style("opacity", 0);
+        });
 
-        // Draw circles
-        const circles = svg.selectAll(".dot")
-            .data(data)
-            .enter().append("circle")
-            .attr("class", "dot")
-            .attr("cx", d => xScale(d.totalTitles))
-            .attr("cy", d => yScale(d.price))
-            .attr("r", d => sizeScale(d.costPerTitle))
-            .style("fill", d => colorScale(getPriceCategory(d.price)))
+    // Add trend line
+    const regression = d3.regressionLinear()
+        .x(d => d.totalTitles)
+        .y(d => d.price)
+        .domain([d3.min(data, d => d.totalTitles), d3.max(data, d => d.totalTitles)]);
+    
+    const trendData = regression(data);
+    
+    svg.append("path")
+        .datum(trendData)
+        .attr("class", "trend-line")
+        .attr("d", d3.line()
+            .x(d => xScale(d[0]))
+            .y(d => yScale(d[1])))
+        .style("stroke", "#ff6b6b")
+        .style("stroke-width", 2)
+        .style("stroke-dasharray", "5,5")
+        .style("opacity", 0.7)
+        .style("fill", "none");
+
+    // Function to reset all button states and visualization
+    function resetView() {
+        d3.selectAll(".controls button").classed("active", false);
+        circles
             .style("opacity", 0.85)
-            .style("stroke", "rgba(255,255,255,0.3)")
-            .style("stroke-width", 1)
-            .on("mouseover", async function(event, d) {
-                d3.select(this).style("opacity", 1).style("stroke-width", 2);
-                
-                // Get country flag emoji
-                let flag = "";
-                try {
-                    const flags = await fetch("https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/by-code.json")
-                        .then(response => response.json());
-                    flag = flags[d.code]?.emoji || "";
-                } catch (e) {
-                    console.log("Couldn't load flags");
-                }
-                
-                tooltip.transition()
-                    .duration(200)
-                    .style("opacity", 0.95);
-                
-                tooltip.html(`
-                    <strong><span class="flag">${flag}</span>${d.country}</strong>
-                    <div>Region: ${d.region}</div>
-                    <div>Total Titles: ${d.totalTitles.toLocaleString()}</div>
-                    <div>Price: $${d.price.toFixed(2)}/month</div>
-                    <div>Cost per Title: $${d.costPerTitle.toFixed(5)}</div>
-                    <div>Movies: ${d.movies.toLocaleString()}</div>
-                    <div>TV Shows: ${d.tvShows.toLocaleString()}</div>
-                    ${d.gdpPerCapita ? `<div>GDP per capita: $${d.gdpPerCapita.toLocaleString()}</div>` : ''}
-                `)
-                .style("left", (event.pageX + 15) + "px")
-                .style("top", (event.pageY - 28) + "px");
-            })
-            .on("mouseout", function() {
-                d3.select(this).style("opacity", 0.85).style("stroke-width", 1);
-                tooltip.transition()
-                    .duration(500)
-                    .style("opacity", 0);
-            });
+            .style("fill", d => colorScale(getPriceCategory(d.price)))
+            .transition()
+            .duration(500)
+            .attr("r", 6);
+    }
 
-        // Add trend line
-        const regression = d3.regressionLinear()
-            .x(d => d.totalTitles)
-            .y(d => d.price)
-            .domain([d3.min(data, d => d.totalTitles), d3.max(data, d => d.totalTitles)]);
-        
-        const trendData = regression(data);
-        
-        svg.append("path")
-            .datum(trendData)
-            .attr("class", "trend-line")
-            .attr("d", d3.line()
-                .x(d => xScale(d[0]))
-                .y(d => yScale(d[1])))
-            .style("stroke", "#ff6b6b")
-            .style("stroke-width", 2)
-            .style("stroke-dasharray", "5,5")
-            .style("opacity", 0.7)
-            .style("fill", "none");
-
-        // Add interactive controls
+    // Add interactive controls after DOM is loaded
+    document.addEventListener("DOMContentLoaded", function() {
         document.getElementById("size-cost").addEventListener("click", function() {
-            d3.selectAll(".controls button").classed("active", false);
+            resetView();
             this.classList.add("active");
             
             circles.transition()
@@ -514,7 +528,7 @@
         });
         
         document.getElementById("size-default").addEventListener("click", function() {
-            d3.selectAll(".controls button").classed("active", false);
+            resetView();
             this.classList.add("active");
             
             circles.transition()
@@ -523,7 +537,7 @@
         });
         
         document.getElementById("highlight-premium").addEventListener("click", function() {
-            d3.selectAll(".controls button").classed("active", false);
+            resetView();
             this.classList.add("active");
             
             circles.transition()
@@ -532,7 +546,7 @@
         });
         
         document.getElementById("highlight-value").addEventListener("click", function() {
-            d3.selectAll(".controls button").classed("active", false);
+            resetView();
             this.classList.add("active");
             
             circles.transition()
@@ -541,42 +555,38 @@
         });
         
         document.getElementById("by-region").addEventListener("click", function() {
-            d3.selectAll(".controls button").classed("active", false);
+            resetView();
             this.classList.add("active");
             
-            // Simplified region coloring - would need more complex implementation
+            const regionColors = {
+                "Europe": "#4ecdc4",
+                "Asia": "#ffd93d",
+                "North America": "#ff6b6b",
+                "South America": "#6bcf7f",
+                "Africa": "#9c6bcf",
+                "Oceania": "#6b8ccf"
+            };
+            
             circles.transition()
                 .duration(500)
-                .style("fill", d => {
-                    const regionColors = {
-                        "Europe": "#4ecdc4",
-                        "Asia": "#ffd93d",
-                        "North America": "#ff6b6b",
-                        "South America": "#6bcf7f",
-                        "Africa": "#9c6bcf",
-                        "Oceania": "#6b8ccf"
-                    };
-                    return regionColors[d.region] || "#ccc";
-                });
+                .style("fill", d => regionColors[d.region] || "#ccc");
         });
 
         // CSV Download
         document.getElementById("download-csv").addEventListener("click", function(e) {
             e.preventDefault();
             
-            const headers = ["Country", "Code", "Region", "Movies", "TV Shows", "Total Titles", "Price (USD)", "Cost Per Title", "GDP Per Capita"];
+            const headers = ["Country", "Region", "Movies", "TV Shows", "Total Titles", "Price (USD)", "Cost Per Title"];
             const csvContent = [
                 headers.join(","),
                 ...data.map(item => [
                     `"${item.country}"`,
-                    item.code,
                     item.region,
                     item.movies,
                     item.tvShows,
                     item.totalTitles,
                     item.price,
-                    item.costPerTitle,
-                    item.gdpPerCapita || ""
+                    item.costPerTitle
                 ].join(","))
             ].join("\n");
 
@@ -597,7 +607,9 @@
             .transition()
             .delay((d, i) => i * 20)
             .duration(800)
-            .attr("r", d => sizeScale(d.costPerTitle));
-    </script>
+            .attr("r", 6);
+    });
+</script>
+     
 </body>
 </html>
