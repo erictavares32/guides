@@ -505,109 +505,110 @@
         .style("opacity", 0.7)
         .style("fill", "none");
 
-    // Function to reset all button states and visualization
-    function resetView() {
-        d3.selectAll(".controls button").classed("active", false);
-        circles
-            .style("opacity", 0.85)
-            .style("fill", d => colorScale(getPriceCategory(d.price)))
-            .transition()
-            .duration(500)
-            .attr("r", 6);
-    }
+// [Previous visualization code...]
 
-    // Add interactive controls after DOM is loaded
-    document.addEventListener("DOMContentLoaded", function() {
-        document.getElementById("size-cost").addEventListener("click", function() {
-            resetView();
-            this.classList.add("active");
-            
-            circles.transition()
-                .duration(1000)
-                .attr("r", d => sizeScale(d.costPerTitle));
-        });
-        
-        document.getElementById("size-default").addEventListener("click", function() {
-            resetView();
-            this.classList.add("active");
-            
-            circles.transition()
-                .duration(1000)
-                .attr("r", 6);
-        });
-        
-        document.getElementById("highlight-premium").addEventListener("click", function() {
-            resetView();
-            this.classList.add("active");
-            
-            circles.transition()
-                .duration(500)
-                .style("opacity", d => getPriceCategory(d.price) === "Premium" ? 1 : 0.2);
-        });
-        
-        document.getElementById("highlight-value").addEventListener("click", function() {
-            resetView();
-            this.classList.add("active");
-            
-            circles.transition()
-                .duration(500)
-                .style("opacity", d => d.costPerTitle < 0.0005 ? 1 : 0.2);
-        });
-        
-        document.getElementById("by-region").addEventListener("click", function() {
-            resetView();
-            this.classList.add("active");
-            
-            const regionColors = {
-                "Europe": "#4ecdc4",
-                "Asia": "#ffd93d",
-                "North America": "#ff6b6b",
-                "South America": "#6bcf7f",
-                "Africa": "#9c6bcf",
-                "Oceania": "#6b8ccf"
-            };
-            
-            circles.transition()
-                .duration(500)
-                .style("fill", d => regionColors[d.region] || "#ccc");
-        });
+// Function to reset all button states and visualization
+function resetView() {
+    d3.selectAll(".controls button").classed("active", false);
+    circles
+        .style("opacity", 0.85)
+        .style("fill", d => colorScale(getPriceCategory(d.price)))
+        .transition()
+        .duration(500)
+        .attr("r", 6);
+}
 
-        // CSV Download
-        document.getElementById("download-csv").addEventListener("click", function(e) {
-            e.preventDefault();
-            
-            const headers = ["Country", "Region", "Movies", "TV Shows", "Total Titles", "Price (USD)", "Cost Per Title"];
-            const csvContent = [
-                headers.join(","),
-                ...data.map(item => [
-                    `"${item.country}"`,
-                    item.region,
-                    item.movies,
-                    item.tvShows,
-                    item.totalTitles,
-                    item.price,
-                    item.costPerTitle
-                ].join(","))
-            ].join("\n");
+// Set up button event handlers (no DOMContentLoaded wrapper needed)
+document.getElementById("size-cost").addEventListener("click", function() {
+    resetView();
+    this.classList.add("active");
+    
+    circles.transition()
+        .duration(1000)
+        .attr("r", d => sizeScale(d.costPerTitle));
+});
 
-            const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
-            const url = URL.createObjectURL(blob);
-            const link = document.createElement("a");
-            link.setAttribute("href", url);
-            link.setAttribute("download", "netflix-global-pricing-2025.csv");
-            link.style.visibility = "hidden";
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
-        });
+document.getElementById("size-default").addEventListener("click", function() {
+    resetView();
+    this.classList.add("active");
+    
+    circles.transition()
+        .duration(1000)
+        .attr("r", 6);
+});
 
-        // Initial animation
-        circles
-            .attr("r", 0)
-            .transition()
-            .delay((d, i) => i * 20)
-            .duration(800)
-            .attr("r", 6);
+document.getElementById("highlight-premium").addEventListener("click", function() {
+    resetView();
+    this.classList.add("active");
+    
+    circles.transition()
+        .duration(500)
+        .style("opacity", d => getPriceCategory(d.price) === "Premium" ? 1 : 0.2);
+});
+
+document.getElementById("highlight-value").addEventListener("click", function() {
+    resetView();
+    this.classList.add("active");
+    
+    circles.transition()
+        .duration(500)
+        .style("opacity", d => d.costPerTitle < 0.0005 ? 1 : 0.2);
+});
+
+document.getElementById("by-region").addEventListener("click", function() {
+    resetView();
+    this.classList.add("active");
+    
+    const regionColors = {
+        "Europe": "#4ecdc4",
+        "Asia": "#ffd93d",
+        "North America": "#ff6b6b",
+        "South America": "#6bcf7f",
+        "Africa": "#9c6bcf",
+        "Oceania": "#6b8ccf"
+    };
+    
+    circles.transition()
+        .duration(500)
+        .style("fill", d => regionColors[d.region] || "#ccc");
+});
+
+// CSV Download
+document.getElementById("download-csv").addEventListener("click", function(e) {
+    e.preventDefault();
+    
+    const headers = ["Country", "Region", "Movies", "TV Shows", "Total Titles", "Price (USD)", "Cost Per Title"];
+    const csvContent = [
+        headers.join(","),
+        ...data.map(item => [
+            `"${item.country}"`,
+            item.region,
+            item.movies,
+            item.tvShows,
+            item.totalTitles,
+            item.price,
+            item.costPerTitle
+        ].join(","))
+    ].join("\n");
+
+    const blob = new Blob([csvContent], { type: "text/csv;charset=utf-8;" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.setAttribute("href", url);
+    link.setAttribute("download", "netflix-global-pricing-2025.csv");
+    link.style.visibility = "hidden";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+});
+
+// Initial animation
+circles
+    .attr("r", 0)
+    .transition()
+    .delay((d, i) => i * 20)
+    .duration(800)
+    .attr("r", 6);
     });
 </script>
      
