@@ -197,6 +197,12 @@
             box-shadow: 0 4px 12px rgba(78, 205, 196, 0.3);
         }
         
+        .trend-line-label {
+            fill: #ff6b6b;
+            font-size: 0.8rem;
+            font-weight: bold;
+        }
+        
         @media (max-width: 768px) {
             .container {
                 padding: 1.5rem;
@@ -214,6 +220,15 @@
             .chart-container {
                 margin: 1.5rem 0;
                 min-height: 400px;
+            }
+            
+            .controls {
+                gap: 0.5rem;
+            }
+            
+            button {
+                padding: 0.5rem 0.8rem;
+                font-size: 0.8rem;
             }
         }
     </style>
@@ -263,11 +278,10 @@
     </div>
 
     <script src="https://d3js.org/d3.v7.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/by-code.json" crossorigin></script>
     <script>
         // COMPLETE 2025 DATASET - 83 COUNTRIES
         const data = [
-                 {country: "United States", movies: 4440, tvShows: 3071, totalTitles: 7511, price: 15.49, costPerTitle: 0.00206, region: "North America"},
+            {country: "United States", movies: 4440, tvShows: 3071, totalTitles: 7511, price: 15.49, costPerTitle: 0.00206, region: "North America"},
             {country: "Canada", movies: 4766, tvShows: 2979, totalTitles: 7745, price: 14.00, costPerTitle: 0.00181, region: "North America"},
             {country: "United Kingdom", movies: 5661, tvShows: 3148, totalTitles: 8809, price: 8.61, costPerTitle: 0.00098, region: "Europe"},
             {country: "Australia", movies: 4736, tvShows: 3073, totalTitles: 7809, price: 12.92, costPerTitle: 0.00165, region: "Oceania"},
@@ -348,176 +362,256 @@
             {country: "Jamaica", movies: 4690, tvShows: 3016, totalTitles: 7706, price: 3.62, costPerTitle: 0.00047, region: "North America"},
             {country: "Trinidad and Tobago", movies: 4643, tvShows: 3017, totalTitles: 7660, price: 3.62, costPerTitle: 0.00047, region: "North America"}
         ];
-    // Set up visualization
-    const margin = {top: 50, right: 80, bottom: 80, left: 80};
-    const width = 1000 - margin.left - margin.right;
-    const height = 600 - margin.top - margin.bottom;
 
-    // Create SVG
-    const svg = d3.select("#scatter-plot")
-        .append("svg")
-        .attr("width", width + margin.left + margin.right)
-        .attr("height", height + margin.top + margin.bottom)
-        .append("g")
-        .attr("transform", `translate(${margin.left},${margin.top})`);
+        // Country to flag emoji mapping
+        const countryFlags = {
+            "United States": "🇺🇸",
+            "Canada": "🇨🇦",
+            "United Kingdom": "🇬🇧",
+            "Australia": "🇦🇺",
+            "Germany": "🇩🇪",
+            "France": "🇫🇷",
+            "Italy": "🇮🇹",
+            "Spain": "🇪🇸",
+            "Brazil": "🇧🇷",
+            "Mexico": "🇲🇽",
+            "Japan": "🇯🇵",
+            "South Korea": "🇰🇷",
+            "India": "🇮🇳",
+            "Netherlands": "🇳🇱",
+            "Sweden": "🇸🇪",
+            "Belgium": "🇧🇪",
+            "Portugal": "🇵🇹",
+            "Norway": "🇳🇴",
+            "Denmark": "🇩🇰",
+            "Finland": "🇫🇮",
+            "Poland": "🇵🇱",
+            "Turkey": "🇹🇷",
+            "Argentina": "🇦🇷",
+            "Colombia": "🇨🇴",
+            "Chile": "🇨🇱",
+            "Peru": "🇵🇪",
+            "Indonesia": "🇮🇩",
+            "Thailand": "🇹🇭",
+            "Malaysia": "🇲🇾",
+            "Singapore": "🇸🇬",
+            "Philippines": "🇵🇭",
+            "Ireland": "🇮🇪",
+            "Switzerland": "🇨🇭",
+            "Austria": "🇦🇹",
+            "South Africa": "🇿🇦",
+            "Saudi Arabia": "🇸🇦",
+            "United Arab Emirates": "🇦🇪",
+            "Israel": "🇮🇱",
+            "Hungary": "🇭🇺",
+            "Czech Republic": "🇨🇿",
+            "Romania": "🇷🇴",
+            "Greece": "🇬🇷",
+            "Slovakia": "🇸🇰",
+            "Croatia": "🇭🇷",
+            "Bulgaria": "🇧🇬",
+            "Ukraine": "🇺🇦",
+            "Hong Kong": "🇭🇰",
+            "Taiwan": "🇹🇼",
+            "Egypt": "🇪🇬",
+            "Nigeria": "🇳🇬",
+            "Kenya": "🇰🇪",
+            "Pakistan": "🇵🇰",
+            "Iraq": "🇮🇶",
+            "Algeria": "🇩🇿",
+            "Morocco": "🇲🇦",
+            "Tunisia": "🇹🇳",
+            "Jordan": "🇯🇴",
+            "Lebanon": "🇱🇧",
+            "Kuwait": "🇰🇼",
+            "Qatar": "🇶🇦",
+            "Oman": "🇴🇲",
+            "Iceland": "🇮🇸",
+            "Lithuania": "🇱🇹",
+            "Latvia": "🇱🇻",
+            "Estonia": "🇪🇪",
+            "Slovenia": "🇸🇮",
+            "Serbia": "🇷🇸",
+            "Costa Rica": "🇨🇷",
+            "Panama": "🇵🇦",
+            "Dominican Republic": "🇩🇴",
+            "Ecuador": "🇪🇨",
+            "Guatemala": "🇬🇹",
+            "El Salvador": "🇸🇻",
+            "Honduras": "🇭🇳",
+            "Nicaragua": "🇳🇮",
+            "Paraguay": "🇵🇾",
+            "Uruguay": "🇺🇾",
+            "Bolivia": "🇧🇴",
+            "Jamaica": "🇯🇲",
+            "Trinidad and Tobago": "🇹🇹"
+        };
 
-    // Create scales
-    const xScale = d3.scaleLinear()
-        .domain([4000, 11000])
-        .range([0, width]);
+        // Set up visualization
+        const margin = {top: 50, right: 80, bottom: 80, left: 80};
+        const width = 1000 - margin.left - margin.right;
+        const height = 600 - margin.top - margin.bottom;
 
-    const yScale = d3.scaleLinear()
-        .domain([0, 25])
-        .range([height, 0]);
+        // Create SVG
+        const svg = d3.select("#scatter-plot")
+            .append("svg")
+            .attr("width", width + margin.left + margin.right)
+            .attr("height", height + margin.top + margin.bottom)
+            .append("g")
+            .attr("transform", `translate(${margin.left},${margin.top})`);
 
-    const colorScale = d3.scaleOrdinal()
-        .domain(["Budget", "Emerging", "Mid-tier", "Premium"])
-        .range(["#6bcf7f", "#4ecdc4", "#ffd93d", "#ff6b6b"]);
+        // Create scales
+        const xScale = d3.scaleLinear()
+            .domain([4000, 11000])
+            .range([0, width]);
 
-    const sizeScale = d3.scaleSqrt()
-        .domain([0, d3.max(data, d => d.costPerTitle)])
-        .range([3, 20]);
+        const yScale = d3.scaleLinear()
+            .domain([0, 25])
+            .range([height, 0]);
 
-    // Add grid lines
-    svg.append("g")
-        .attr("class", "grid")
-        .attr("transform", `translate(0,${height})`)
-        .call(d3.axisBottom(xScale)
-            .tickSize(-height)
-            .tickFormat(""))
-        .style("stroke", "rgba(255,255,255,0.08)");
+        const colorScale = d3.scaleOrdinal()
+            .domain(["Budget", "Emerging", "Mid-tier", "Premium"])
+            .range(["#6bcf7f", "#4ecdc4", "#ffd93d", "#ff6b6b"]);
 
-    svg.append("g")
-        .attr("class", "grid")
-        .call(d3.axisLeft(yScale)
-            .tickSize(-width)
-            .tickFormat(""))
-        .style("stroke", "rgba(255,255,255,0.08)");
+        const sizeScale = d3.scaleSqrt()
+            .domain([0, d3.max(data, d => d.costPerTitle)])
+            .range([3, 20]);
 
-    // Add axes
-    svg.append("g")
-        .attr("transform", `translate(0,${height})`)
-        .call(d3.axisBottom(xScale))
-        .style("color", "#ffffff");
+        // Add grid lines
+        svg.append("g")
+            .attr("class", "grid")
+            .attr("transform", `translate(0,${height})`)
+            .call(d3.axisBottom(xScale)
+                .tickSize(-height)
+                .tickFormat(""))
+            .style("stroke", "rgba(255,255,255,0.08)");
 
-    svg.append("g")
-        .call(d3.axisLeft(yScale))
-        .style("color", "#ffffff");
+        svg.append("g")
+            .attr("class", "grid")
+            .call(d3.axisLeft(yScale)
+                .tickSize(-width)
+                .tickFormat(""))
+            .style("stroke", "rgba(255,255,255,0.08)");
 
-    // Add axis labels
-    svg.append("text")
-        .attr("class", "axis-label")
-        .attr("transform", "rotate(-90)")
-        .attr("y", 0 - margin.left)
-        .attr("x", 0 - (height / 2))
-        .attr("dy", "1em")
-        .style("text-anchor", "middle")
-        .style("fill", "#ffffff")
-        .text("Basic Plan Price (USD)");
+        // Add axes
+        svg.append("g")
+            .attr("transform", `translate(0,${height})`)
+            .call(d3.axisBottom(xScale).tickFormat(d3.format("~s")))
+            .style("color", "#ffffff");
 
-    svg.append("text")
-        .attr("class", "axis-label")
-        .attr("transform", `translate(${width / 2}, ${height + margin.bottom - 10})`)
-        .style("text-anchor", "middle")
-        .style("fill", "#ffffff")
-        .text("Total Content Titles");
+        svg.append("g")
+            .call(d3.axisLeft(yScale))
+            .style("color", "#ffffff");
 
-    // Create tooltip
-    const tooltip = d3.select("#tooltip");
+        // Add axis labels
+        svg.append("text")
+            .attr("class", "axis-label")
+            .attr("transform", "rotate(-90)")
+            .attr("y", 0 - margin.left)
+            .attr("x", 0 - (height / 2))
+            .attr("dy", "1em")
+            .style("text-anchor", "middle")
+            .style("fill", "#ffffff")
+            .text("Basic Plan Price (USD)");
 
-    // Function to categorize price tiers
-    function getPriceCategory(price) {
-        if (price < 5) return "Budget";
-        if (price < 8) return "Emerging";
-        if (price < 15) return "Mid-tier";
-        return "Premium";
-    }
+        svg.append("text")
+            .attr("class", "axis-label")
+            .attr("transform", `translate(${width / 2}, ${height + margin.bottom - 10})`)
+            .style("text-anchor", "middle")
+            .style("fill", "#ffffff")
+            .text("Total Content Titles");
 
-    // Draw circles
-    const circles = svg.selectAll(".dot")
-        .data(data)
-        .enter().append("circle")
-        .attr("class", "dot")
-        .attr("cx", d => xScale(d.totalTitles))
-        .attr("cy", d => yScale(d.price))
-        .attr("r", 6) // Default size
-        .style("fill", d => colorScale(getPriceCategory(d.price)))
-        .style("opacity", 0.85)
-        .style("stroke", "rgba(255,255,255,0.3)")
-        .style("stroke-width", 1)
-        .on("mouseover", async function(event, d) {
-            d3.select(this).style("opacity", 1).style("stroke-width", 2);
-            
-            // Get country flag emoji
-            let flag = "";
-            try {
-                const flags = await fetch("https://cdn.jsdelivr.net/npm/country-flag-emoji-json@2.0.0/dist/by-code.json")
-                    .then(response => response.json());
-                // Create country code from country name (simple approach)
-                const code = d.country === "United States" ? "US" : 
-                              d.country === "United Kingdom" ? "GB" :
-                              d.country.split(" ").map(word => word[0]).join("").toUpperCase();
-                flag = flags[code]?.emoji || "";
-            } catch (e) {
-                console.log("Couldn't load flags");
-            }
-            
-            tooltip.transition()
-                .duration(200)
-                .style("opacity", 0.95);
-            
-            tooltip.html(`
-                <strong><span class="flag">${flag}</span>${d.country}</strong>
-                <div>Region: ${d.region}</div>
-                <div>Total Titles: ${d.totalTitles.toLocaleString()}</div>
-                <div>Price: $${d.price.toFixed(2)}/month</div>
-                <div>Cost per Title: $${d.costPerTitle.toFixed(5)}</div>
-                <div>Movies: ${d.movies.toLocaleString()}</div>
-                <div>TV Shows: ${d.tvShows.toLocaleString()}</div>
-            `)
-            .style("left", (event.pageX + 15) + "px")
-            .style("top", (event.pageY - 28) + "px");
-        })
-        .on("mouseout", function() {
-            d3.select(this).style("opacity", 0.85).style("stroke-width", 1);
-            tooltip.transition()
-                .duration(500)
-                .style("opacity", 0);
-        });
+        // Create tooltip
+        const tooltip = d3.select("#tooltip");
 
-    // Add trend line
-    const regression = d3.regressionLinear()
-        .x(d => d.totalTitles)
-        .y(d => d.price)
-        .domain([d3.min(data, d => d.totalTitles), d3.max(data, d => d.totalTitles)]);
-    
-    const trendData = regression(data);
-    
-    svg.append("path")
-        .datum(trendData)
-        .attr("class", "trend-line")
-        .attr("d", d3.line()
-            .x(d => xScale(d[0]))
-            .y(d => yScale(d[1])))
-        .style("stroke", "#ff6b6b")
-        .style("stroke-width", 2)
-        .style("stroke-dasharray", "5,5")
-        .style("opacity", 0.7)
-        .style("fill", "none");
+        // Function to categorize price tiers
+        function getPriceCategory(price) {
+            if (price < 5) return "Budget";
+            if (price < 8) return "Emerging";
+            if (price < 15) return "Mid-tier";
+            return "Premium";
+        }
 
-    // Function to reset all button states and visualization
-    function resetView() {
-        d3.selectAll(".controls button").classed("active", false);
-        circles
-            .style("opacity", 0.85)
+        // Draw circles
+        const circles = svg.selectAll(".dot")
+            .data(data)
+            .enter().append("circle")
+            .attr("class", "dot")
+            .attr("cx", d => xScale(d.totalTitles))
+            .attr("cy", d => yScale(d.price))
+            .attr("r", 6) // Default size
             .style("fill", d => colorScale(getPriceCategory(d.price)))
-            .transition()
-            .duration(500)
-            .attr("r", 6);
-    }
+            .style("opacity", 0.85)
+            .style("stroke", "rgba(255,255,255,0.3)")
+            .style("stroke-width", 1)
+            .on("mouseover", function(event, d) {
+                d3.select(this).style("opacity", 1).style("stroke-width", 2);
+                
+                // Get country flag emoji from our local mapping
+                const flag = countryFlags[d.country] || "";
+                
+                tooltip.transition()
+                    .duration(200)
+                    .style("opacity", 0.95);
+                
+                tooltip.html(`
+                    <strong><span class="flag">${flag}</span>${d.country}</strong>
+                    <div>Region: ${d.region}</div>
+                    <div>Total Titles: ${d.totalTitles.toLocaleString()}</div>
+                    <div>Price: $${d.price.toFixed(2)}/month</div>
+                    <div>Cost per Title: $${d.costPerTitle.toFixed(5)}</div>
+                    <div>Movies: ${d.movies.toLocaleString()}</div>
+                    <div>TV Shows: ${d.tvShows.toLocaleString()}</div>
+                `)
+                .style("left", (event.pageX + 15) + "px")
+                .style("top", (event.pageY - 28) + "px");
+            })
+            .on("mouseout", function() {
+                d3.select(this).style("opacity", 0.85).style("stroke-width", 1);
+                tooltip.transition()
+                    .duration(500)
+                    .style("opacity", 0);
+            });
 
-    // Add interactive controls after DOM is loaded
-    document.addEventListener("DOMContentLoaded", function() {
+        // Add trend line
+        const regression = d3.regressionLinear()
+            .x(d => d.totalTitles)
+            .y(d => d.price)
+            .domain([d3.min(data, d => d.totalTitles), d3.max(data, d => d.totalTitles)]);
+        
+        const trendData = regression(data);
+        
+        svg.append("path")
+            .datum(trendData)
+            .attr("class", "trend-line")
+            .attr("d", d3.line()
+                .x(d => xScale(d[0]))
+                .y(d => yScale(d[1])))
+            .style("stroke", "#ff6b6b")
+            .style("stroke-width", 2)
+            .style("stroke-dasharray", "5,5")
+            .style("opacity", 0.7)
+            .style("fill", "none");
+
+        // Add trend line label
+        svg.append("text")
+            .attr("class", "trend-line-label")
+            .attr("x", xScale(8000))
+            .attr("y", yScale(18))
+            .text("Price vs. Library Size Trend");
+
+        // Function to reset all button states and visualization
+        function resetView() {
+            d3.selectAll(".controls button").classed("active", false);
+            circles
+                .style("opacity", 0.85)
+                .style("fill", d => colorScale(getPriceCategory(d.price)))
+                .transition()
+                .duration(500)
+                .attr("r", 6);
+        }
+
+        // Set up button event handlers
         document.getElementById("size-cost").addEventListener("click", function() {
             resetView();
             this.classList.add("active");
@@ -526,7 +620,7 @@
                 .duration(1000)
                 .attr("r", d => sizeScale(d.costPerTitle));
         });
-        
+
         document.getElementById("size-default").addEventListener("click", function() {
             resetView();
             this.classList.add("active");
@@ -535,7 +629,7 @@
                 .duration(1000)
                 .attr("r", 6);
         });
-        
+
         document.getElementById("highlight-premium").addEventListener("click", function() {
             resetView();
             this.classList.add("active");
@@ -544,7 +638,7 @@
                 .duration(500)
                 .style("opacity", d => getPriceCategory(d.price) === "Premium" ? 1 : 0.2);
         });
-        
+
         document.getElementById("highlight-value").addEventListener("click", function() {
             resetView();
             this.classList.add("active");
@@ -553,7 +647,7 @@
                 .duration(500)
                 .style("opacity", d => d.costPerTitle < 0.0005 ? 1 : 0.2);
         });
-        
+
         document.getElementById("by-region").addEventListener("click", function() {
             resetView();
             this.classList.add("active");
@@ -608,8 +702,6 @@
             .delay((d, i) => i * 20)
             .duration(800)
             .attr("r", 6);
-    });
-</script>
-     
+    </script>
 </body>
 </html>
