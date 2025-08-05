@@ -907,53 +907,63 @@
         this.isLoading = false;
       }
       
-      async makeRequest(apiUrl, attempt = 0, signal = null) {
-        const proxyUrl = `${this.fallbackSources[this.currentProxyIndex]}${encodeURIComponent(apiUrl)}`;
-        
-        try {
-          const options = {
+    async makeRequest(apiUrl, attempt = 0, signal = null) {
+    // This line remains the same
+    const proxyUrl = `${this.fallbackSources[this.currentProxyIndex]}${encodeURIComponent(apiUrl)}`;
+    
+    try {
+        const options = {
             method: 'GET',
             headers: { 'Accept': 'application/json' },
             signal: signal
-          };
-          
-          const response = await fetch(proxyUrl, options);
-          
-          if (signal?.aborted) {
+        };
+        
+        const response = await fetch(proxyUrl, options);
+        
+        if (signal?.aborted) {
             throw new Error('Request aborted');
-          }
-          
-          if (!response.ok) {
-            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-          }
-          
-          const data = await response.json();
-          
-          // Handle different proxy response formats
-          if (data.contents) {
-            return JSON.parse(data.contents);
-          } else if (data.status === 'ok' || data.articles) {
-            return data;
-          } else {
-            throw new Error('Invalid response format');
-          }
-          
-        } catch (error) {
-          if (error.name === 'AbortError') {
-            throw new Error('Request was aborted');
-          }
-          
-          // Try next proxy on failure
-          if (attempt === 0 && this.currentProxyIndex < this.fallbackSources.length - 1) {
-            this.currentProxyIndex++;
-            return this.makeRequest(apiUrl, attempt + 1, signal);
-          }
-          
-          // Reset proxy index for next time
-          this.currentProxyIndex = 0;
-          throw error;
         }
-      }
+        
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+        
+        const data = await response.json();
+        
+        // **This is the only logic change**
+        // If the proxy wraps the response in a "contents" property, parse it.
+        // Otherwise, assume the data is the direct response from the News API.
+        if (data.contents) {
+            const parsedContents = JSON.parse(data.contents);
+            // If the actual API returned an error, throw it
+            if (parsedContents.status === 'error') {
+                throw new Error(parsedContents.message || 'News API returned an error');
+            }
+            return parsedContents;
+        } else {
+            // If the actual API returned an error, throw it
+            if (data.status === 'error') {
+                throw new Error(data.message || 'News API returned an error');
+            }
+            return data;
+        }
+        
+    } catch (error) {
+        if (error.name === 'AbortError') {
+            throw new Error('Request was aborted');
+        }
+        
+        // Your original fallback logic remains the same
+        if (attempt === 0 && this.currentProxyIndex < this.fallbackSources.length - 1) {
+            this.currentProxyIndex++;
+            console.log(`Proxy failed. Trying next proxy: ${this.fallbackSources[this.currentProxyIndex]}`);
+            return this.makeRequest(apiUrl, attempt, signal); // Use attempt 0 for the next proxy
+        }
+        
+        this.currentProxyIndex = 0; // Reset for the next full fetch operation
+        throw error;
+    }
+}
       
       filterAndValidateArticles(articles) {
         const filtered = [];
@@ -1346,4 +1356,5 @@
   </script>
 </body>
 </html>
+
 
