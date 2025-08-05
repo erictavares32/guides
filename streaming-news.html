@@ -596,11 +596,10 @@
         // Error tracking
         this.errorCount = 0;
         this.lastError = null;
-        this.fallbackSources = [
-          'https://api.allorigins.win/get?url=',
-          'https://cors-anywhere.herokuapp.com/',
-          'https://api.codetabs.com/v1/proxy?quest='
-        ];
+      this.fallbackSources = [
+  'https://api.allorigins.win/get?url=', // This one is usually reliable
+  'https://corsproxy.io/?' // A solid alternative
+];
         this.currentProxyIndex = 0;
         
         this.initializeElements();
@@ -1347,3 +1346,4 @@
   </script>
 </body>
 </html>
+
