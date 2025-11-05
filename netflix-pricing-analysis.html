@@ -85,6 +85,27 @@
             margin: 0 auto;
         }
 
+        .breadcrumb {
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            color: rgba(203, 213, 225, 0.7);
+        }
+
+        .breadcrumb a {
+            color: var(--color-cyan-400);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--color-sky-300);
+        }
+
+        .breadcrumb .separator {
+            margin: 0 0.5rem;
+            color: rgba(203, 213, 225, 0.5);
+        }
+
         header {
             position: relative;
             overflow: hidden;
@@ -486,10 +507,25 @@
 <body>
       <div class="container">
     <!-- Breadcrumb Navigation -->
-    <div class="breadcrumb">
-      <a href="https://www.wheretowatch.stream">Home</a> > 
-      <a href="https://www.wheretowatch.stream/guides">Guides</a> > 
-      <span>Netflix Picing by country</span>
+    <div class="breadcrumb" aria-label="Breadcrumb navigation">
+      <span itemscope itemtype="http://schema.org/ListItem">
+        <a itemprop="item" href="https://www.wheretowatch.stream">
+          <span itemprop="name">Home</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </span>
+      <span class="separator">></span>
+      <span itemscope itemtype="http://schema.org/ListItem">
+        <a itemprop="item" href="https://www.wheretowatch.stream/guides">
+          <span itemprop="name">Guides</span>
+        </a>
+        <meta itemprop="position" content="2" />
+      </span>
+      <span class="separator">></span>
+      <span itemscope itemtype="http://schema.org/ListItem">
+        <span itemprop="name">Netflix Pricing Analysis</span>
+        <meta itemprop="position" content="3" />
+      </span>
     </div>
     <div class="container">
         <header>
