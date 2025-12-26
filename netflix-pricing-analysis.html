@@ -1,0 +1,1122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Netflix Global Pricing Analysis 2025: Content Library vs Cost Across 83 Countries | WhereToWatch</title>
+    <meta name="description" content="Interactive 2025 data visualization showing Netflix pricing strategy across 83 countries. Switzerland charges $21.48 while India offers best value at $0.00032 per title.">
+    <meta name="keywords" content="Netflix pricing 2025, streaming costs, content library comparison, data visualization, wheretowatch">
+    <meta name="author" content="WhereToWatch Research Team">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.wheretowatch.stream/guides/netflix-pricing-analysis-2025">
+    <meta property="og:title" content="Netflix Global Pricing Analysis 2025: 83 Countries Compared">
+    <meta property="og:description" content="🇨🇭 Switzerland: $21.48 | 🇮🇳 India: $0.00032 per title. See how Netflix prices vary worldwide in 2025">
+    <meta property="og:image" content="https://www.wheretowatch.stream/guides/netflix-pricing-2025-og.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:creator" content="@WhereToWatch">
+    <meta name="twitter:title" content="Netflix's 2025 Global Pricing Strategy Revealed">
+    <meta name="twitter:description" content="Interactive visualization of Netflix prices across 83 countries. Slovakia now has the largest library (9,554 titles)">
+    <meta name="twitter:image" content="https://www.wheretowatch.stream/guides/netflix-pricing-2025-og.jpg">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.wheretowatch.stream/guides/netflix-pricing-analysis-2025">
+
+    <style>
+        :root {
+            --color-bg-1: rgba(59, 130, 246, 0.08);
+            --color-bg-2: rgba(245, 158, 11, 0.08);
+            --color-bg-3: rgba(34, 197, 94, 0.08);
+            --color-bg-cyan: rgba(6, 182, 212, 0.15);
+            --color-bg-indigo: rgba(99, 102, 241, 0.15);
+            
+            --color-white: rgba(255, 255, 255, 1);
+            --color-slate-100: rgba(241, 245, 249, 1);
+            --color-slate-200: rgba(226, 232, 240, 1);
+            --color-slate-300: rgba(203, 213, 225, 1);
+            --color-slate-900: rgba(15, 23, 42, 1);
+            --color-slate-950: rgba(2, 6, 23, 1);
+            --color-cyan-300: rgba(103, 232, 249, 1);
+            --color-cyan-400: rgba(34, 211, 238, 1);
+            --color-cyan-500: rgba(6, 182, 212, 1);
+            --color-sky-300: rgba(125, 211, 252, 1);
+            --color-sky-400: rgba(56, 189, 248, 1);
+            --color-indigo-500: rgba(99, 102, 241, 1);
+            
+            --font-family-base: "FKGroteskNeue", "Geist", "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --gradient-primary: linear-gradient(to right, var(--color-cyan-500), var(--color-sky-400), var(--color-indigo-500));
+            --gradient-text: linear-gradient(to right, var(--color-cyan-400), var(--color-sky-300), rgb(191, 219, 254));
+            --shadow-glow-cyan: 0 25px 65px -30px rgba(6, 182, 212, 0.6);
+            --shadow-glow-indigo: 0 22px 65px -32px rgba(99, 102, 241, 0.5);
+        }
+
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --color-bg-1: rgba(29, 78, 216, 0.12);
+                --color-bg-2: rgba(180, 83, 9, 0.12);
+                --color-bg-3: rgba(21, 128, 61, 0.12);
+            }
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-family-base);
+            background: linear-gradient(135deg, var(--color-slate-900) 0%, var(--color-slate-950) 100%);
+            color: var(--color-slate-200);
+            line-height: 1.6;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .breadcrumb {
+            margin-bottom: 2rem;
+            font-size: 0.9rem;
+            color: rgba(203, 213, 225, 0.7);
+        }
+
+        .breadcrumb a {
+            color: var(--color-cyan-400);
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb a:hover {
+            color: var(--color-sky-300);
+        }
+
+        .breadcrumb .separator {
+            margin: 0 0.5rem;
+            color: rgba(203, 213, 225, 0.5);
+        }
+
+        header {
+            position: relative;
+            overflow: hidden;
+            border-radius: 24px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            background: linear-gradient(to bottom right, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.5), rgba(2, 6, 23, 0.8));
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(24px);
+            padding: 60px 40px;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            right: -96px;
+            top: -128px;
+            width: 288px;
+            height: 288px;
+            background: rgba(6, 182, 212, 0.3);
+            border-radius: 50%;
+            filter: blur(80px);
+            pointer-events: none;
+        }
+
+        header::after {
+            content: '';
+            position: absolute;
+            left: -64px;
+            bottom: -80px;
+            width: 256px;
+            height: 256px;
+            background: rgba(99, 102, 241, 0.25);
+            border-radius: 50%;
+            filter: blur(80px);
+            pointer-events: none;
+        }
+
+        h1 {
+            position: relative;
+            font-size: clamp(2rem, 5vw, 3rem);
+            font-weight: 700;
+            margin-bottom: 16px;
+            background: var(--gradient-text);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .subtitle {
+            position: relative;
+            font-size: clamp(1.1rem, 2.5vw, 1.5rem);
+            color: var(--color-slate-100);
+            margin-bottom: 12px;
+            font-weight: 400;
+        }
+
+        .data-source {
+            position: relative;
+            font-size: 0.95em;
+            color: rgba(203, 213, 225, 0.7);
+            margin-top: 20px;
+            font-style: italic;
+        }
+
+        .divider {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            margin: 24px auto;
+            max-width: 600px;
+        }
+
+        .divider-dot {
+            width: 8px;
+            height: 8px;
+            background: var(--color-cyan-400);
+            border-radius: 50%;
+            animation: pulse 2s ease-in-out infinite;
+            box-shadow: 0 0 15px rgba(34, 211, 238, 0.8);
+        }
+
+        .divider-line {
+            flex: 1;
+            height: 1px;
+            background: linear-gradient(to right, rgba(6, 182, 212, 0.6), transparent);
+        }
+
+        @keyframes pulse {
+            0%, 100% { opacity: 1; }
+            50% { opacity: 0.5; }
+        }
+
+        .intro-section {
+            background: linear-gradient(to bottom right, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.5));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow-glow-cyan);
+        }
+
+        .intro-section h2 {
+            font-size: 2em;
+            margin-bottom: 24px;
+            background: var(--gradient-text);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .intro-section p {
+            font-size: 1.1em;
+            line-height: 1.8;
+            color: rgba(226, 232, 240, 0.9);
+            margin-bottom: 20px;
+        }
+
+        .key-findings {
+            background: linear-gradient(to bottom right, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.5));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: var(--shadow-glow-indigo);
+        }
+
+        .key-findings h2 {
+            font-size: 2em;
+            margin-bottom: 32px;
+            text-align: center;
+            background: var(--gradient-text);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .findings-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 24px;
+        }
+
+        .finding-card {
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(99, 102, 241, 0.05));
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            padding: 28px;
+            transition: all 0.3s ease;
+        }
+
+        .finding-card:hover {
+            transform: translateY(-5px);
+            border-color: rgba(6, 182, 212, 0.4);
+            box-shadow: 0 20px 40px -20px rgba(6, 182, 212, 0.4);
+        }
+
+        .finding-card h3 {
+            color: var(--color-cyan-300);
+            font-size: 1.3em;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+
+        .finding-card p {
+            color: rgba(226, 232, 240, 0.85);
+            font-size: 1.05em;
+            line-height: 1.7;
+        }
+
+        .finding-card .stat {
+            color: var(--color-sky-300);
+            font-weight: 700;
+            font-size: 1.15em;
+        }
+
+        .analysis-section {
+            background: linear-gradient(to bottom right, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.5));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 16px;
+            padding: 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+        }
+
+        .analysis-section h2 {
+            font-size: 2em;
+            margin-bottom: 28px;
+            padding-bottom: 16px;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            background: var(--gradient-text);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .analysis-section h3 {
+            color: var(--color-sky-300);
+            margin: 32px 0 16px;
+            font-size: 1.5em;
+            font-weight: 600;
+        }
+
+        .analysis-section p {
+            color: rgba(226, 232, 240, 0.9);
+            font-size: 1.1em;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .analysis-section ul {
+            margin-left: 28px;
+            margin-bottom: 24px;
+        }
+
+        .analysis-section li {
+            color: rgba(226, 232, 240, 0.85);
+            font-size: 1.05em;
+            margin-bottom: 12px;
+            line-height: 1.7;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.1), rgba(15, 23, 42, 0.5));
+            border-left: 4px solid var(--color-cyan-400);
+            border-radius: 8px;
+            padding: 24px;
+            margin: 28px 0;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+        }
+
+        .highlight-box strong {
+            color: var(--color-cyan-300);
+        }
+
+        .data-table-section {
+            margin-bottom: 40px;
+        }
+
+        .section-header {
+            background: var(--gradient-primary);
+            padding: 24px 32px;
+            border-radius: 12px 12px 0 0;
+        }
+
+        .section-header h2 {
+            color: var(--color-slate-950);
+            font-size: 1.8em;
+            font-weight: 700;
+            margin: 0;
+        }
+
+        .table-container {
+            background: linear-gradient(to bottom right, rgba(15, 23, 42, 0.8), rgba(15, 23, 42, 0.5));
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 0 0 12px 12px;
+            overflow-x: auto;
+            box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.3);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            min-width: 800px;
+        }
+
+        thead {
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.2), rgba(99, 102, 241, 0.2));
+        }
+
+        th {
+            padding: 18px 16px;
+            text-align: left;
+            font-weight: 600;
+            color: var(--color-cyan-300);
+            font-size: 1em;
+            border-right: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        th:last-child {
+            border-right: none;
+        }
+
+        tbody tr {
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+            transition: background 0.2s ease;
+        }
+
+        tbody tr:hover {
+            background: rgba(6, 182, 212, 0.05);
+        }
+
+        tbody tr:nth-child(odd) {
+            background: rgba(255, 255, 255, 0.02);
+        }
+
+        td {
+            padding: 16px;
+            color: rgba(226, 232, 240, 0.85);
+            font-size: 0.95em;
+        }
+
+        .rank {
+            font-weight: 700;
+            color: var(--color-sky-300);
+            font-size: 1.1em;
+        }
+
+        .country-name {
+            font-weight: 600;
+            color: var(--color-slate-100);
+        }
+
+        .price {
+            color: var(--color-cyan-400);
+            font-weight: 600;
+        }
+
+        .conclusion {
+            background: linear-gradient(135deg, rgba(6, 182, 212, 0.15), rgba(99, 102, 241, 0.1), rgba(15, 23, 42, 0.8));
+            border: 2px solid rgba(6, 182, 212, 0.3);
+            border-radius: 16px;
+            padding: 48px;
+            margin-top: 48px;
+            box-shadow: 0 30px 60px -20px rgba(6, 182, 212, 0.3);
+        }
+
+        .conclusion h2 {
+            font-size: 2.2em;
+            margin-bottom: 28px;
+            text-align: center;
+            background: var(--gradient-text);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .conclusion p {
+            color: rgba(226, 232, 240, 0.9);
+            font-size: 1.15em;
+            line-height: 1.9;
+            margin-bottom: 24px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 48px 20px;
+            margin-top: 60px;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            color: rgba(203, 213, 225, 0.7);
+        }
+
+        footer a {
+            color: var(--color-cyan-400);
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: var(--color-sky-300);
+        }
+
+        @media (max-width: 768px) {
+            body {
+                padding: 12px;
+            }
+
+            header {
+                padding: 40px 24px;
+            }
+
+            .intro-section, .key-findings, .analysis-section {
+                padding: 28px;
+            }
+
+            .findings-grid {
+                grid-template-columns: 1fr;
+            }
+
+            table {
+                font-size: 0.85em;
+            }
+
+            th, td {
+                padding: 12px 10px;
+            }
+
+            .conclusion {
+                padding: 32px 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+      <div class="container">
+    <!-- Breadcrumb Navigation -->
+    <div class="breadcrumb" aria-label="Breadcrumb navigation">
+      <span itemscope itemtype="http://schema.org/ListItem">
+        <a itemprop="item" href="https://www.wheretowatch.stream">
+          <span itemprop="name">Home</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </span>
+      <span class="separator">></span>
+      <span itemscope itemtype="http://schema.org/ListItem">
+        <a itemprop="item" href="https://www.wheretowatch.stream/guides">
+          <span itemprop="name">Guides</span>
+        </a>
+        <meta itemprop="position" content="2" />
+      </span>
+      <span class="separator">></span>
+      <span itemscope itemtype="http://schema.org/ListItem">
+        <span itemprop="name">Netflix Pricing Analysis</span>
+        <meta itemprop="position" content="3" />
+      </span>
+    </div>
+    <div class="container">
+        <header>
+            <h1>Netflix Pricing Around the World</h1>
+            <p class="subtitle">What You Actually Get for Your Money in 83 Countries</p>
+            <div class="divider">
+                <span class="divider-dot"></span>
+                <span class="divider-line"></span>
+            </div>
+            <p class="data-source">Data collected June 2025 | Prices converted as of 15/06/2025</p>
+        </header>
+
+        <div class="intro-section">
+            <h2>Here's What We Found</h2>
+            <p>Look, everyone knows Netflix prices are different around the world. But just how different? We pulled together pricing data from 83 countries to see who's getting the best deal and who's getting a raw deal. Turns out the gap between what people pay and what they get is way bigger than you'd think.</p>
+            <p>We're talking about comparing monthly costs, all converted to USD so we can actually compare apples to apples, library sizes, and what you're really paying per title. Some folks are getting thousands of extra shows and movies for half the price. Others are paying premium rates for less content.</p>
+        </div>
+
+        <div class="key-findings">
+            <h2>The Big Takeaways</h2>
+            <div class="findings-grid">
+                <div class="finding-card">
+                    <h3>Switzerland Pays the Most</h3>
+                    <p>If you're streaming in Switzerland, you're dropping <span class="stat">$21.48</span> every month. That's the highest price globally. The library? About 8,982 titles. Not terrible, but definitely not matching that premium price tag.</p>
+                </div>
+
+                <div class="finding-card">
+                    <h3>Slovakia Has the Biggest Library</h3>
+                    <p>Slovakia subscribers get access to <span class="stat">9,554 titles</span>, the most content anywhere on Netflix. And they're only paying $8.61 monthly, which works out to about $0.00090 per title. That's genuinely impressive value.</p>
+                </div>
+
+                <div class="finding-card">
+                    <h3>India Gets the Best Deal</h3>
+                    <p>At <span class="stat">$0.00032 per title</span>, India wins the value game hands down. Sure, the library isn't the biggest at 7,550 titles, but when you're paying just $2.41 a month, nobody's complaining.</p>
+                </div>
+
+                <div class="finding-card">
+                    <h3>Prices Vary Like Crazy</h3>
+                    <p>The difference between cheapest and most expensive? Over <span class="stat">890%</span>. Netflix isn't doing one size fits all pricing. They're charging whatever each market can handle.</p>
+                </div>
+
+                <div class="finding-card">
+                    <h3>Library Sizes All Over the Place</h3>
+                    <p>Some countries get <span class="stat">5,000+ more titles</span> than others. Licensing deals, local content, and regional restrictions create huge gaps in what's actually available to watch.</p>
+                </div>
+
+                <div class="finding-card">
+                    <h3>Clear Regional Patterns</h3>
+                    <p>Europe generally has bigger libraries, between 8,000 and 9,500+ titles, but charges more. Asia and Latin America have smaller catalogs but way lower prices, clearly optimized for those specific markets.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="analysis-section">
+            <h2>Let's Break This Down</h2>
+
+            <h3>Who's Paying What?</h3>
+            <p>Western Europe dominates the expensive end. Switzerland ($21.48), Israel ($14.00), and Germany ($14.00) are paying premium prices, probably because Netflix knows these markets can afford it and there's strong demand for streaming content.</p>
+
+            <p>Mid-range pricing ($8-12/month) covers big markets like the US ($15.49), UK ($8.61), and Australia ($12.92). These seem calibrated to stay competitive while still making decent money in markets where streaming wars are heating up.</p>
+
+            <div class="highlight-box">
+                <p><strong>Pattern Worth Noting:</strong> Smaller wealthier countries pay significantly more. Switzerland, Norway, and Denmark all top $12 monthly, while huge population centers like India, Turkey, and Argentina stay under $5.</p>
+            </div>
+
+            <h3>Content Libraries: What's Available Where</h3>
+            <p>Slovakia's massive 9,554 title library is kind of unusual. They're benefiting from European licensing agreements plus regional content. Slovenia with 9,557 and Bulgaria with 9,586 are right behind, suggesting Central Europe has some favorable multi region licensing going on.</p>
+
+            <p>On the flip side, Ukraine with 5,701 titles and Israel with 6,549 titles have much smaller catalogs despite being in competitive markets. This screams licensing headaches, probably related to content restrictions, censorship, or complicated regional rights.</p>
+
+            <h3>The Real Value Calculation</h3>
+            <p>Here's where it gets interesting. India's $0.00032 per title wins because they've got low pricing at $2.41 and a solid 7,550 title library. Egypt at $0.00027 and Nigeria at $0.00028 follow the same playbook. Aggressive pricing in emerging markets creates insane value.</p>
+
+            <p>Compare that to Switzerland at $0.00239 per title, literally over 7 times more expensive than India on a per title basis. Swiss subscribers aren't getting 7x the content. They're just living in an expensive market where Netflix can charge more.</p>
+
+            <div class="highlight-box">
+                <p><strong>Reality Check:</strong> Western European subscribers typically pay 5 to 10 times more per title than Asian subscribers. The content difference doesn't come close to justifying that gap. It's just economic reality based on what people will pay.</p>
+            </div>
+
+            <h3>What This Actually Means</h3>
+            <p>If you're in a high price market, your monthly fee is basically funding Netflix's global content machine and their expansion into price sensitive regions. Those $15 to $20+ payments from Europe and North America subsidize the aggressive pricing in India, Brazil, and Southeast Asia.</p>
+
+            <p>For anyone trying to be budget conscious, location is everything. A hypothetical VPN user accessing Netflix from India versus Switzerland gets similar core content for a fraction of the cost, though Netflix's terms say you shouldn't do this.</p>
+
+            <h3>Price vs. Content: Not Connected</h3>
+            <p>There's surprisingly little link between how much you pay and how much content you get. Some of the priciest markets like Switzerland, Israel, and Germany have mid tier libraries around 8,000 to 9,000 titles. Meanwhile, affordable markets like Turkey at $3.34 and Argentina at $3.57 are serving up 7,000+ titles.</p>
+
+            <p>This shows Netflix's real strategy: charge based on market economics, not content volume. It makes business sense but creates wild value differences globally.</p>
+        </div>
+
+        <div class="data-table-section">
+            <div class="section-header">
+                <h2>Best Value Rankings by Country</h2>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Country</th>
+                            <th>Monthly Price (USD)</th>
+                            <th>Library Size</th>
+                            <th>Cost per Title</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rank">1</td>
+                            <td class="country-name">Egypt</td>
+                            <td class="price">$1.98</td>
+                            <td>7,287</td>
+                            <td>$0.00027</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">2</td>
+                            <td class="country-name">Nigeria</td>
+                            <td class="price">$2.00</td>
+                            <td>7,267</td>
+                            <td>$0.00028</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">3</td>
+                            <td class="country-name">India</td>
+                            <td class="price">$2.41</td>
+                            <td>7,550</td>
+                            <td>$0.00032</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">4</td>
+                            <td class="country-name">Kenya</td>
+                            <td class="price">$2.27</td>
+                            <td>7,277</td>
+                            <td>$0.00031</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">5</td>
+                            <td class="country-name">Turkey</td>
+                            <td class="price">$3.34</td>
+                            <td>7,225</td>
+                            <td>$0.00046</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">6</td>
+                            <td class="country-name">Argentina</td>
+                            <td class="price">$3.57</td>
+                            <td>7,723</td>
+                            <td>$0.00046</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">7</td>
+                            <td class="country-name">Colombia</td>
+                            <td class="price">$3.62</td>
+                            <td>7,669</td>
+                            <td>$0.00047</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">8</td>
+                            <td class="country-name">Pakistan</td>
+                            <td class="price">$2.82</td>
+                            <td>7,428</td>
+                            <td>$0.00038</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">9</td>
+                            <td class="country-name">Chile</td>
+                            <td class="price">$3.62</td>
+                            <td>7,683</td>
+                            <td>$0.00047</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">10</td>
+                            <td class="country-name">Peru</td>
+                            <td class="price">$3.62</td>
+                            <td>7,651</td>
+                            <td>$0.00047</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">11</td>
+                            <td class="country-name">Tunisia</td>
+                            <td class="price">$3.99</td>
+                            <td>7,332</td>
+                            <td>$0.00054</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">12</td>
+                            <td class="country-name">Indonesia</td>
+                            <td class="price">$5.02</td>
+                            <td>8,002</td>
+                            <td>$0.00063</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">13</td>
+                            <td class="country-name">Thailand</td>
+                            <td class="price">$5.02</td>
+                            <td>8,348</td>
+                            <td>$0.00060</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">14</td>
+                            <td class="country-name">Philippines</td>
+                            <td class="price">$5.02</td>
+                            <td>8,411</td>
+                            <td>$0.00060</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">15</td>
+                            <td class="country-name">Singapore</td>
+                            <td class="price">$5.02</td>
+                            <td>8,314</td>
+                            <td>$0.00060</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">16</td>
+                            <td class="country-name">South Africa</td>
+                            <td class="price">$5.47</td>
+                            <td>7,339</td>
+                            <td>$0.00075</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">17</td>
+                            <td class="country-name">Saudi Arabia</td>
+                            <td class="price">$5.47</td>
+                            <td>7,252</td>
+                            <td>$0.00075</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">18</td>
+                            <td class="country-name">United Arab Emirates</td>
+                            <td class="price">$5.47</td>
+                            <td>7,062</td>
+                            <td>$0.00077</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">19</td>
+                            <td class="country-name">Malaysia</td>
+                            <td class="price">$5.02</td>
+                            <td>7,241</td>
+                            <td>$0.00069</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">20</td>
+                            <td class="country-name">Ukraine</td>
+                            <td class="price">$5.41</td>
+                            <td>5,701</td>
+                            <td>$0.00095</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="data-table-section">
+            <div class="section-header">
+                <h2>Most Expensive Markets</h2>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Country</th>
+                            <th>Monthly Price (USD)</th>
+                            <th>Library Size</th>
+                            <th>Cost per Title</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rank">1</td>
+                            <td class="country-name">Switzerland</td>
+                            <td class="price">$21.48</td>
+                            <td>8,982</td>
+                            <td>$0.00239</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">2</td>
+                            <td class="country-name">United States</td>
+                            <td class="price">$15.49</td>
+                            <td>7,511</td>
+                            <td>$0.00206</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">3</td>
+                            <td class="country-name">Israel</td>
+                            <td class="price">$14.00</td>
+                            <td>6,549</td>
+                            <td>$0.00214</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">4</td>
+                            <td class="country-name">Canada</td>
+                            <td class="price">$14.00</td>
+                            <td>7,745</td>
+                            <td>$0.00181</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">5</td>
+                            <td class="country-name">Germany</td>
+                            <td class="price">$14.00</td>
+                            <td>8,628</td>
+                            <td>$0.00162</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">6</td>
+                            <td class="country-name">Portugal</td>
+                            <td class="price">$14.00</td>
+                            <td>9,240</td>
+                            <td>$0.00152</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">7</td>
+                            <td class="country-name">Ireland</td>
+                            <td class="price">$14.00</td>
+                            <td>8,868</td>
+                            <td>$0.00158</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">8</td>
+                            <td class="country-name">Austria</td>
+                            <td class="price">$14.00</td>
+                            <td>8,667</td>
+                            <td>$0.00161</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">9</td>
+                            <td class="country-name">Netherlands</td>
+                            <td class="price">$14.00</td>
+                            <td>9,107</td>
+                            <td>$0.00154</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">10</td>
+                            <td class="country-name">Australia</td>
+                            <td class="price">$12.92</td>
+                            <td>7,809</td>
+                            <td>$0.00165</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">11</td>
+                            <td class="country-name">France</td>
+                            <td class="price">$12.92</td>
+                            <td>8,471</td>
+                            <td>$0.00153</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">12</td>
+                            <td class="country-name">Sweden</td>
+                            <td class="price">$12.92</td>
+                            <td>8,471</td>
+                            <td>$0.00153</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">13</td>
+                            <td class="country-name">Norway</td>
+                            <td class="price">$12.92</td>
+                            <td>8,437</td>
+                            <td>$0.00153</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">14</td>
+                            <td class="country-name">Denmark</td>
+                            <td class="price">$12.92</td>
+                            <td>8,354</td>
+                            <td>$0.00155</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">15</td>
+                            <td class="country-name">Finland</td>
+                            <td class="price">$12.92</td>
+                            <td>8,471</td>
+                            <td>$0.00153</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">16</td>
+                            <td class="country-name">Iceland</td>
+                            <td class="price">$12.92</td>
+                            <td>9,504</td>
+                            <td>$0.00136</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">17</td>
+                            <td class="country-name">Lithuania</td>
+                            <td class="price">$12.92</td>
+                            <td>9,438</td>
+                            <td>$0.00137</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">18</td>
+                            <td class="country-name">Latvia</td>
+                            <td class="price">$12.92</td>
+                            <td>9,454</td>
+                            <td>$0.00137</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">19</td>
+                            <td class="country-name">Estonia</td>
+                            <td class="price">$12.92</td>
+                            <td>9,412</td>
+                            <td>$0.00137</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">20</td>
+                            <td class="country-name">Slovenia</td>
+                            <td class="price">$12.92</td>
+                            <td>9,557</td>
+                            <td>$0.00135</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="data-table-section">
+            <div class="section-header">
+                <h2>Countries with Biggest Libraries</h2>
+            </div>
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>Country</th>
+                            <th>Library Size</th>
+                            <th>Monthly Price (USD)</th>
+                            <th>Cost per Title</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="rank">1</td>
+                            <td class="country-name">Bulgaria</td>
+                            <td>9,586</td>
+                            <td class="price">$8.61</td>
+                            <td>$0.00090</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">2</td>
+                            <td class="country-name">Slovenia</td>
+                            <td>9,557</td>
+                            <td class="price">$12.92</td>
+                            <td>$0.00135</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">3</td>
+                            <td class="country-name">Slovakia</td>
+                            <td>9,554</td>
+                            <td class="price">$8.61</td>
+                            <td>$0.00090</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">4</td>
+                            <td class="country-name">Iceland</td>
+                            <td>9,504</td>
+                            <td class="price">$12.92</td>
+                            <td>$0.00136</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">5</td>
+                            <td class="country-name">Latvia</td>
+                            <td>9,454</td>
+                            <td class="price">$12.92</td>
+                            <td>$0.00137</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">6</td>
+                            <td class="country-name">Lithuania</td>
+                            <td>9,438</td>
+                            <td class="price">$12.92</td>
+                            <td>$0.00137</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">7</td>
+                            <td class="country-name">Estonia</td>
+                            <td>9,412</td>
+                            <td class="price">$12.92</td>
+                            <td>$0.00137</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">8</td>
+                            <td class="country-name">Portugal</td>
+                            <td>9,240</td>
+                            <td class="price">$14.00</td>
+                            <td>$0.00152</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">9</td>
+                            <td class="country-name">Czech Republic</td>
+                            <td>8,828</td>
+                            <td class="price">$8.61</td>
+                            <td>$0.00098</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">10</td>
+                            <td class="country-name">United Kingdom</td>
+                            <td>8,809</td>
+                            <td class="price">$8.61</td>
+                            <td>$0.00098</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">11</td>
+                            <td class="country-name">Romania</td>
+                            <td>9,079</td>
+                            <td class="price">$8.61</td>
+                            <td>$0.00095</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">12</td>
+                            <td class="country-name">Greece</td>
+                            <td>8,903</td>
+                            <td class="price">$8.61</td>
+                            <td>$0.00097</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">13</td>
+                            <td class="country-name">Hungary</td>
+                            <td>8,682</td>
+                            <td class="price">$8.61</td>
+                            <td>$0.00099</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">14</td>
+                            <td class="country-name">Ireland</td>
+                            <td>8,868</td>
+                            <td class="price">$14.00</td>
+                            <td>$0.00158</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">15</td>
+                            <td class="country-name">Netherlands</td>
+                            <td>9,107</td>
+                            <td class="price">$14.00</td>
+                            <td>$0.00154</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">16</td>
+                            <td class="country-name">Switzerland</td>
+                            <td>8,982</td>
+                            <td class="price">$21.48</td>
+                            <td>$0.00239</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">17</td>
+                            <td class="country-name">Germany</td>
+                            <td>8,628</td>
+                            <td class="price">$14.00</td>
+                            <td>$0.00162</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">18</td>
+                            <td class="country-name">Austria</td>
+                            <td>8,667</td>
+                            <td class="price">$14.00</td>
+                            <td>$0.00161</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">19</td>
+                            <td class="country-name">Italy</td>
+                            <td>9,007</td>
+                            <td class="price">$14.00</td>
+                            <td>$0.00155</td>
+                        </tr>
+                        <tr>
+                            <td class="rank">20</td>
+                            <td class="country-name">Spain</td>
+                            <td>9,303</td>
+                            <td class="price">$12.92</td>
+                            <td>$0.00139</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <div class="conclusion">
+            <h2>So What's the Verdict?</h2>
+            <p>Netflix's global pricing strategy is pretty simple when you look at it: charge what each market can afford, not based on how much content they're getting. The connection between price and library size is weak. Some of the cheapest markets have huge catalogs while expensive ones sometimes get less.</p>
+            
+            <p>If you're paying $15 to $21 monthly in Switzerland, United States, or Israel, you're basically bankrolling Netflix's worldwide content budget and their push into emerging markets. Your subscription helps fund those crazy low $2-3 prices in India, Egypt, and Nigeria where Netflix is chasing subscribers over immediate profits.</p>
+            
+            <p>The sweet spot? Central and Eastern Europe. Places like Bulgaria, Slovakia, and Czech Republic get massive libraries with 9,000+ titles for reasonable prices between $8 and $9 monthly. That's genuinely good value.</p>
+            
+            <p>What's obvious is that Netflix has absolutely nailed price discrimination on a global level. They've figured out exactly what each market will pay and priced accordingly. Fair? Debatable. Effective? Absolutely. They're still the dominant streaming platform worldwide despite these huge price gaps.</p>
+            
+            <p>Bottom line for subscribers: geography is destiny when it comes to Netflix value. Getting 7,000+ titles for under $5? You're winning. Paying $15+ for fewer than 8,000 titles? You're in the premium bracket, subsidizing everyone else's streaming.Ps: we used Netflix standard subscription add free all over the tests.</p>
+        </div>
+
+        <footer>
+            <p>Data collected June 2025 | Prices converted as of 15/06/2025</p>
+            <p>© 2025 <a href="https://www.wheretowatch.stream" target="_blank" rel="noopener noreferrer">WhereToWatch.stream</a> | All rights reserved</p>
+        </footer>
+    </div>
+</body>
+</html>
+

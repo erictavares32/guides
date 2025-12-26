@@ -1,1 +1,2 @@
-# Guides Repository
+# guides
+streaming guides for wheretowatch.stream

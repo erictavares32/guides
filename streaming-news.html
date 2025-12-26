@@ -1,0 +1,1360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="robots" content="index, follow, max-image-preview:large"/>
+  <meta name="theme-color" content="#121212"/>
+  
+  <!-- Primary Meta Tags -->
+  <title>Streaming News: Netflix, Prime Video, Disney+, Hulu & More (Updated Daily)</title>
+  <meta name="description" content="Breaking streaming news from Netflix, Prime Video, Disney+, Hulu, and more. Stay updated on release dates, upcoming shows, and platform exclusives."/>
+  <meta name="keywords" content="Netflix news, Prime Video updates, Disney+ releases, Hulu shows, streaming news, where to watch, entertainment news"/>
+  
+  <!-- Canonical URL -->
+  <link rel="canonical" href="https://www.wheretowatch.stream/guides/streaming-news.html"/>
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website"/>
+  <meta property="og:url" content="https://www.wheretowatch.stream/guides/streaming-news.html"/>
+  <meta property="og:title" content="Streaming News: Netflix, Prime Video, Disney+, Hulu & More (Updated Daily)"/>
+  <meta property="og:description" content="Fresh streaming updates and release news across all major platforms. Check what's coming next."/>
+  <meta property="og:image" content="https://www.wheretowatch.stream/guides/streaming-news-og.jpg"/>
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+  <meta property="og:site_name" content="WhereToWatch"/>
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image"/>
+  <meta name="twitter:title" content="Streaming News: Netflix, Prime Video, Disney+, Hulu & More"/>
+  <meta name="twitter:description" content="Stay ahead with breaking streaming updates from every major platform — updated daily."/>
+  <meta name="twitter:image" content="https://www.wheretowatch.stream/guides/streaming-news-og.jpg"/>
+
+  <!-- Favicon -->
+  <link rel="icon" href="/guides/favicon.ico" sizes="any"/>
+  <link rel="icon" href="/guides/icon.svg" type="image/svg+xml"/>
+  <link rel="apple-touch-icon" href="/guides/apple-touch-icon.png"/>
+
+  <!-- Preload Critical Resources -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" as="style"/>
+  <link rel="preload" as="image" href="https://www.wheretowatch.stream/guides/streaming-news-og.jpg"/>
+   <!-- Google Tag Manager -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-EJJMFE5YXW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-EJJMFE5YXW');
+  </script>
+  <style>
+    :root {
+      --primary: #00ffd1;
+      --primary-hover: #00e6bf;
+      --secondary: #1db954;
+      --dark-bg: #121212;
+      --card-bg: #1e1e1e;
+      --card-hover: #2a2a2a;
+      --text-primary: #f1f1f1;
+      --text-secondary: #aaa;
+      --border-radius: 16px;
+      --box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+      --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      --success: #4caf50;
+      --warning: #ff9800;
+      --error: #f44336;
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Inter', system-ui, -apple-system, sans-serif;
+      line-height: 1.6;
+      background-color: var(--dark-bg);
+      color: var(--text-primary);
+      padding: 0;
+      margin: 0;
+      min-height: 100vh;
+    }
+    
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+    
+    .breadcrumbs {
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+      color: var(--text-secondary);
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    
+    .breadcrumbs a {
+      color: var(--secondary);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    
+    .breadcrumbs a:hover {
+      color: var(--primary);
+      text-decoration: underline;
+    }
+    
+    h1 {
+      color: var(--primary);
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+      margin-bottom: 1rem;
+      background: linear-gradient(90deg, var(--primary), var(--secondary));
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    
+    .page-description {
+      font-size: 1.1rem;
+      color: var(--text-secondary);
+      margin-bottom: 2.5rem;
+      max-width: 800px;
+    }
+    
+    .status-indicator {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin-bottom: 2rem;
+      padding: 1rem;
+      border-radius: 8px;
+      font-size: 0.9rem;
+      transition: var(--transition);
+    }
+    
+    .status-indicator.loading {
+      background: rgba(255, 255, 255, 0.05);
+      color: var(--text-secondary);
+    }
+    
+    .status-indicator.success {
+      background: rgba(76, 175, 80, 0.1);
+      color: var(--success);
+      border: 1px solid rgba(76, 175, 80, 0.2);
+    }
+    
+    .status-indicator.warning {
+      background: rgba(255, 152, 0, 0.1);
+      color: var(--warning);
+      border: 1px solid rgba(255, 152, 0, 0.2);
+    }
+    
+    .status-indicator.error {
+      background: rgba(244, 67, 54, 0.1);
+      color: var(--error);
+      border: 1px solid rgba(244, 67, 54, 0.2);
+    }
+    
+    .status-indicator .status-icon {
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      animation: pulse 2s infinite;
+    }
+    
+    .status-indicator.loading .status-icon {
+      background: var(--primary);
+    }
+    
+    .status-indicator.success .status-icon {
+      background: var(--success);
+      animation: none;
+    }
+    
+    .status-indicator.warning .status-icon {
+      background: var(--warning);
+      animation: none;
+    }
+    
+    .status-indicator.error .status-icon {
+      background: var(--error);
+      animation: none;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.5; }
+    }
+    
+    .news-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+      gap: 2rem;
+      margin: 2rem 0;
+      min-height: 400px;
+    }
+    
+    .article-card {
+      background: var(--card-bg);
+      border-radius: var(--border-radius);
+      overflow: hidden;
+      transition: var(--transition);
+      box-shadow: var(--box-shadow);
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      position: relative;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+    
+    .article-card:nth-child(even) {
+      animation-delay: 0.1s;
+    }
+    
+    .article-card:nth-child(3n) {
+      animation-delay: 0.2s;
+    }
+    
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    .article-card:hover {
+      transform: translateY(-5px);
+      background: var(--card-hover);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.4);
+    }
+    
+    .article-image-container {
+      width: 100%;
+      height: 200px;
+      overflow: hidden;
+      position: relative;
+      background: linear-gradient(135deg, #2a2a2a, #1a1a1a);
+    }
+    
+    .article-image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: var(--transition);
+    }
+    
+    .article-image.broken {
+      opacity: 0;
+    }
+    
+    .article-image-container::after {
+      content: "📺 Streaming News";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+      display: none;
+      text-align: center;
+    }
+    
+    .article-image-container.broken::after {
+      display: block;
+    }
+    
+    .article-card:hover .article-image:not(.broken) {
+      transform: scale(1.03);
+    }
+    
+    .article-content {
+      padding: 1.5rem;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .article-title {
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.75rem;
+      line-height: 1.4;
+    }
+    
+    .article-title a {
+      color: var(--text-primary);
+      text-decoration: none;
+      transition: var(--transition);
+    }
+    
+    .article-title a:hover {
+      color: var(--primary);
+    }
+    
+    .article-description {
+      color: var(--text-secondary);
+      margin-bottom: 1.5rem;
+      flex-grow: 1;
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+    
+    .article-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      color: var(--text-secondary);
+      margin-top: auto;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    
+    .article-source {
+      background-color: rgba(29, 185, 84, 0.1);
+      color: var(--secondary);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+      font-weight: 500;
+    }
+    
+    .loading-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 300px;
+      gap: 1.5rem;
+    }
+    
+    .loading-spinner {
+      width: 50px;
+      height: 50px;
+      border: 5px solid rgba(255, 255, 255, 0.1);
+      border-radius: 50%;
+      border-top-color: var(--primary);
+      animation: spin 1s ease-in-out infinite;
+    }
+    
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+    
+    .pagination {
+      display: flex;
+      justify-content: center;
+      gap: 0.75rem;
+      margin: 3rem 0;
+      flex-wrap: wrap;
+    }
+    
+    .pagination-button {
+      background: var(--card-bg);
+      color: var(--text-primary);
+      border: none;
+      padding: 0.75rem 1.25rem;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: var(--transition);
+      font-weight: 500;
+      min-width: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    
+    .pagination-button:hover:not(:disabled) {
+      background: var(--card-hover);
+      transform: translateY(-2px);
+    }
+    
+    .pagination-button.active {
+      background: var(--primary);
+      color: var(--dark-bg);
+      font-weight: 600;
+    }
+    
+    .pagination-button:disabled {
+      opacity: 0.4;
+      cursor: not-allowed;
+      transform: none;
+    }
+    
+    .error-message {
+      background: linear-gradient(135deg, rgba(244, 67, 54, 0.1), rgba(244, 67, 54, 0.05));
+      padding: 2rem;
+      border-radius: var(--border-radius);
+      text-align: center;
+      margin: 2rem 0;
+      border: 1px solid rgba(244, 67, 54, 0.2);
+    }
+    
+    .error-message h2 {
+      color: var(--error);
+      margin-bottom: 1rem;
+    }
+    
+    .retry-button {
+      background: var(--primary);
+      color: var(--dark-bg);
+      border: none;
+      padding: 0.75rem 1.5rem;
+      border-radius: 8px;
+      font-weight: 600;
+      margin-top: 1rem;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    
+    .retry-button:hover {
+      background: var(--primary-hover);
+      transform: translateY(-2px);
+    }
+    
+    .empty-state {
+      text-align: center;
+      padding: 3rem 1rem;
+      color: var(--text-secondary);
+    }
+    
+    .empty-state .empty-icon {
+      font-size: 4rem;
+      margin-bottom: 1rem;
+      opacity: 0.5;
+    }
+    
+    .refresh-button {
+      position: fixed;
+      bottom: 2rem;
+      right: 2rem;
+      background: var(--primary);
+      color: var(--dark-bg);
+      border: none;
+      padding: 1rem;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: var(--transition);
+      box-shadow: var(--box-shadow);
+      z-index: 100;
+      opacity: 0;
+      transform: scale(0);
+    }
+    
+    .refresh-button.visible {
+      opacity: 1;
+      transform: scale(1);
+    }
+    
+    .refresh-button:hover {
+      background: var(--primary-hover);
+      transform: scale(1.1);
+    }
+    
+    .refresh-button svg {
+      width: 20px;
+      height: 20px;
+      animation: none;
+    }
+    
+    .refresh-button.spinning svg {
+      animation: spin 1s linear infinite;
+    }
+    
+    @media (max-width: 768px) {
+      .container {
+        padding: 1.5rem 1rem;
+      }
+      
+      h1 {
+        font-size: 2rem;
+      }
+      
+      .news-grid {
+        grid-template-columns: 1fr;
+      }
+      
+      .article-image-container {
+        height: 180px;
+      }
+      
+      .refresh-button {
+        bottom: 1rem;
+        right: 1rem;
+      }
+      
+      .article-meta {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+    
+    /* Accessibility focus styles */
+    a:focus-visible, button:focus-visible {
+      outline: 3px solid var(--primary);
+      outline-offset: 2px;
+    }
+    
+    /* Smooth transitions for status changes */
+    .news-grid.updating {
+      opacity: 0.7;
+      pointer-events: none;
+    }
+  </style>
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Streaming News: Netflix, Prime Video, Disney+, Hulu & More",
+    "url": "https://www.wheretowatch.stream/guides/streaming-news.html",
+    "description": "Daily updated streaming news covering Netflix, Prime Video, Disney+, Hulu, and more.",
+    "publisher": {
+      "@type": "Organization",
+      "name": "WhereToWatch",
+      "url": "https://www.wheretowatch.stream",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.wheretowatch.stream/guides/logo.png",
+        "width": 300,
+        "height": 60
+      },
+      "sameAs": [
+        "https://x.com/wheretowatch25",
+        "https://www.youtube.com/@Wheretowatch.stream"
+      ]
+    },
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "https://www.wheretowatch.stream/search?q={search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
+  }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <svg viewBox="0 0 24 24" width="16" height="16"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+      <a href="/guides">Guides</a>
+      <svg viewBox="0 0 24 24" width="16" height="16"><path d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"/></svg>
+      <span>Streaming News</span>
+    </nav>
+
+    <header>
+      <h1>Streaming News: Netflix, Prime Video, Disney+, Hulu & More</h1>
+      <p class="page-description">Stay up to date with the latest in streaming — release dates, new shows, cancellations, renewals, and platform updates across all major services.</p>
+    </header>
+
+    <div id="status" class="status-indicator loading">
+      <div class="status-icon"></div>
+      <span>Loading the latest streaming news...</span>
+    </div>
+
+    <main id="news">
+      <div class="loading-container">
+        <div class="loading-spinner" aria-hidden="true"></div>
+        <p>Fetching fresh streaming updates...</p>
+      </div>
+    </main>
+
+    <div id="pagination" class="pagination"></div>
+    
+    <button id="refreshButton" class="refresh-button" title="Refresh News" aria-label="Refresh streaming news">
+      <svg viewBox="0 0 24 24" fill="currentColor">
+        <path d="M17.65 6.35C16.2 4.9 14.21 4 12 4c-4.42 0-7.99 3.58-7.99 8s3.57 8 7.99 8c3.73 0 6.84-2.55 7.73-6h-2.08c-.82 2.33-3.04 4-5.65 4-3.31 0-6-2.69-6-6s2.69-6 6-6c1.66 0 3.14.69 4.22 1.78L13 11h7V4l-2.35 2.35z"/>
+      </svg>
+    </button>
+  </div>
+
+  <script>
+    // Enhanced News Manager with Advanced Error Handling and Pagination
+    class StreamingNewsManager {
+      constructor() {
+        this.API_KEY = "9db22d19ef594e7594493ee58f74fa6c";
+        this.currentPage = 1;
+        this.totalPages = 10;
+        this.maxRetries = 3;
+        this.retryDelay = 2000;
+        this.isLoading = false;
+        this.activeRequest = null;
+        
+        // Enhanced duplicate detection
+        this.seenArticles = new Map();
+        this.titleHashes = new Set();
+        
+        // Error tracking
+        this.errorCount = 0;
+        this.lastError = null;
+      this.fallbackSources = [
+  'https://api.allorigins.win/get?url=', // This one is usually reliable
+  'https://corsproxy.io/?' // A solid alternative
+];
+        this.currentProxyIndex = 0;
+        
+        this.initializeElements();
+        this.setupEventListeners();
+        this.startInitialLoad();
+      }
+      
+      initializeElements() {
+        this.newsContainer = document.getElementById('news');
+        this.paginationContainer = document.getElementById('pagination');
+        this.statusIndicator = document.getElementById('status');
+        this.refreshButton = document.getElementById('refreshButton');
+      }
+      
+      setupEventListeners() {
+        this.refreshButton.addEventListener('click', () => window.location.reload());
+        
+        // Auto-refresh every 10 minutes with user notification
+        this.autoRefreshInterval = setInterval(() => {
+          if (!this.isLoading && document.visibilityState === 'visible') {
+            this.updateStatus('loading', 'Checking for new articles...');
+            this.fetchNews(this.currentPage, true);
+          }
+        }, 10 * 60 * 1000);
+        
+        // Clean up old articles every hour
+        this.cleanupInterval = setInterval(() => this.cleanupOldArticles(), 60 * 60 * 1000);
+      }
+      
+      // Abort any active requests
+      abortActiveRequest() {
+        if (this.activeRequest) {
+          this.activeRequest.abort();
+          this.activeRequest = null;
+        }
+      }
+      
+      // Clean up intervals when needed
+      cleanup() {
+        clearInterval(this.autoRefreshInterval);
+        clearInterval(this.cleanupInterval);
+        this.abortActiveRequest();
+      }
+      
+      generateTitleHash(title) {
+        // Normalize title for comparison
+        const normalized = title.toLowerCase()
+          .replace(/[^\w\s]/g, '')
+          .replace(/\s+/g, ' ')
+          .trim();
+        
+        // Create a simple hash
+        let hash = 0;
+        for (let i = 0; i < normalized.length; i++) {
+          const char = normalized.charCodeAt(i);
+          hash = ((hash << 5) - hash) + char;
+          hash = hash & hash; // Convert to 32-bit integer
+        }
+        return hash.toString();
+      }
+      
+      calculateSimilarity(str1, str2) {
+        // Simple Levenshtein distance ratio
+        const longer = str1.length > str2.length ? str1 : str2;
+        const shorter = str1.length > str2.length ? str2 : str1;
+        
+        if (longer.length === 0) return 1.0;
+        
+        const distance = this.levenshteinDistance(longer, shorter);
+        return (longer.length - distance) / longer.length;
+      }
+      
+      levenshteinDistance(str1, str2) {
+        const matrix = [];
+        
+        for (let i = 0; i <= str2.length; i++) {
+          matrix[i] = [i];
+        }
+        
+        for (let j = 0; j <= str1.length; j++) {
+          matrix[0][j] = j;
+        }
+        
+        for (let i = 1; i <= str2.length; i++) {
+          for (let j = 1; j <= str1.length; j++) {
+            if (str2.charAt(i - 1) === str1.charAt(j - 1)) {
+              matrix[i][j] = matrix[i - 1][j - 1];
+            } else {
+              matrix[i][j] = Math.min(
+                matrix[i - 1][j - 1] + 1,
+                matrix[i][j - 1] + 1,
+                matrix[i - 1][j] + 1
+              );
+            }
+          }
+        }
+        
+        return matrix[str2.length][str1.length];
+      }
+      
+      isDuplicate(article) {
+        // Check exact URL match
+        if (this.seenArticles.has(article.url)) {
+          return true;
+        }
+        
+        // Check similar titles (80% similarity threshold)
+        const titleHash = this.generateTitleHash(article.title);
+        if (this.titleHashes.has(titleHash)) {
+          return true;
+        }
+        
+        // Check for similar titles with different hashes
+        for (const [url, existingArticle] of this.seenArticles) {
+          const similarity = this.calculateSimilarity(
+            article.title.toLowerCase(),
+            existingArticle.title.toLowerCase()
+          );
+          
+          if (similarity > 0.8) {
+            return true;
+          }
+        }
+        
+        return false;
+      }
+      
+      addArticleToTracker(article) {
+        this.seenArticles.set(article.url, {
+          title: article.title,
+          publishedAt: article.publishedAt,
+          addedAt: Date.now()
+        });
+        
+        const titleHash = this.generateTitleHash(article.title);
+        this.titleHashes.add(titleHash);
+      }
+      
+      cleanupOldArticles() {
+        const now = Date.now();
+        const maxAge = 24 * 60 * 60 * 1000; // 24 hours
+        
+        for (const [url, data] of this.seenArticles) {
+          if (now - data.addedAt > maxAge) {
+            this.seenArticles.delete(url);
+            const titleHash = this.generateTitleHash(data.title);
+            this.titleHashes.delete(titleHash);
+          }
+        }
+      }
+      
+      updateStatus(type, message, details = '') {
+        this.statusIndicator.className = `status-indicator ${type}`;
+        this.statusIndicator.innerHTML = `
+          <div class="status-icon"></div>
+          <span>${message}</span>
+          ${details ? `<small style="opacity: 0.7; margin-left: 0.5rem;">${details}</small>` : ''}
+        `;
+      }
+      
+      async startInitialLoad() {
+        try {
+          await this.fetchNews(1);
+          
+          // Show refresh button after initial load
+          setTimeout(() => {
+            this.refreshButton.classList.add('visible');
+          }, 1000);
+        } catch (error) {
+          this.handleError(error, 1);
+        }
+      }
+      
+      async handleRefresh() {
+        if (this.isLoading) return;
+        
+        this.refreshButton.classList.add('spinning');
+        try {
+          await this.fetchNews(this.currentPage, true);
+        } catch (error) {
+          this.handleError(error, this.currentPage);
+        } finally {
+          setTimeout(() => {
+            this.refreshButton.classList.remove('spinning');
+          }, 1000);
+        }
+      }
+      
+      getSearchQuery() {
+        const streamingServices = [
+          'Netflix', '"Prime Video"', 'Disney+', 'Hulu', '"HBO Max"', 
+          '"Apple TV+"', 'Peacock', 'Paramount+', '"Max"', 'Showtime'
+        ];
+        
+        const contentTypes = [
+          'show', 'movie', 'series', 'streaming', '"original series"', 
+          '"new season"', '"release date"', 'premiere', 'finale', 'cancel'
+        ];
+        
+        const excludeTerms = [
+          'Trump', 'politics', 'election', 'sports', 'football', 
+          'basketball', 'government', 'president', 'Biden', 'debate'
+        ];
+        
+        const query = `(${streamingServices.join(' OR ')}) AND (${contentTypes.join(' OR ')}) ${excludeTerms.map(term => `-${term}`).join(' ')}`;
+        
+        return encodeURIComponent(query);
+      }
+      
+      async fetchNews(page, isRefresh = false) {
+        // Validate page number
+        if (page < 1 || page > this.totalPages) {
+          console.error(`Invalid page requested: ${page}`);
+          return;
+        }
+        
+        // Cancel any active request
+        this.abortActiveRequest();
+        
+        this.isLoading = true;
+        this.currentPage = page;
+        
+        const query = this.getSearchQuery();
+        const apiUrl = `https://newsapi.org/v2/everything?q=${query}&language=en&sortBy=publishedAt&pageSize=12&page=${page}&apiKey=${this.API_KEY}`;
+        
+        if (!isRefresh) {
+          this.updateStatus('loading', `Loading page ${page}...`);
+          this.newsContainer.innerHTML = `
+            <div class="loading-container">
+              <div class="loading-spinner" aria-hidden="true"></div>
+              <p>Fetching the latest streaming updates...</p>
+            </div>
+          `;
+        } else {
+          this.newsContainer.classList.add('updating');
+        }
+        
+        let lastError = null;
+        let attempt = 0;
+        
+        // Create new AbortController for this request
+        const controller = new AbortController();
+        this.activeRequest = controller;
+        
+        while (attempt < this.maxRetries) {
+          try {
+            const data = await this.makeRequest(apiUrl, attempt, controller.signal);
+            
+            if (controller.signal.aborted) {
+              throw new Error('Request was aborted');
+            }
+            
+            if (!data.articles || data.articles.length === 0) {
+              throw new Error('No articles found');
+            }
+            
+            const filteredArticles = this.filterAndValidateArticles(data.articles);
+            
+            if (filteredArticles.length === 0) {
+              if (attempt === this.maxRetries - 1) {
+                throw new Error('No relevant streaming articles found after filtering');
+              }
+              attempt++;
+              continue;
+            }
+            
+            // Update total pages with reasonable limits
+            const calculatedPages = Math.ceil(data.totalResults / 12);
+            this.totalPages = Math.min(Math.max(calculatedPages, 1), 8);
+            
+            // Ensure current page is within bounds
+            if (this.currentPage > this.totalPages) {
+              this.currentPage = this.totalPages;
+            }
+            
+            this.renderArticles(filteredArticles, isRefresh);
+            this.updatePagination();
+            this.updateStatus('success', `Loaded ${filteredArticles.length} articles`, `Page ${this.currentPage} of ${this.totalPages}`);
+            
+            this.errorCount = 0;
+            this.lastError = null;
+            break;
+            
+          } catch (error) {
+            lastError = error;
+            console.warn(`Attempt ${attempt + 1} failed:`, error.message);
+            
+            if (attempt < this.maxRetries - 1 && !controller.signal.aborted) {
+              this.updateStatus('warning', `Retrying... (${attempt + 1}/${this.maxRetries})`, error.message);
+              await this.delay(this.retryDelay * Math.pow(2, attempt));
+              attempt++;
+            } else {
+              break;
+            }
+          }
+        }
+        
+        this.activeRequest = null;
+        
+        if (lastError && !controller.signal.aborted) {
+          this.handleError(lastError, page);
+        }
+        
+        this.newsContainer.classList.remove('updating');
+        this.isLoading = false;
+      }
+      
+    async makeRequest(apiUrl, attempt = 0, signal = null) {
+    // This line remains the same
+    const proxyUrl = `${this.fallbackSources[this.currentProxyIndex]}${encodeURIComponent(apiUrl)}`;
+    
+    try {
+        const options = {
+            method: 'GET',
+            headers: { 'Accept': 'application/json' },
+            signal: signal
+        };
+        
+        const response = await fetch(proxyUrl, options);
+        
+        if (signal?.aborted) {
+            throw new Error('Request aborted');
+        }
+        
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+        
+        const data = await response.json();
+        
+        // **This is the only logic change**
+        // If the proxy wraps the response in a "contents" property, parse it.
+        // Otherwise, assume the data is the direct response from the News API.
+        if (data.contents) {
+            const parsedContents = JSON.parse(data.contents);
+            // If the actual API returned an error, throw it
+            if (parsedContents.status === 'error') {
+                throw new Error(parsedContents.message || 'News API returned an error');
+            }
+            return parsedContents;
+        } else {
+            // If the actual API returned an error, throw it
+            if (data.status === 'error') {
+                throw new Error(data.message || 'News API returned an error');
+            }
+            return data;
+        }
+        
+    } catch (error) {
+        if (error.name === 'AbortError') {
+            throw new Error('Request was aborted');
+        }
+        
+        // Your original fallback logic remains the same
+        if (attempt === 0 && this.currentProxyIndex < this.fallbackSources.length - 1) {
+            this.currentProxyIndex++;
+            console.log(`Proxy failed. Trying next proxy: ${this.fallbackSources[this.currentProxyIndex]}`);
+            return this.makeRequest(apiUrl, attempt, signal); // Use attempt 0 for the next proxy
+        }
+        
+        this.currentProxyIndex = 0; // Reset for the next full fetch operation
+        throw error;
+    }
+}
+      
+      filterAndValidateArticles(articles) {
+        const filtered = [];
+        const relevanceKeywords = [
+          'stream', 'netflix', 'disney', 'hulu', 'prime', 'hbo', 'apple tv',
+          'season', 'episode', 'series', 'show', 'movie', 'premiere', 'release'
+        ];
+        
+        const excludeKeywords = [
+          'trump', 'biden', 'politics', 'election', 'sports', 'nfl', 'nba',
+          'government', 'congress', 'senate', 'vote', 'campaign'
+        ];
+        
+        for (const article of articles) {
+          try {
+            // Skip if duplicate
+            if (this.isDuplicate(article)) {
+              continue;
+            }
+            
+            // Validate required fields
+            if (!article.title || !article.url || !article.publishedAt) {
+              continue;
+            }
+            
+            const titleLower = article.title.toLowerCase();
+            const descLower = (article.description || '').toLowerCase();
+            const combinedText = `${titleLower} ${descLower}`;
+            
+            // Check for excluded content
+            if (excludeKeywords.some(keyword => combinedText.includes(keyword))) {
+              continue;
+            }
+            
+            // Check for streaming relevance
+            const hasRelevantKeywords = relevanceKeywords.some(keyword => 
+              combinedText.includes(keyword)
+            );
+            
+            if (!hasRelevantKeywords) {
+              continue;
+            }
+            
+            // Additional quality checks
+            if (article.title.length < 10 || article.title.length > 200) {
+              continue;
+            }
+            
+            // Check if article is too old (more than 7 days)
+            const publishedDate = new Date(article.publishedAt);
+            const daysDiff = (Date.now() - publishedDate.getTime()) / (1000 * 60 * 60 * 24);
+            if (daysDiff > 7) {
+              continue;
+            }
+            
+            // Add to tracking
+            this.addArticleToTracker(article);
+            filtered.push(article);
+            
+          } catch (error) {
+            console.warn('Error processing article:', error);
+            continue;
+          }
+        }
+        
+        return filtered;
+      }
+      
+      renderArticles(articles, isUpdate = false) {
+        if (!articles.length) {
+          this.newsContainer.innerHTML = `
+            <div class="empty-state">
+              <div class="empty-icon">📺</div>
+              <h3>No streaming news found</h3>
+              <p>We couldn't find any recent streaming articles. Try refreshing in a few minutes.</p>
+            </div>
+          `;
+          return;
+        }
+        
+        // Create document fragment for better performance
+        const fragment = document.createDocumentFragment();
+        const grid = document.createElement('div');
+        grid.className = 'news-grid';
+        
+        articles.forEach((article, index) => {
+          const articleEl = document.createElement('article');
+          articleEl.className = 'article-card';
+          articleEl.style.animationDelay = `${index * 0.1}s`;
+          articleEl.setAttribute('itemscope', '');
+          articleEl.setAttribute('itemtype', 'https://schema.org/NewsArticle');
+          
+          articleEl.innerHTML = `
+            <div class="article-image-container">
+              <img 
+                src="${article.urlToImage || 'https://via.placeholder.com/600x400/1e1e1e/00ffd1?text=📺+Streaming+News'}" 
+                alt="${this.escapeHtml(article.title)}" 
+                class="article-image" 
+                loading="lazy"
+                onerror="this.onerror=null; this.classList.add('broken'); this.parentElement.classList.add('broken');"
+                itemprop="image"
+              >
+            </div>
+            <div class="article-content">
+              <h2 class="article-title" itemprop="headline">
+                <a href="${article.url}" target="_blank" rel="noopener noreferrer" itemprop="url">
+                  ${this.escapeHtml(article.title)}
+                </a>
+              </h2>
+              <p class="article-description" itemprop="description">
+                ${this.escapeHtml(article.description || 'Click to read more about this streaming news story.')}
+              </p>
+              <div class="article-meta">
+                <time datetime="${article.publishedAt}" itemprop="datePublished">
+                  ${this.formatDate(article.publishedAt)}
+                </time>
+                <span class="article-source" itemprop="publisher" itemscope itemtype="https://schema.org/Organization">
+                  <span itemprop="name">${this.escapeHtml(article.source.name)}</span>
+                </span>
+              </div>
+            </div>
+          `;
+          
+          grid.appendChild(articleEl);
+        });
+        
+        fragment.appendChild(grid);
+        
+        // Clear existing content and append new content
+        this.newsContainer.innerHTML = '';
+        this.newsContainer.appendChild(fragment);
+        
+        // Add structured data
+        this.addStructuredData(articles);
+      }
+      
+      updatePagination() {
+        if (!this.paginationContainer || this.totalPages <= 1) {
+          this.paginationContainer.innerHTML = '';
+          return;
+        }
+        
+        // Create document fragment for better performance
+        const fragment = document.createDocumentFragment();
+        
+        // Previous button
+        const prevButton = document.createElement('button');
+        prevButton.className = 'pagination-button';
+        prevButton.disabled = this.currentPage === 1;
+        prevButton.textContent = '← Previous';
+        prevButton.setAttribute('aria-label', 'Previous page');
+        prevButton.onclick = () => this.goToPage(this.currentPage - 1);
+        fragment.appendChild(prevButton);
+        
+        // Page numbers
+        const startPage = Math.max(1, this.currentPage - 2);
+        const endPage = Math.min(this.totalPages, this.currentPage + 2);
+        
+        if (startPage > 1) {
+          const firstButton = document.createElement('button');
+          firstButton.className = 'pagination-button';
+          firstButton.textContent = '1';
+          firstButton.onclick = () => this.goToPage(1);
+          fragment.appendChild(firstButton);
+          
+          if (startPage > 2) {
+            const ellipsis = document.createElement('span');
+            ellipsis.style.padding = '0 0.5rem';
+            ellipsis.style.color = 'var(--text-secondary)';
+            ellipsis.textContent = '...';
+            fragment.appendChild(ellipsis);
+          }
+        }
+        
+        for (let i = startPage; i <= endPage; i++) {
+          const button = document.createElement('button');
+          button.className = `pagination-button ${i === this.currentPage ? 'active' : ''}`;
+          button.textContent = i;
+          button.setAttribute('aria-label', `Page ${i}`);
+          if (i === this.currentPage) {
+            button.setAttribute('aria-current', 'page');
+          }
+          button.onclick = () => this.goToPage(i);
+          fragment.appendChild(button);
+        }
+        
+        if (endPage < this.totalPages) {
+          if (endPage < this.totalPages - 1) {
+            const ellipsis = document.createElement('span');
+            ellipsis.style.padding = '0 0.5rem';
+            ellipsis.style.color = 'var(--text-secondary)';
+            ellipsis.textContent = '...';
+            fragment.appendChild(ellipsis);
+          }
+          
+          const lastButton = document.createElement('button');
+          lastButton.className = 'pagination-button';
+          lastButton.textContent = this.totalPages;
+          lastButton.onclick = () => this.goToPage(this.totalPages);
+          fragment.appendChild(lastButton);
+        }
+        
+        // Next button
+        const nextButton = document.createElement('button');
+        nextButton.className = 'pagination-button';
+        nextButton.disabled = this.currentPage >= this.totalPages;
+        nextButton.textContent = 'Next →';
+        nextButton.setAttribute('aria-label', 'Next page');
+        nextButton.onclick = () => this.goToPage(this.currentPage + 1);
+        fragment.appendChild(nextButton);
+        
+        // Clear and update
+        this.paginationContainer.innerHTML = '';
+        this.paginationContainer.appendChild(fragment);
+      }
+      
+      async goToPage(page) {
+        // Validate page number
+        if (page < 1 || page > this.totalPages || page === this.currentPage || this.isLoading) {
+          return;
+        }
+        
+        try {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+          await this.fetchNews(page);
+        } catch (error) {
+          this.handleError(error, page);
+        }
+      }
+      
+      handleError(error, page) {
+        this.errorCount++;
+        this.lastError = error;
+        
+        console.error('News fetch error:', error);
+        
+        let errorMessage = 'Unable to load streaming news';
+        let suggestion = 'Please try again in a few moments.';
+        
+        if (error.message.includes('429')) {
+          errorMessage = 'Rate limit exceeded';
+          suggestion = 'Too many requests. Please wait a moment before trying again.';
+        } else if (error.message.includes('network') || error.message.includes('fetch')) {
+          errorMessage = 'Network connection issue';
+          suggestion = 'Please check your internet connection and try again.';
+        } else if (error.message.includes('No articles')) {
+          errorMessage = 'No streaming news available';
+          suggestion = 'There might not be any recent streaming news. Try refreshing in a few minutes.';
+        }
+        
+        this.updateStatus('error', errorMessage, suggestion);
+        
+        this.newsContainer.innerHTML = `
+          <div class="error-message">
+            <h2>Oops! ${errorMessage}</h2>
+            <p>${suggestion}</p>
+            <p style="margin-top: 1rem; font-size: 0.9rem; opacity: 0.7;">
+              Error details: ${error.message}
+            </p>
+            <div style="margin-top: 1.5rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+              <button class="retry-button" onclick="newsManager.fetchNews(${page})">
+                Try Again
+              </button>
+              ${page > 1 ? `<button class="retry-button" style="background: var(--secondary);" onclick="newsManager.goToPage(1)">Go to First Page</button>` : ''}
+            </div>
+          </div>
+        `;
+        
+        // Show minimal pagination even on error
+        this.updatePagination();
+      }
+      
+      formatDate(dateString) {
+        try {
+          const date = new Date(dateString);
+          const now = new Date();
+          const diffTime = Math.abs(now - date);
+          const diffDays = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+          const diffHours = Math.floor(diffTime / (1000 * 60 * 60));
+          const diffMinutes = Math.floor(diffTime / (1000 * 60));
+          
+          if (diffMinutes < 60) {
+            return `${diffMinutes}m ago`;
+          } else if (diffHours < 24) {
+            return `${diffHours}h ago`;
+          } else if (diffDays < 7) {
+            return `${diffDays}d ago`;
+          } else {
+            return date.toLocaleDateString('en-US', {
+              month: 'short',
+              day: 'numeric',
+              year: date.getFullYear() !== now.getFullYear() ? 'numeric' : undefined
+            });
+          }
+        } catch (error) {
+          return 'Recently';
+        }
+      }
+      
+      escapeHtml(text) {
+        if (!text) return '';
+        const div = document.createElement('div');
+        div.textContent = text;
+        return div.innerHTML;
+      }
+      
+      addStructuredData(articles) {
+        // Remove existing structured data
+        const existingScript = document.querySelector('script[type="application/ld+json"]:not(:first-of-type)');
+        if (existingScript) {
+          existingScript.remove();
+        }
+        
+        const script = document.createElement('script');
+        script.type = 'application/ld+json';
+        script.textContent = JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "ItemList",
+          "itemListElement": articles.map((article, index) => ({
+            "@type": "ListItem",
+            "position": index + 1,
+            "item": {
+              "@type": "NewsArticle",
+              "headline": article.title,
+              "description": article.description || 'Streaming news article',
+              "url": article.url,
+              "datePublished": article.publishedAt,
+              "image": article.urlToImage || 'https://www.wheretowatch.stream/guides/streaming-news-og.jpg',
+              "publisher": {
+                "@type": "Organization",
+                "name": article.source.name
+              }
+            }
+          }))
+        });
+        
+        document.head.appendChild(script);
+      }
+      
+      delay(ms) {
+        return new Promise(resolve => setTimeout(resolve, ms));
+      }
+    }
+    
+    // Initialize the news manager when DOM is ready
+    let newsManager;
+    
+    document.addEventListener('DOMContentLoaded', function() {
+      newsManager = new StreamingNewsManager();
+    });
+    
+    // Clean up when page is unloaded
+    window.addEventListener('beforeunload', function() {
+      if (newsManager) {
+        newsManager.cleanup();
+      }
+    });
+    
+    // Global error handler
+    window.addEventListener('error', function(event) {
+      console.error('Global error:', event.error);
+      if (newsManager) {
+        newsManager.updateStatus('error', 'An unexpected error occurred', 'Please refresh the page');
+      }
+      return true; // Prevent default error handling
+    });
+    
+    window.addEventListener('unhandledrejection', function(event) {
+      console.error('Unhandled promise rejection:', event.reason);
+      if (newsManager) {
+        newsManager.updateStatus('error', 'An unexpected error occurred', 'Please refresh the page');
+      }
+    });
+    
+    // Handle visibility changes to pause/resume updates
+    document.addEventListener('visibilitychange', function() {
+      if (newsManager) {
+        if (document.visibilityState === 'hidden') {
+          newsManager.abortActiveRequest();
+        } else if (newsManager.errorCount > 0) {
+          // Auto-retry when user returns to page after errors
+          setTimeout(() => {
+            if (newsManager.errorCount > 0) {
+              newsManager.handleRefresh();
+            }
+          }, 2000);
+        }
+      }
+    });
+  </script>
+</body>
+</html>
+
+
