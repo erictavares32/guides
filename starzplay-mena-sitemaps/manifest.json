@@ -1,0 +1,37 @@
+﻿{
+    "generatedAt":  "2026-06-28T19:34:49.0221903Z",
+    "source":  "https://starzplay.com",
+    "rawBaseUrl":  "https://raw.githubusercontent.com/erictavares32/guides/main/starzplay-mena-sitemaps",
+    "items":  [
+                  {
+                      "file":  "starzplay-mena-sitemaps/movies-sitemap-en.xml",
+                      "sourceUrl":  "https://starzplay.com/movies-sitemap-en.xml",
+                      "urlCount":  1000
+                  },
+                  {
+                      "file":  "starzplay-mena-sitemaps/movies-sitemap-ar.xml",
+                      "sourceUrl":  "https://starzplay.com/movies-sitemap-ar.xml",
+                      "urlCount":  1000
+                  },
+                  {
+                      "file":  "starzplay-mena-sitemaps/tv-shows-sitemap-en.xml",
+                      "sourceUrl":  "https://starzplay.com/tv-shows-sitemap-en.xml",
+                      "urlCount":  1000
+                  },
+                  {
+                      "file":  "starzplay-mena-sitemaps/tv-shows-sitemap-ar.xml",
+                      "sourceUrl":  "https://starzplay.com/tv-shows-sitemap-ar.xml",
+                      "urlCount":  1000
+                  },
+                  {
+                      "file":  "starzplay-mena-sitemaps/kids-movies-shows-sitemap-en.xml",
+                      "sourceUrl":  "https://starzplay.com/kids-movies-shows-sitemap-en.xml",
+                      "urlCount":  182
+                  },
+                  {
+                      "file":  "starzplay-mena-sitemaps/kids-movies-shows-sitemap-ar.xml",
+                      "sourceUrl":  "https://starzplay.com/kids-movies-shows-sitemap-ar.xml",
+                      "urlCount":  182
+                  }
+              ]
+}
