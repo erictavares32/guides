@@ -1,5 +1,5 @@
 ﻿{
-    "generatedAt":  "2026-06-28T19:26:52.4265677Z",
+    "generatedAt":  "2026-06-29T07:44:50.0822067Z",
     "source":  "https://www.apps.disneyplus.com",
     "rawBaseUrl":  "https://raw.githubusercontent.com/erictavares32/guides/main/disney-mena-sitemaps",
     "items":  [
@@ -22,7 +22,7 @@
                       "mediaType":  "movie",
                       "file":  "disney-mena-sitemaps/bh/new-sitemap-MOVIE-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/bh/new-sitemap-MOVIE-1.xml",
-                      "urlCount":  2027
+                      "urlCount":  2028
                   },
                   {
                       "country":  "BH",
@@ -50,7 +50,7 @@
                       "mediaType":  "movie",
                       "file":  "disney-mena-sitemaps/eg/new-sitemap-MOVIE-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/eg/new-sitemap-MOVIE-1.xml",
-                      "urlCount":  2027
+                      "urlCount":  2028
                   },
                   {
                       "country":  "EG",
