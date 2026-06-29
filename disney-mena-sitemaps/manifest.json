@@ -1,5 +1,5 @@
 ﻿{
-    "generatedAt":  "2026-06-29T07:44:50.0822067Z",
+    "generatedAt":  "2026-06-29T13:33:47.1253070Z",
     "source":  "https://www.apps.disneyplus.com",
     "rawBaseUrl":  "https://raw.githubusercontent.com/erictavares32/guides/main/disney-mena-sitemaps",
     "items":  [
@@ -78,7 +78,7 @@
                       "mediaType":  "movie",
                       "file":  "disney-mena-sitemaps/jo/new-sitemap-MOVIE-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/jo/new-sitemap-MOVIE-1.xml",
-                      "urlCount":  2027
+                      "urlCount":  2028
                   },
                   {
                       "country":  "JO",
@@ -92,7 +92,7 @@
                       "mediaType":  "movie",
                       "file":  "disney-mena-sitemaps/kw/new-sitemap-MOVIE-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/kw/new-sitemap-MOVIE-1.xml",
-                      "urlCount":  2027
+                      "urlCount":  2028
                   },
                   {
                       "country":  "KW",
@@ -120,7 +120,7 @@
                       "mediaType":  "movie",
                       "file":  "disney-mena-sitemaps/ly/new-sitemap-MOVIE-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/ly/new-sitemap-MOVIE-1.xml",
-                      "urlCount":  2027
+                      "urlCount":  2028
                   },
                   {
                       "country":  "LY",
@@ -134,7 +134,7 @@
                       "mediaType":  "movie",
                       "file":  "disney-mena-sitemaps/ma/new-sitemap-MOVIE-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/ma/new-sitemap-MOVIE-1.xml",
-                      "urlCount":  2027
+                      "urlCount":  2028
                   },
                   {
                       "country":  "MA",
@@ -162,7 +162,7 @@
                       "mediaType":  "movie",
                       "file":  "disney-mena-sitemaps/ps/new-sitemap-MOVIE-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/ps/new-sitemap-MOVIE-1.xml",
-                      "urlCount":  2027
+                      "urlCount":  2028
                   },
                   {
                       "country":  "PS",
