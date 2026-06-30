@@ -5192,7 +5192,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/sa/movies/ice-age-collision-course/1770015395</loc>
-    <lastmod>2026-05-09</lastmod>
+    <lastmod>2026-06-29</lastmod>
     <video:video>
       <video:title>Ice Age: Collision Course</video:title>
       <video:description>When their world is threatened, Manny and friends go on a quest to survive the Scrat-tastrophe!</video:description>
@@ -5328,16 +5328,6 @@
       <video:description>Check out &#34;What Might Have Been&#34; performed by Phineas and Isabella!</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/sa/movies/what-might-have-been-phineas-and-ferb-last-day-of-summer-music-video/1271418504/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/403/1749031890403-i</video:thumbnail_loc>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/sa/movies/bad-boys-ii/1271531143</loc>
-    <lastmod>2026-03-31</lastmod>
-    <video:video>
-      <video:title>Bad Boys II</video:title>
-      <video:description>Bullets fly as Mike and Marcus pursue a drug lord from the streets of Miami to the barrios of Cuba.</video:description>
-      <video:player_loc>https://www.apps.disneyplus.com/sa/movies/bad-boys-ii/1271531143/watch</video:player_loc>
-      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8107/1774873928107-i</video:thumbnail_loc>
     </video:video>
   </url>
   <url>
@@ -9051,16 +9041,6 @@
     </video:video>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/sa/movies/bad-boys/1271531154</loc>
-    <lastmod>2026-03-31</lastmod>
-    <video:video>
-      <video:title>Bad Boys</video:title>
-      <video:description>Will Smith and Martin Lawrence team up in this action-packed flick.</video:description>
-      <video:player_loc>https://www.apps.disneyplus.com/sa/movies/bad-boys/1271531154/watch</video:player_loc>
-      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7293/1774873777293-i</video:thumbnail_loc>
-    </video:video>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/sa/movies/cars-toon-monster-truck-mater/1260023109</loc>
     <lastmod>2025-11-04</lastmod>
     <video:video>
@@ -10988,16 +10968,6 @@
       <video:description>A heart-warming story of love between a wild otter and a man set in Shetland.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/sa/movies/billy-molly-an-otter-love-story/1271306219/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/5342/1718710055342-i</video:thumbnail_loc>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/sa/movies/yuzuru-hanyu-ice-story-2023-gift-at-tokyo-dome/1260142494</loc>
-    <lastmod>2026-03-10</lastmod>
-    <video:video>
-      <video:title>Yuzuru Hanyu ICE STORY 2023 “GIFT” at Tokyo Dome</video:title>
-      <video:description>The first-ever solo ice show at Tokyo Dome, &#34;GIFT,” is Yuzuru Hanyu’s story.</video:description>
-      <video:player_loc>https://www.apps.disneyplus.com/sa/movies/yuzuru-hanyu-ice-story-2023-gift-at-tokyo-dome/1260142494/watch</video:player_loc>
-      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/4177/1554177-i-51dc9752f1a4</video:thumbnail_loc>
     </video:video>
   </url>
   <url>
@@ -17321,16 +17291,6 @@
     </video:video>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/sa/movies/sleepless-in-seattle/1271531144</loc>
-    <lastmod>2026-03-31</lastmod>
-    <video:video>
-      <video:title>Sleepless in Seattle</video:title>
-      <video:description>Tom Hanks and Meg Ryan star in a romantic comedy about two people drawn together by destiny.</video:description>
-      <video:player_loc>https://www.apps.disneyplus.com/sa/movies/sleepless-in-seattle/1271531144/watch</video:player_loc>
-      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6896/1774874006896-i</video:thumbnail_loc>
-    </video:video>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/sa/movies/halloweentown-high/1260092408</loc>
     <lastmod>2025-10-24</lastmod>
     <video:video>
@@ -20252,7 +20212,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/sa/movies/ready-or-not-2-here-i-come/1271652945</loc>
-    <lastmod>2026-06-23</lastmod>
+    <lastmod>2026-06-28</lastmod>
     <video:video>
       <video:title>Ready or Not 2: Here I Come</video:title>
       <video:description>The next level of the nightmarish game begins — double or nothing.</video:description>
@@ -20268,6 +20228,16 @@
       <video:description>When a villain traps the Queen of Hearts, Red and Chloe must work with unlikely allies to save her.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/sa/movies/descendants-wicked-wonderland/1271643996/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8983/1780712768983-i</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/sa/movies/the-devil-wears-prada-2/1271506598</loc>
+    <lastmod>2026-06-29</lastmod>
+    <video:video>
+      <video:title>The Devil Wears Prada 2</video:title>
+      <video:description>Miranda, Andy, Emily, and Nigel reunite at a now vulnerable Runway in this smashing sequel.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/sa/movies/the-devil-wears-prada-2/1271506598/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2265/1782452912265-i</video:thumbnail_loc>
     </video:video>
   </url>
 </urlset>
