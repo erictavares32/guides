@@ -53,9 +53,9 @@
       --paper-soft: #f7f0e8;
       --ink: #151515;
       --ink-soft: #4f4943;
-      --red: #06B6D4; /* primary cyan from guides index */
-      --red-dark: #0596b3;
-      --line: rgba(6, 182, 212, 0.82);
+      --red: #04293A; /* darker blue matching app/page */
+      --red-dark: #02161e;
+      --line: rgba(4, 41, 58, 0.86);
       --white: #fffdf9;
       --font-body: "Inter", "Helvetica Neue", Arial, "Noto Sans Arabic", "Segoe UI Arabic", sans-serif;
       --font-display: "Arial Black", "Arial Narrow", Impact, "Noto Sans Arabic", sans-serif;
@@ -224,7 +224,8 @@
       max-width: 1040px;
       margin-left: auto;
       margin-right: auto;
-      font-size: clamp(1.02rem, 1.4vw, 1.28rem);
+      /* increased 30% from 1.02rem / 1.4vw / 1.28rem */
+      font-size: clamp(1.33rem, 1.82vw, 1.66rem);
       line-height: 1.75;
       text-align: center;
       border-radius: 0 34px 0 34px;
@@ -383,7 +384,7 @@
     .content-details p {
       margin: 0 0 14px;
       color: var(--ink-soft);
-      font-size: 1rem;
+      font-size: 1.3rem; /* increased 30% for better readability across languages */
       max-width: 88ch;
     }
 
