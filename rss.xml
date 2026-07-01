@@ -2,11 +2,11 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/">
   <channel>
     <title>WhereToWatch Streaming Guides</title>
-    <description>2025's ultimate streaming guides: Shows like The Last of Us, Breaking Bad alternatives, best Amazon Prime series, Marvel's Thunderbolts similar movies, complete Mission Impossible watch order.</description>
+    <description>2026 streaming guides from WhereToWatch, including Turkish series, Ramadan Arabic dramas, similar-show recommendations, platform picks, franchise watch orders, and pricing analysis.</description>
     <link>https://www.wheretowatch.stream/guides</link>
     <atom:link href="https://www.wheretowatch.stream/guides/rss" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
-    <lastBuildDate>Mon, 23 Feb 2026 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2026 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://www.wheretowatch.stream/guides/guides-og.jpg</url>
       <title>WhereToWatch Streaming Guides</title>
@@ -14,6 +14,18 @@
     </image>
 
     <!-- Guide Items -->
+    <item>
+      <title>Best Turkish Series in 2026: The Complete Dizi Watch Guide</title>
+      <link>https://www.wheretowatch.stream/guides/best-turkish-series-2026</link>
+      <guid isPermaLink="true">https://www.wheretowatch.stream/guides/best-turkish-series-2026</guid>
+      <description>A multilingual editorial guide to the best Turkish series to watch in 2026, covering romance, family drama, Ottoman history, crime thrillers, and contemporary Turkish stories.</description>
+      <pubDate>Wed, 01 Jul 2026 00:00:00 +0000</pubDate>
+      <category>Turkish Series</category>
+      <category>Dizi</category>
+      <category>2026</category>
+      <enclosure url="https://www.wheretowatch.stream/api/images/tmdb/t/p/w300/cvXKlmr2RNpKU8nQREwBbwuJoZ6.jpg" length="0" type="image/jpeg"/>
+    </item>
+
     <item>
       <title>دليل مسلسلات رمضان 2026 - أفضل الأعمال العربية</title>
       <link>https://www.wheretowatch.stream/guides/ramadan-2026-arabic-series-guide</link>
