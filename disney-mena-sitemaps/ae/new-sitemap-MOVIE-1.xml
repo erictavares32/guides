@@ -2861,16 +2861,6 @@
     </video:video>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/ae/movies/the-princess-bride/1260027112</loc>
-    <lastmod>2026-04-07</lastmod>
-    <video:video>
-      <video:title>The Princess Bride</video:title>
-      <video:description>A man regales his ailing grandson with a tale of romance and adventure in a lighthearted fairy tale.</video:description>
-      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/the-princess-bride/1260027112/watch</video:player_loc>
-      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8789/1774957118789-i</video:thumbnail_loc>
-    </video:video>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/frozen-2/1260022015</loc>
     <lastmod>2025-10-24</lastmod>
     <video:video>
@@ -4098,16 +4088,6 @@
       <video:description>Mater is a rock star in a heavy metal band.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/ae/movies/cars-toon-heavy-metal-mater/1260023111/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/4023/1464023-i-a11d23d4a49c</video:thumbnail_loc>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/ae/movies/king-kong/1271499840</loc>
-    <lastmod>2026-04-01</lastmod>
-    <video:video>
-      <video:title>King Kong</video:title>
-      <video:description>Academy Award®-winning director Peter Jackson brings his sweeping cinematic vision to King Kong.</video:description>
-      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/king-kong/1271499840/watch</video:player_loc>
-      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/9829/1774956319829-i</video:thumbnail_loc>
     </video:video>
   </url>
   <url>
@@ -5761,6 +5741,16 @@
     </video:video>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/ae/movies/dirty-dancing/1271633293</loc>
+    <lastmod>2026-07-01</lastmod>
+    <video:video>
+      <video:title>Dirty Dancing</video:title>
+      <video:description>On summer vacation in the Catskills, 1963, Baby soon becomes Johnny&#39;s pupil in dance and love.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/dirty-dancing/1271633293/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/9196/1782856929196-i</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/a-place-to-fight-for/1260141839</loc>
     <lastmod>2025-11-26</lastmod>
     <video:video>
@@ -5921,6 +5911,16 @@
     </video:video>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/ae/movies/the-amazing-spider-man-2/1221059991</loc>
+    <lastmod>2026-07-01</lastmod>
+    <video:video>
+      <video:title>The Amazing Spider-Man 2</video:title>
+      <video:description>Peter Parker runs the gauntlet as the company Oscorp sends up a slew of supervillains against him.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/the-amazing-spider-man-2/1221059991/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/4929/1767157594929-i</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/lady-and-the-tramp/1260018311</loc>
     <lastmod>2025-10-28</lastmod>
     <video:video>
@@ -6038,16 +6038,6 @@
       <video:description>A girl and her brothers find themselves on a thrilling adventure with a boy who refuses to grow up.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/ae/movies/peter-pan-wendy/1260132975/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2624/1512624-i-b52fb7a86af1</video:thumbnail_loc>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/ae/movies/now-you-see-me-2/1271531135</loc>
-    <lastmod>2026-04-07</lastmod>
-    <video:video>
-      <video:title>Now You See Me 2</video:title>
-      <video:description>The Four Horsemen return for a second mind-bending adventure.</video:description>
-      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/now-you-see-me-2/1271531135/watch</video:player_loc>
-      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6917/1774957046917-i</video:thumbnail_loc>
     </video:video>
   </url>
   <url>
@@ -6442,7 +6432,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/the-balloonist/1271442048</loc>
-    <lastmod>2025-11-26</lastmod>
+    <lastmod>2026-06-30</lastmod>
     <video:video>
       <video:title>The Balloonist</video:title>
       <video:description>Gaby’s joyless life is upended when an arrogant hot-air balloonist crash-lands on her chicken coop.</video:description>
@@ -6968,16 +6958,6 @@
       <video:description>A selfish emperor learns a lesson in humility when he is turned into a llama.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/ae/movies/the-emperor-s-new-groove/1260018185/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7434/1257434-i-5bb9519f847a</video:thumbnail_loc>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/ae/movies/mamma-mia-here-we-go-again/1271499838</loc>
-    <lastmod>2026-04-07</lastmod>
-    <video:video>
-      <video:title>Mamma Mia! Here We Go Again</video:title>
-      <video:description>You’re invited to the magical Greek island of Kalokairi in this musical based on the songs of ABBA.</video:description>
-      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/mamma-mia-here-we-go-again/1271499838/watch</video:player_loc>
-      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1922/1774956421922-i</video:thumbnail_loc>
     </video:video>
   </url>
   <url>
@@ -7601,16 +7581,6 @@
     </video:video>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/ae/movies/mamma-mia-the-movie/1271499839</loc>
-    <lastmod>2026-04-01</lastmod>
-    <video:video>
-      <video:title>Mamma Mia! The Movie</video:title>
-      <video:description>Drama rains down on Donna’s hotel when three men from her past arrive for her daughter’s wedding.</video:description>
-      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/mamma-mia-the-movie/1271499839/watch</video:player_loc>
-      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7032/1774956837032-i</video:thumbnail_loc>
-    </video:video>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/mary-poppins/1260018316</loc>
     <lastmod>2026-05-06</lastmod>
     <video:video>
@@ -8061,6 +8031,16 @@
     </video:video>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/ae/movies/spider-man-far-from-home/1260106073</loc>
+    <lastmod>2026-07-01</lastmod>
+    <video:video>
+      <video:title>Spider-Man™: Far From Home</video:title>
+      <video:description>Peter Parker returns in Spider-Man: Far From Home!</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/spider-man-far-from-home/1260106073/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6094/1406094-i-5c39dc21286e</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/eric-dane-life-loss-and-courage-a-diane-sawyer-special-event/1271543403</loc>
     <lastmod>2026-05-11</lastmod>
     <video:video>
@@ -8408,16 +8388,6 @@
       <video:description>A Halloween science experiment leaves Cleo&#39;s popular sister invisible.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/ae/movies/invisible-sister/1260037292/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/994/1260994-i-7c79c20776ab</video:thumbnail_loc>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/ae/movies/now-you-see-me/1271531134</loc>
-    <lastmod>2026-04-01</lastmod>
-    <video:video>
-      <video:title>Now You See Me</video:title>
-      <video:description>Charismatic magician Atlas leads a team of talented illusionists called the Four Horsemen.</video:description>
-      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/now-you-see-me/1271531134/watch</video:player_loc>
-      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8613/1774956928613-i</video:thumbnail_loc>
     </video:video>
   </url>
   <url>
@@ -9031,6 +9001,16 @@
     </video:video>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/ae/movies/the-hunger-games-catching-fire/1271627547</loc>
+    <lastmod>2026-07-02</lastmod>
+    <video:video>
+      <video:title>The Hunger Games: Catching Fire</video:title>
+      <video:description>Sensing resistance, Snow ushers in new rules that will change the Hunger Games and Panem forever.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/the-hunger-games-catching-fire/1271627547/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/4982/1782963984982-i</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/man-of-the-house/1260091444</loc>
     <lastmod>2025-10-16</lastmod>
     <video:video>
@@ -9038,6 +9018,16 @@
       <video:description>A man joins the YMCA to impress the son of the woman of his dreams.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/ae/movies/man-of-the-house/1260091444/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7782/1237782-i-3c1c9e80c948</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/ae/movies/who/1271647004</loc>
+    <lastmod>2026-07-01</lastmod>
+    <video:video>
+      <video:title>WHO</video:title>
+      <video:description>Nine criminals, one traitor. One rule: survive.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/who/1271647004/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6175/1781258466175-i</video:thumbnail_loc>
     </video:video>
   </url>
   <url>
@@ -9198,16 +9188,6 @@
       <video:description>A young boy discovers the true spirit of the Christmas season.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/ae/movies/the-small-one/1260091983/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/4865/1564865-i-999db321e71e</video:thumbnail_loc>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/ae/movies/the-devil-wears-prada-2-a-special-look/1271626859</loc>
-    <lastmod>2026-05-11</lastmod>
-    <video:video>
-      <video:title>The Devil Wears Prada 2: A Special Look</video:title>
-      <video:description>Get ready for &#34;The Devil Wears Prada 2,&#34; only in theaters.</video:description>
-      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/the-devil-wears-prada-2-a-special-look/1271626859/watch</video:player_loc>
-      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/3375/1776453223375-i</video:thumbnail_loc>
     </video:video>
   </url>
   <url>
@@ -10121,6 +10101,16 @@
     </video:video>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/ae/movies/sir-alex-ferguson-never-give-in/1271638935</loc>
+    <lastmod>2026-07-01</lastmod>
+    <video:video>
+      <video:title>Sir Alex Ferguson: Never Give in</video:title>
+      <video:description>The ultimate account of the life and legend of football’s greatest manager.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/sir-alex-ferguson-never-give-in/1271638935/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2545/1782857262545-i</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/hold-your-breath/1271325725</loc>
     <lastmod>2026-04-23</lastmod>
     <video:video>
@@ -10281,6 +10271,16 @@
     </video:video>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/ae/movies/ready-or-not-2-here-i-come/1271652945</loc>
+    <lastmod>2026-07-02</lastmod>
+    <video:video>
+      <video:title>Ready or Not 2: Here I Come</video:title>
+      <video:description>The next level of the nightmarish game begins — double or nothing.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/ready-or-not-2-here-i-come/1271652945/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/163/1782202710163-i</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/johnny-kapahala-back-on-board/1260091484</loc>
     <lastmod>2025-10-28</lastmod>
     <video:video>
@@ -10332,7 +10332,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/home-alone/1770000922</loc>
-    <lastmod>2025-11-26</lastmod>
+    <lastmod>2026-07-01</lastmod>
     <video:video>
       <video:title>Home Alone</video:title>
       <video:description>When Kevin is home while his family goes on a Christmas trip, he must defend his home from burglars.</video:description>
@@ -10498,6 +10498,16 @@
       <video:description>The Mouseketeers arrive to perform at Walt Disney World.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/ae/movies/the-mouseketeers-at-walt-disney-world/1260045048/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8210/1228210-i-4c9831bdd4bc</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/ae/movies/the-sparks-brothers/1271499837</loc>
+    <lastmod>2026-07-01</lastmod>
+    <video:video>
+      <video:title>The Sparks Brothers</video:title>
+      <video:description>This documentary celebrates the inspiring legacy of Sparks: your favorite band&#39;s favorite band.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/the-sparks-brothers/1271499837/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/4987/1782857614987-i</video:thumbnail_loc>
     </video:video>
   </url>
   <url>
@@ -10688,6 +10698,16 @@
       <video:description>Check out &#34;When There Was Me and You&#34; performed by Gabriella from High School Musical.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/ae/movies/when-there-was-me-and-you-high-school-musical-music-video/1271517970/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1142/1768544101142-i</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/ae/movies/the-amazing-spider-man/1260104625</loc>
+    <lastmod>2026-07-01</lastmod>
+    <video:video>
+      <video:title>The Amazing Spider-Man</video:title>
+      <video:description>Peter Parker grapples with both high school and super-human crises as his alter-ego Spider-Man.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/the-amazing-spider-man/1260104625/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/857/1766987740857-i</video:thumbnail_loc>
     </video:video>
   </url>
   <url>
@@ -11752,7 +11772,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/camp-rock-2-the-final-jam/1260031936</loc>
-    <lastmod>2026-04-21</lastmod>
+    <lastmod>2026-07-02</lastmod>
     <video:video>
       <video:title>Camp Rock 2: The Final Jam</video:title>
       <video:description>To save Camp Rock, Mitchie challenges Camp Star to a final jam.</video:description>
@@ -12102,7 +12122,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/marvel-studios-iron-man/1660000038</loc>
-    <lastmod>2025-10-22</lastmod>
+    <lastmod>2026-07-02</lastmod>
     <video:video>
       <video:title>Marvel Studios&#39; Iron Man</video:title>
       <video:description>Jet-setting industrialist Tony Stark vows to protect the world as Iron Man.</video:description>
@@ -12948,6 +12968,16 @@
       <video:description>Hannah Berner gets vulnerable about her career, love and being “part-time hot.&#34;</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/ae/movies/hannah-berner-none-of-my-business/1271639717/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1429/1780546261429-i</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/ae/movies/spider-man-homecoming/1260104626</loc>
+    <lastmod>2026-07-01</lastmod>
+    <video:video>
+      <video:title>Spider-Man™: Homecoming</video:title>
+      <video:description>A young Peter Parker/Spider-Man navigates his newfound identity as the web-slinging superhero.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/spider-man-homecoming/1260104626/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7563/1277563-i-35e62c432023</video:thumbnail_loc>
     </video:video>
   </url>
   <url>
@@ -13991,16 +14021,6 @@
     </video:video>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/ae/movies/the-hulk/1271531142</loc>
-    <lastmod>2026-04-07</lastmod>
-    <video:video>
-      <video:title>The Hulk</video:title>
-      <video:description>Scientist Bruce Banner’s transformation into a super-human mutant engulfs him in war against evil.</video:description>
-      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/the-hulk/1271531142/watch</video:player_loc>
-      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1910/1774957191910-i</video:thumbnail_loc>
-    </video:video>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/i-m-winning-zombies-2-music-video/1271423018</loc>
     <lastmod>2025-10-26</lastmod>
     <video:video>
@@ -14858,6 +14878,16 @@
       <video:description>Check out &#34;Someday,&#34; performed by Milo Manheim and Meg Donnelly!</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/ae/movies/someday-sing-along-zombies-music-video/1271423026/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/3425/1750846743425-i</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/ae/movies/spider-man-into-the-spider-verse/1260104628</loc>
+    <lastmod>2026-07-01</lastmod>
+    <video:video>
+      <video:title>Spider-Man™: Into the Spider-Verse</video:title>
+      <video:description>Spider-Man: Into the Spider-Verse introduces Miles Morales and limitless possibilities.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/spider-man-into-the-spider-verse/1260104628/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/4050/1274050-i-3812f660f2ac</video:thumbnail_loc>
     </video:video>
   </url>
   <url>
@@ -16311,16 +16341,6 @@
     </video:video>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/ae/movies/venom-let-there-be-carnage/1271522517</loc>
-    <lastmod>2026-03-09</lastmod>
-    <video:video>
-      <video:title>Venom: Let There Be Carnage</video:title>
-      <video:description>Sequel to the box-office hit film &#34;Venom.&#34;</video:description>
-      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/venom-let-there-be-carnage/1271522517/watch</video:player_loc>
-      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2245/1772002942245-i</video:thumbnail_loc>
-    </video:video>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/die-hard-with-a-vengeance/1770001195</loc>
     <lastmod>2026-05-08</lastmod>
     <video:video>
@@ -17321,6 +17341,16 @@
     </video:video>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/ae/movies/paper-glue/1271499836</loc>
+    <lastmod>2026-07-01</lastmod>
+    <video:video>
+      <video:title>Paper &amp; Glue</video:title>
+      <video:description>Paper &amp; Glue uses the power of collaborative art to uplift communities and inspire self-expression.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/paper-glue/1271499836/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/9042/1782857419042-i</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/elemental/1260147564</loc>
     <lastmod>2026-05-11</lastmod>
     <video:video>
@@ -17482,7 +17512,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/star-wars-the-phantom-menace-episode-i/1660010584</loc>
-    <lastmod>2026-05-06</lastmod>
+    <lastmod>2026-07-02</lastmod>
     <video:video>
       <video:title>Star Wars: The Phantom Menace (Episode I)</video:title>
       <video:description>Jedi discover Anakin Skywalker, a boy unusually strong in the Force.</video:description>
@@ -17952,7 +17982,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/the-lion-king/1660000046</loc>
-    <lastmod>2026-05-29</lastmod>
+    <lastmod>2026-07-01</lastmod>
     <video:video>
       <video:title>The Lion King</video:title>
       <video:description>A cub who can&#39;t wait to be king finds his place in the &#34;Circle of Life.&#34;</video:description>
@@ -18022,7 +18052,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/toy-story-4/1260015326</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-07-01</lastmod>
     <video:video>
       <video:title>Toy Story 4</video:title>
       <video:description>Pixar Animation Studios proudly presents the adventure of a lifetime!</video:description>
@@ -18658,6 +18688,16 @@
       <video:description>Go behind the scenes of &#34;Happier Than Ever: A Love Letter to Los Angeles.&#34;</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/ae/movies/the-making-of-happier-than-ever-a-love-letter-to-los-angeles/1260072966/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/9068/1760074609068-i</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/ae/movies/the-hunger-games/1271627545</loc>
+    <lastmod>2026-07-02</lastmod>
+    <video:video>
+      <video:title>The Hunger Games</video:title>
+      <video:description>Each year the nation of Panem forces each district to send two teens to compete in the Hunger Games.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/the-hunger-games/1271627545/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1084/1782963901084-i</video:thumbnail_loc>
     </video:video>
   </url>
   <url>
@@ -19502,7 +19542,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/toy-story/1660010197</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-07-01</lastmod>
     <video:video>
       <video:title>Toy Story</video:title>
       <video:description>Meet Woody, Buzz and the gang in an adventure full of humor and heart.</video:description>
@@ -19622,7 +19662,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/camp-rock/1260031933</loc>
-    <lastmod>2026-03-05</lastmod>
+    <lastmod>2026-07-02</lastmod>
     <video:video>
       <video:title>Camp Rock</video:title>
       <video:description>Mitchie gets the chance to spend a summer at a prestigious music camp.</video:description>
@@ -19858,6 +19898,16 @@
       <video:description>In 7th grade, Greg must bond with his brother, Rodrick while also impressing the new girl in town.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/ae/movies/diary-of-a-wimpy-kid-rodrick-rules/1770000298/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1960/1221960-i-638ec52ab7cb</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/ae/movies/spider-man-no-way-home/1271516381</loc>
+    <lastmod>2026-07-01</lastmod>
+    <video:video>
+      <video:title>Spider-Man™: No Way Home</video:title>
+      <video:description>Peter is forced to overcome his greatest challenge yet.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/spider-man-no-way-home/1271516381/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/4901/1766988084901-i</video:thumbnail_loc>
     </video:video>
   </url>
   <url>
@@ -20211,33 +20261,23 @@
     </video:video>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/ae/movies/ready-or-not-2-here-i-come/1271652945</loc>
-    <lastmod>2026-06-28</lastmod>
-    <video:video>
-      <video:title>Ready or Not 2: Here I Come</video:title>
-      <video:description>The next level of the nightmarish game begins — double or nothing.</video:description>
-      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/ready-or-not-2-here-i-come/1271652945/watch</video:player_loc>
-      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/163/1782202710163-i</video:thumbnail_loc>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/ae/movies/descendants-wicked-wonderland/1271643996</loc>
-    <lastmod>2026-06-18</lastmod>
-    <video:video>
-      <video:title>Descendants: Wicked Wonderland</video:title>
-      <video:description>When a villain traps the Queen of Hearts, Red and Chloe must work with unlikely allies to save her.</video:description>
-      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/descendants-wicked-wonderland/1271643996/watch</video:player_loc>
-      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8983/1780712768983-i</video:thumbnail_loc>
-    </video:video>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/the-devil-wears-prada-2/1271506598</loc>
-    <lastmod>2026-06-29</lastmod>
+    <lastmod>2026-07-02</lastmod>
     <video:video>
       <video:title>The Devil Wears Prada 2</video:title>
       <video:description>Miranda, Andy, Emily, and Nigel reunite at a now vulnerable Runway in this smashing sequel.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/ae/movies/the-devil-wears-prada-2/1271506598/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2265/1782452912265-i</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/ae/movies/descendants-wicked-wonderland/1271643996</loc>
+    <lastmod>2026-07-01</lastmod>
+    <video:video>
+      <video:title>Descendants: Wicked Wonderland</video:title>
+      <video:description>When a villain traps the Queen of Hearts, Red and Chloe must work with unlikely allies to save her.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/descendants-wicked-wonderland/1271643996/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8983/1780712768983-i</video:thumbnail_loc>
     </video:video>
   </url>
 </urlset>
