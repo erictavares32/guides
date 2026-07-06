@@ -1,5 +1,5 @@
 ﻿{
-    "generatedAt":  "2026-07-05T12:24:37.4362055Z",
+    "generatedAt":  "2026-07-06T17:01:16.4458005Z",
     "source":  "https://www.apps.disneyplus.com",
     "rawBaseUrl":  "https://raw.githubusercontent.com/erictavares32/guides/main/disney-mena-sitemaps",
     "items":  [
@@ -50,7 +50,7 @@
                       "mediaType":  "movie",
                       "file":  "disney-mena-sitemaps/eg/new-sitemap-MOVIE-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/eg/new-sitemap-MOVIE-1.xml",
-                      "urlCount":  2030
+                      "urlCount":  2031
                   },
                   {
                       "country":  "EG",
