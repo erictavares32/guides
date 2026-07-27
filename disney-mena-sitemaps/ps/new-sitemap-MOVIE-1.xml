@@ -246,7 +246,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/dashing-through-the-snow/1260154873</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-07-22</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/embrace-the-panda-making-turning-red/1260096244</loc>
@@ -1574,7 +1574,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/elway-to-marino/1260092087</loc>
-    <lastmod>2026-05-26</lastmod>
+    <lastmod>2026-07-24</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/mars-and-beyond/1260045194</loc>
@@ -2306,7 +2306,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/dirty-dancing/1271633293</loc>
-    <lastmod>2026-07-07</lastmod>
+    <lastmod>2026-07-20</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/a-place-to-fight-for/1260141839</loc>
@@ -2386,7 +2386,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/the-x-files-i-want-to-believe/1770000679</loc>
-    <lastmod>2026-06-01</lastmod>
+    <lastmod>2026-07-23</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/x-men-dark-phoenix/1260017860</loc>
@@ -2554,7 +2554,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/four-falls-of-buffalo/1260091892</loc>
-    <lastmod>2025-10-25</lastmod>
+    <lastmod>2026-07-24</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/tron-legacy/1260018669</loc>
@@ -3358,7 +3358,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/broke/1260082077</loc>
-    <lastmod>2025-10-19</lastmod>
+    <lastmod>2026-07-24</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/prep-landing/1260091771</loc>
@@ -3925,6 +3925,10 @@
     <lastmod>2026-05-06</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/ps/movies/my-grandfather-charles-manson/1271647862</loc>
+    <lastmod>2026-07-22</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/premalu/1271295279</loc>
     <lastmod>2026-05-11</lastmod>
   </url>
@@ -4294,7 +4298,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/the-amazing-spider-man/1260104625</loc>
-    <lastmod>2026-07-07</lastmod>
+    <lastmod>2026-07-22</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/star-wars-the-last-jedi-episode-viii/1660010667</loc>
@@ -4406,7 +4410,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/billy-molly-an-otter-love-story/1271306219</loc>
-    <lastmod>2026-04-10</lastmod>
+    <lastmod>2026-07-19</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/disney-s-snow-white/1271325602</loc>
@@ -4446,7 +4450,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/bukayo-saka-the-time-is-now/1271647877</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-24</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/marvel-studios-avengers-age-of-ultron/1260018315</loc>
@@ -5150,7 +5154,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/oz-the-great-and-powerful/1260017866</loc>
-    <lastmod>2026-04-28</lastmod>
+    <lastmod>2026-07-23</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/zootropolis/1271508699</loc>
@@ -7826,7 +7830,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/moana-a-special-look/1271655058</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-23</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/broken-arrow/1260091631</loc>
@@ -7975,10 +7979,6 @@
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/marvel-one-shot-agent-carter/1260091482</loc>
     <lastmod>2026-05-04</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/ps/movies/star-wars-the-mandalorian-and-grogu-a-special-look/1271640114</loc>
-    <lastmod>2026-07-15</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/salaar-part-1-ceasefire/1260170331</loc>
@@ -8138,10 +8138,14 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/the-devil-wears-prada-2/1271506598</loc>
-    <lastmod>2026-07-16</lastmod>
+    <lastmod>2026-07-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/ps/movies/camp-rock-3/1271647020</loc>
+    <lastmod>2026-07-24</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ps/movies/time-and-water/1271650822</loc>
-    <lastmod>2026-07-14</lastmod>
+    <lastmod>2026-07-27</lastmod>
   </url>
 </urlset>
