@@ -37,10 +37,6 @@
     <lastmod>2024-12-24</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/betrayal/1260147067</loc>
-    <lastmod>2026-07-23</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/sam-s-zookeeper-challenge/1260093124</loc>
     <lastmod>2026-04-09</lastmod>
   </url>
@@ -145,8 +141,12 @@
     <lastmod>2024-12-16</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/american-horror-story/8459</loc>
+    <lastmod>2026-07-29</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/papa-jake-epic-box-forts/1271666577</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-29</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/wild-congo/1260029333</loc>
@@ -229,8 +229,16 @@
     <lastmod>2025-11-26</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/9-1-1/16246</loc>
+    <lastmod>2026-07-31</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/parallels/1260093408</loc>
     <lastmod>2026-04-10</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/win-or-lose/1260166710</loc>
+    <lastmod>2026-07-29</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/interior-chinatown/1271329960</loc>
@@ -263,6 +271,10 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/sultan-of-delhi/1260152955</loc>
     <lastmod>2023-10-12</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/adults/1271412249</loc>
+    <lastmod>2026-07-31</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/dance-moms/1260127577</loc>
@@ -333,10 +345,6 @@
     <lastmod>2025-11-26</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/scrubs-2001/1260029636</loc>
-    <lastmod>2026-02-25</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/fix-the/1260094354</loc>
     <lastmod>2024-12-24</lastmod>
   </url>
@@ -355,6 +363,10 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-deep-end/1260114031</loc>
     <lastmod>2024-12-21</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/spidey-and-his-amazing-friends/1260116705</loc>
+    <lastmod>2026-07-29</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/single-drunk-female/1260079836</loc>
@@ -461,6 +473,10 @@
     <lastmod>2024-12-11</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/house-of-stassi/1271667852</loc>
+    <lastmod>2026-07-31</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/hitler-s-american-battleground/1260112195</loc>
     <lastmod>2023-09-08</lastmod>
   </url>
@@ -521,10 +537,6 @@
     <lastmod>2023-09-11</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/fantastic-four/1260051837</loc>
-    <lastmod>2026-02-02</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/nothing-gold-can-stay/1260050652</loc>
     <lastmod>2024-07-16</lastmod>
   </url>
@@ -551,6 +563,10 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/9-11-one-day-in-america/1260068438</loc>
     <lastmod>2026-05-15</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/play-break/1271643620</loc>
+    <lastmod>2026-07-28</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/misty/1260073355</loc>
@@ -601,20 +617,12 @@
     <lastmod>2026-07-10</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/zhong-creator-essentials/1271666641</loc>
-    <lastmod>2026-07-15</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/team-players/1271399256</loc>
     <lastmod>2025-07-23</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/secrets-sisterhood-the-sozahdahs/1260141207</loc>
     <lastmod>2024-12-13</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/hidden-beneath-the-cities/1271655156</loc>
-    <lastmod>2026-06-22</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/prairie-dog-manor/1260092563</loc>
@@ -705,6 +713,10 @@
     <lastmod>2025-09-15</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/dragon-striker/1271630352</loc>
+    <lastmod>2026-07-29</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/castle/12123</loc>
     <lastmod>2025-11-26</lastmod>
   </url>
@@ -723,6 +735,10 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/primal-survivor/8435</loc>
     <lastmod>2026-07-07</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/wizards-beyond-waverly-place/1271328555</loc>
+    <lastmod>2026-07-31</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/fancy-nancy/1260036425</loc>
@@ -834,7 +850,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/dancing-with-the-stars-the-next-pro/1271664109</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-07-31</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/oklahoma-city-bombing-one-day-in-america/1271392768</loc>
@@ -871,10 +887,6 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/bad-signal-the-series/1260067872</loc>
     <lastmod>2025-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/9-1-1/16246</loc>
-    <lastmod>2026-07-17</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/once-upon-a-time-in-queens/1271649886</loc>
@@ -917,10 +929,6 @@
     <lastmod>2025-10-31</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/peppa-pig/1260129504</loc>
-    <lastmod>2026-07-24</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/chibiverse/1260122759</loc>
     <lastmod>2026-07-18</lastmod>
   </url>
@@ -943,6 +951,10 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/breeders/1260024202</loc>
     <lastmod>2026-05-27</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/star-wars-visions-presents-the-ninth-jedi/1271652949</loc>
+    <lastmod>2026-07-28</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/this-is-not-hollywood/1271333044</loc>
@@ -1001,6 +1013,10 @@
     <lastmod>2025-06-02</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/disney-twisted-wonderland-the-animation/1271450136</loc>
+    <lastmod>2026-07-27</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-hot-zone/1260005306</loc>
     <lastmod>2024-12-24</lastmod>
   </url>
@@ -1029,6 +1045,10 @@
     <lastmod>2026-02-02</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/r-j-decker/1271543471</loc>
+    <lastmod>2026-07-27</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/betrayal-secrets-and-lies/1271630366</loc>
     <lastmod>2026-07-14</lastmod>
   </url>
@@ -1055,10 +1075,6 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/what-s-wrong-with-secretary-kim/1260143537</loc>
     <lastmod>2023-09-07</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/disney-junior-ariel-the-little-mermaid/1271306939</loc>
-    <lastmod>2026-07-24</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/spider-man/1260111124</loc>
@@ -1257,6 +1273,10 @@
     <lastmod>2023-09-08</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/zhc-creator-essentials/1271666625</loc>
+    <lastmod>2026-07-31</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/kindergarten-the-musical/1271326517</loc>
     <lastmod>2025-04-24</lastmod>
   </url>
@@ -1329,10 +1349,6 @@
     <lastmod>2026-06-11</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/cocomelon-playdates-with-sanrio-friends/1271664394</loc>
-    <lastmod>2026-07-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-santa-clauses/1260110018</loc>
     <lastmod>2025-08-05</lastmod>
   </url>
@@ -1373,8 +1389,8 @@
     <lastmod>2026-04-30</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/abandoned/1271647060</loc>
-    <lastmod>2026-07-22</lastmod>
+    <loc>https://www.apps.disneyplus.com/tn/shows/a-shop-for-killers/1260157773</loc>
+    <lastmod>2026-07-28</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/doug/1260026117</loc>
@@ -1401,12 +1417,12 @@
     <lastmod>2024-10-16</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/the-husband/1271641634</loc>
-    <lastmod>2026-07-27</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/grid/1260096273</loc>
     <lastmod>2026-03-20</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/unexpected-loves/1271406277</loc>
+    <lastmod>2026-07-30</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/masterpeace/1260148141</loc>
@@ -1435,6 +1451,10 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/so-random/1260093440</loc>
     <lastmod>2023-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/disney-hulu-throwbacks-podcast/1271669682</loc>
+    <lastmod>2026-08-01</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/under-the-bridge/1271305189</loc>
@@ -1485,6 +1505,10 @@
     <lastmod>2025-11-26</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/the-chi/16315</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/is-it-wrong-to-try-to-pick-up-girls-in-a-dungeon/1260110098</loc>
     <lastmod>2024-09-18</lastmod>
   </url>
@@ -1499,6 +1523,10 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/kizazi-moto-generation-fire/1260142800</loc>
     <lastmod>2026-03-20</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/locker-diaries-descendants/1271655397</loc>
+    <lastmod>2026-07-28</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/culprits/1260148208</loc>
@@ -1519,10 +1547,6 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/legion/1260011484</loc>
     <lastmod>2025-07-01</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/big-city-greens/1260019522</loc>
-    <lastmod>2026-05-24</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/flashforward/1260095000</loc>
@@ -1549,20 +1573,12 @@
     <lastmod>2025-11-26</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/win-or-lose/1260166710</loc>
-    <lastmod>2026-04-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/american-dragon-jake-long/1260015269</loc>
     <lastmod>2024-10-17</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/army-wives/1260114507</loc>
     <lastmod>2025-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/me-mickey/1260121484</loc>
-    <lastmod>2026-07-13</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-ashley-madison-affair/1260144023</loc>
@@ -1595,6 +1611,10 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/coppola-the-agent/1260170290</loc>
     <lastmod>2024-10-03</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/peppa-pig/1260129504</loc>
+    <lastmod>2026-07-30</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/belly-showdown/1271439740</loc>
@@ -1655,10 +1675,6 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/secrets-of-the-zoo-north-carolina/1260113859</loc>
     <lastmod>2024-12-13</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/furious/1271648108</loc>
-    <lastmod>2026-07-22</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/single-parents/1260000554</loc>
@@ -1845,10 +1861,6 @@
     <lastmod>2026-05-15</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/dear-killer-nannies/1271531165</loc>
-    <lastmod>2026-07-14</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/baahubali-crown-of-blood/1271306888</loc>
     <lastmod>2024-05-17</lastmod>
   </url>
@@ -1893,6 +1905,10 @@
     <lastmod>2024-12-05</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/the-proud-family-louder-and-prouder/1260096262</loc>
+    <lastmod>2026-07-31</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/suspicious-partner/1271404214</loc>
     <lastmod>2025-07-16</lastmod>
   </url>
@@ -1902,7 +1918,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/phineas-and-ferb/1260015299</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-07-30</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/north-korea-from-the-inside-with-michael-palin/1260092544</loc>
@@ -2037,6 +2053,10 @@
     <lastmod>2025-06-19</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/zhong-creator-essentials/1271666641</loc>
+    <lastmod>2026-07-31</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/maria-the-outlaw-legend/1271379545</loc>
     <lastmod>2025-10-01</lastmod>
   </url>
@@ -2161,10 +2181,6 @@
     <lastmod>2026-07-07</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/wizards-beyond-waverly-place/1271328555</loc>
-    <lastmod>2026-07-21</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/perception/1260093119</loc>
     <lastmod>2025-11-26</lastmod>
   </url>
@@ -2217,16 +2233,16 @@
     <lastmod>2025-11-26</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/x-men-97/1271269313</loc>
-    <lastmod>2026-07-24</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/birth-of-europe/1260029412</loc>
     <lastmod>2023-09-09</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/lego-star-wars-rebuild-the-galaxy-pieces-of-the-past/1271439524</loc>
     <lastmod>2025-11-06</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/big-city-greens/1260019522</loc>
+    <lastmod>2026-07-30</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-good-doctor/1260112423</loc>
@@ -2275,6 +2291,10 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/reservation-dogs/1260068461</loc>
     <lastmod>2025-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/bob-s-burgers/1260076787</loc>
+    <lastmod>2026-07-29</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/light-magic/1260101204</loc>
@@ -2385,10 +2405,6 @@
     <lastmod>2023-09-09</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/mackenzie-turner-s-cuties-chronicles-a-pocket-watch-mishmash/1271666529</loc>
-    <lastmod>2026-07-15</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/matthew-beem-creator-essentials/1271666561</loc>
     <lastmod>2026-07-15</lastmod>
   </url>
@@ -2449,10 +2465,6 @@
     <lastmod>2025-11-26</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/murder-club-liar-s-table/1271659479</loc>
-    <lastmod>2026-07-24</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/ironheart/1271341039</loc>
     <lastmod>2026-03-31</lastmod>
   </url>
@@ -2494,7 +2506,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/sofia-the-first-royal-magic/1271630364</loc>
-    <lastmod>2026-06-09</lastmod>
+    <lastmod>2026-07-29</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/tyrant/8333</loc>
@@ -2517,10 +2529,6 @@
     <lastmod>2026-07-14</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/jesser-ball-or-nothing/1271666513</loc>
-    <lastmod>2026-07-24</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/mickey-mouse-mixed-up-adventures/1260047648</loc>
     <lastmod>2025-07-23</lastmod>
   </url>
@@ -2535,6 +2543,10 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/sadie-sparks/1260094082</loc>
     <lastmod>2025-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/mackenzie-turner-secrets-surprises-a-pocket-watch-mishmash/1271670662</loc>
+    <lastmod>2026-07-29</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-veil/1271304808</loc>
@@ -2579,10 +2591,6 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/demon-slayer-kimetsu-no-yaiba-tanjiro-kamado-unwavering-resolve-arc/1260121588</loc>
     <lastmod>2024-09-30</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/the-one-shot/1271660982</loc>
-    <lastmod>2026-07-24</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-come-up/1260114077</loc>
@@ -2669,12 +2677,12 @@
     <lastmod>2025-08-13</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/choir/1260157056</loc>
-    <lastmod>2024-06-21</lastmod>
+    <loc>https://www.apps.disneyplus.com/tn/shows/the-mysterious-benedict-society/1260064342</loc>
+    <lastmod>2026-07-31</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/zhc-creator-essentials/1271666625</loc>
-    <lastmod>2026-07-15</lastmod>
+    <loc>https://www.apps.disneyplus.com/tn/shows/choir/1260157056</loc>
+    <lastmod>2024-06-21</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/emergency-couple-2024/1271511416</loc>
@@ -2683,10 +2691,6 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/welcome-to-earth/1260074816</loc>
     <lastmod>2025-11-06</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/play-break/1271643620</loc>
-    <lastmod>2026-07-25</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/hurricane-katrina-race-against-time/1271423077</loc>
@@ -2743,6 +2747,10 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/aruna-s-magic/1260154887</loc>
     <lastmod>2026-07-07</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/betrayal/1260147067</loc>
+    <lastmod>2026-07-30</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/perfect-wife-the-mysterious-disappearance-of-sherri-papini/1271326411</loc>
@@ -2815,6 +2823,10 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/devious-maids/1260067638</loc>
     <lastmod>2025-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/brickleberry/1260093578</loc>
+    <lastmod>2026-07-30</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-knights-of-castelcorvo/1260115813</loc>
@@ -2961,6 +2973,14 @@
     <lastmod>2023-09-08</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/car-sos/1260004372</loc>
+    <lastmod>2026-07-30</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/american-dad/12027</loc>
+    <lastmod>2026-07-29</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/i-m-your-fan/1260153525</loc>
     <lastmod>2024-12-16</lastmod>
   </url>
@@ -3011,10 +3031,6 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/puppy-dog-pals/1260015281</loc>
     <lastmod>2025-07-17</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/star-wars-visions-presents-the-ninth-jedi/1271652949</loc>
-    <lastmod>2026-07-23</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-falcon-and-the-winter-soldier/1260055670</loc>
@@ -3093,10 +3109,6 @@
     <lastmod>2026-04-13</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/disney-twisted-wonderland-the-animation/1271450136</loc>
-    <lastmod>2026-02-13</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-old-man/1260107103</loc>
     <lastmod>2026-06-11</lastmod>
   </url>
@@ -3157,10 +3169,6 @@
     <lastmod>2026-03-05</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/bleach-thousand-year-blood-war/1260118225</loc>
-    <lastmod>2026-07-24</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/mighty-ducks/1260038324</loc>
     <lastmod>2024-06-27</lastmod>
   </url>
@@ -3203,6 +3211,10 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/los-macanimals/1271381736</loc>
     <lastmod>2025-01-02</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/topper-guild-creator-essentials/1271666609</loc>
+    <lastmod>2026-07-27</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/boris/1260112431</loc>
@@ -3255,10 +3267,6 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/into-the-unknown-making-frozen-2/1260029348</loc>
     <lastmod>2025-06-20</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/empire/8573</loc>
-    <lastmod>2025-11-26</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-lions-of-sicily/1260148217</loc>
@@ -3381,8 +3389,8 @@
     <lastmod>2024-06-24</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/the-mysterious-benedict-society/1260064342</loc>
-    <lastmod>2024-12-27</lastmod>
+    <loc>https://www.apps.disneyplus.com/tn/shows/percy-jackson-and-the-olympians/1260111156</loc>
+    <lastmod>2026-07-27</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/alone-together/1260093448</loc>
@@ -3391,10 +3399,6 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-cry-of-the-butterflies/1260130233</loc>
     <lastmod>2024-10-09</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/it-s-always-sunny-in-philadelphia/2330</loc>
-    <lastmod>2026-07-16</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/big-sky/1260048228</loc>
@@ -3413,6 +3417,10 @@
     <lastmod>2025-11-26</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/cocomelon-playdates-with-sanrio-friends/1271664394</loc>
+    <lastmod>2026-07-30</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-shards/1271660568</loc>
     <lastmod>2026-07-21</lastmod>
   </url>
@@ -3423,6 +3431,10 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/tron-uprising/1260015267</loc>
     <lastmod>2025-06-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/the-boss/1260116522</loc>
+    <lastmod>2026-07-29</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/dug-days/1260067332</loc>
@@ -3513,6 +3525,10 @@
     <lastmod>2023-09-07</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/get-real/1271633150</loc>
+    <lastmod>2026-07-30</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/go-buster/1260111163</loc>
     <lastmod>2025-07-04</lastmod>
   </url>
@@ -3547,10 +3563,6 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/goof-troop/1260068117</loc>
     <lastmod>2024-11-20</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/futurama/11005</loc>
-    <lastmod>2026-07-24</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/tell-me-that-you-love-me-series-2023/1260157458</loc>
@@ -3601,6 +3613,10 @@
     <lastmod>2024-12-10</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/me-mickey/1260121484</loc>
+    <lastmod>2026-07-13</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-great-north/1260051105</loc>
     <lastmod>2026-01-06</lastmod>
   </url>
@@ -3617,16 +3633,8 @@
     <lastmod>2024-09-25</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/20-20-britain-s-most-notorious-crimes/1271667843</loc>
-    <lastmod>2026-07-23</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/big-hero-6-the-series-shorts/1260096004</loc>
     <lastmod>2025-08-01</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/bob-s-burgers/1260076787</loc>
-    <lastmod>2026-05-26</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/macross-dynamite-7/1271317341</loc>
@@ -3681,10 +3689,6 @@
     <lastmod>2023-06-08</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/rabbit-hole/1271648112</loc>
-    <lastmod>2026-07-26</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/daddies-on-request/1260106152</loc>
     <lastmod>2023-10-11</lastmod>
   </url>
@@ -3725,6 +3729,14 @@
     <lastmod>2026-02-28</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/the-rookie/1271397188</loc>
+    <lastmod>2026-07-31</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/theme-song-takeover/1271326555</loc>
+    <lastmod>2026-07-31</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/ocean-s-weirdest/1260086703</loc>
     <lastmod>2024-11-21</lastmod>
   </url>
@@ -3749,10 +3761,6 @@
     <lastmod>2023-09-11</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/spidey-and-his-amazing-friends/1260116705</loc>
-    <lastmod>2026-07-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/once-upon-a-time/1260027603</loc>
     <lastmod>2026-03-20</lastmod>
   </url>
@@ -3767,6 +3775,10 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/disney-presents-goofy-in-how-to-stay-at-home/1260066216</loc>
     <lastmod>2024-06-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/disney-junior-ariel-the-little-mermaid/1271306939</loc>
+    <lastmod>2026-07-31</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/8-15/1260098166</loc>
@@ -3803,6 +3815,10 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/high-hopes/1271304852</loc>
     <lastmod>2024-10-16</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/murder-club-liar-s-table/1271659479</loc>
+    <lastmod>2026-07-29</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/america-s-funniest-home-videos-animal-edition/1260132433</loc>
@@ -3945,8 +3961,8 @@
     <lastmod>2026-07-14</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/will-trent/1260127438</loc>
-    <lastmod>2026-07-23</lastmod>
+    <loc>https://www.apps.disneyplus.com/tn/shows/life-in-the-w/1271671233</loc>
+    <lastmod>2026-07-30</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/killing-county/1260129513</loc>
@@ -3999,6 +4015,10 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/higglytown-heroes/1260072271</loc>
     <lastmod>2025-08-05</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/fantastic-four/1260051837</loc>
+    <lastmod>2026-02-02</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/capturing-their-killer-the-girls-on-the-high-bridge/1271434469</loc>
@@ -4143,6 +4163,10 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/alice-and-steve/1271641619</loc>
     <lastmod>2026-07-22</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/hidden-beneath-the-cities/1271655156</loc>
+    <lastmod>2026-07-31</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/attack-on-titan/1260059935</loc>
@@ -4325,10 +4349,6 @@
     <lastmod>2025-11-26</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/the-chi/16315</loc>
-    <lastmod>2026-07-22</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/air-crash-investigation/8229</loc>
     <lastmod>2026-04-15</lastmod>
   </url>
@@ -4411,6 +4431,10 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/running-wild-with-bear-grylls/1260092161</loc>
     <lastmod>2025-07-23</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/lion/1271660571</loc>
+    <lastmod>2026-07-31</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/bluey-compilations/1271657589</loc>
@@ -4501,6 +4525,10 @@
     <lastmod>2026-04-16</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/mackenzie-turner-s-cuties-chronicles-a-pocket-watch-mishmash/1271666529</loc>
+    <lastmod>2026-07-29</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/goldie-bear/1260015276</loc>
     <lastmod>2025-07-18</lastmod>
   </url>
@@ -4529,10 +4557,6 @@
     <lastmod>2025-11-26</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/bluey-tunes/1271660991</loc>
-    <lastmod>2026-07-03</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/call-my-agent-berlin/1271441407</loc>
     <lastmod>2026-05-27</lastmod>
   </url>
@@ -4553,12 +4577,20 @@
     <lastmod>2026-06-19</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/bleach-thousand-year-blood-war/1260118225</loc>
+    <lastmod>2026-07-29</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/life-on-mars/1260143593</loc>
     <lastmod>2023-09-07</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/stained/1260058598</loc>
     <lastmod>2023-09-07</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/superkitties/1260130935</loc>
+    <lastmod>2026-07-31</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/pistol/1260103722</loc>
@@ -4613,16 +4645,16 @@
     <lastmod>2024-12-13</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/jesser-ball-or-nothing/1271666513</loc>
+    <lastmod>2026-07-28</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/secrets-of-wild-india/6204</loc>
     <lastmod>2023-09-08</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/secrets-of-the-octopus/1271276105</loc>
     <lastmod>2026-04-10</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/espn-jeopardy/1271664421</loc>
-    <lastmod>2026-07-22</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/about-sasha/1260139724</loc>
@@ -4653,6 +4685,10 @@
     <lastmod>2025-11-26</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/the-one-shot/1271660982</loc>
+    <lastmod>2026-07-31</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/arctic-ascent-with-alex-honnold/1260165040</loc>
     <lastmod>2026-06-17</lastmod>
   </url>
@@ -4661,8 +4697,8 @@
     <lastmod>2025-07-11</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/flex-x-cop/1260166028</loc>
-    <lastmod>2026-07-22</lastmod>
+    <loc>https://www.apps.disneyplus.com/tn/shows/will-trent/1260127438</loc>
+    <lastmod>2026-07-23</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/home-shanti/1260099490</loc>
@@ -4773,16 +4809,12 @@
     <lastmod>2023-09-08</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/the-boss/1260116522</loc>
-    <lastmod>2026-04-30</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/storage-wars-unlocked/1260127776</loc>
     <lastmod>2024-12-18</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/dragon-striker-meet-the-players/1271634327</loc>
-    <lastmod>2026-06-01</lastmod>
+    <lastmod>2026-07-31</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/under-the-banner-of-heaven/1260099877</loc>
@@ -4817,10 +4849,6 @@
     <lastmod>2025-08-27</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/a-shop-for-killers/1260157773</loc>
-    <lastmod>2026-07-22</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/firebuds/1260121659</loc>
     <lastmod>2026-01-20</lastmod>
   </url>
@@ -4834,7 +4862,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/mickey-mouse-clubhouse-mickey-s-country-farm-songs/1271647880</loc>
-    <lastmod>2026-07-24</lastmod>
+    <lastmod>2026-07-30</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/electric-bloom/1271437299</loc>
@@ -4879,10 +4907,6 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-promised-neverland-chapter-2/1260059030</loc>
     <lastmod>2023-09-07</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/disney-hulu-throwbacks-podcast/1271669682</loc>
-    <lastmod>2026-07-24</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/adamas/1260107746</loc>
@@ -4949,16 +4973,16 @@
     <lastmod>2025-11-26</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/locker-diaries-descendants/1271655397</loc>
-    <lastmod>2026-07-24</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-avengers-united-they-stand/1260060329</loc>
     <lastmod>2026-05-27</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/secret-chef/1260143394</loc>
     <lastmod>2025-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/x-men-97/1271269313</loc>
+    <lastmod>2026-07-29</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/after-baywatch-moment-in-the-sun/1271327158</loc>
@@ -4983,6 +5007,10 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/paradise-islands/1260093159</loc>
     <lastmod>2024-06-25</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/20-20-britain-s-most-notorious-crimes/1271667843</loc>
+    <lastmod>2026-07-27</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-d-amelio-show/1260073285</loc>
@@ -5017,12 +5045,12 @@
     <lastmod>2024-09-18</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/darkwing-duck/1260037806</loc>
-    <lastmod>2025-08-05</lastmod>
+    <loc>https://www.apps.disneyplus.com/tn/shows/miraculous-tales-of-ladybug-cat-noir/1260066163</loc>
+    <lastmod>2026-07-30</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/adults/1271412249</loc>
-    <lastmod>2026-07-24</lastmod>
+    <loc>https://www.apps.disneyplus.com/tn/shows/darkwing-duck/1260037806</loc>
+    <lastmod>2025-08-05</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-watchful-eye/1260129904</loc>
@@ -5073,6 +5101,10 @@
     <lastmod>2024-11-21</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/rabbit-hole/1271648112</loc>
+    <lastmod>2026-07-27</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/alaska-s-deadliest/1260092352</loc>
     <lastmod>2024-09-20</lastmod>
   </url>
@@ -5105,6 +5137,10 @@
     <lastmod>2025-11-26</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/scrubs-2001/1260029636</loc>
+    <lastmod>2026-07-29</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/dawn-of-the-nazis/1260092239</loc>
     <lastmod>2025-06-02</lastmod>
   </url>
@@ -5123,10 +5159,6 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/justified-city-primeval/1260144798</loc>
     <lastmod>2026-05-27</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/r-j-decker/1271543471</loc>
-    <lastmod>2026-07-22</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/savage-kingdom/15579</loc>
@@ -5171,10 +5203,6 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/primal-survivor-escape-the-amazon/1260105953</loc>
     <lastmod>2024-12-11</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/superkitties/1260130935</loc>
-    <lastmod>2026-07-14</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/lab-rats-elite-force/1260038055</loc>
@@ -5291,10 +5319,6 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/bts-monuments-beyond-the-star/1260156198</loc>
     <lastmod>2026-03-20</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/the-simpsons/1260023404</loc>
-    <lastmod>2026-07-20</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-last-man-on-earth/8337</loc>
@@ -5469,6 +5493,10 @@
     <lastmod>2026-01-06</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/it-s-always-sunny-in-philadelphia/2330</loc>
+    <lastmod>2026-07-16</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/anchovy-physical-camp/1271439696</loc>
     <lastmod>2025-12-15</lastmod>
   </url>
@@ -5517,10 +5545,6 @@
     <lastmod>2025-07-17</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/the-besties-in-spooky-sleepover-a-pocket-watch-mishmash/1271666545</loc>
-    <lastmod>2026-07-26</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/capoeiras/1271412972</loc>
     <lastmod>2025-11-21</lastmod>
   </url>
@@ -5561,6 +5585,10 @@
     <lastmod>2023-09-08</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/abandoned/1271647060</loc>
+    <lastmod>2026-07-22</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/not-dead-yet/1260130492</loc>
     <lastmod>2025-11-26</lastmod>
   </url>
@@ -5597,24 +5625,12 @@
     <lastmod>2026-06-26</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/unexpected-loves/1271406277</loc>
-    <lastmod>2025-11-19</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/muslim-matchmaker/1271324752</loc>
     <lastmod>2025-11-26</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-super-dimension-fortress-macross-ii-lovers-again/1271322147</loc>
     <lastmod>2025-01-16</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/brickleberry/1260093578</loc>
-    <lastmod>2025-11-26</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/dragon-striker/1271630352</loc>
-    <lastmod>2026-07-17</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/celtics-lakers-the-best-of-enemies/1271647000</loc>
@@ -5653,10 +5669,6 @@
     <lastmod>2026-03-09</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/get-real/1271633150</loc>
-    <lastmod>2026-07-14</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/like-me-overall-series/1260096030</loc>
     <lastmod>2024-07-16</lastmod>
   </url>
@@ -5671,10 +5683,6 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-muppets-mayhem/1260137427</loc>
     <lastmod>2026-04-12</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/american-horror-story/8459</loc>
-    <lastmod>2025-11-26</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/another-miss-oh/1260106091</loc>
@@ -5729,6 +5737,10 @@
     <lastmod>2023-09-11</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/jesser-test-the-limits/1271666507</loc>
+    <lastmod>2026-07-31</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/beautiful-world/1260072991</loc>
     <lastmod>2023-09-07</lastmod>
   </url>
@@ -5757,20 +5769,12 @@
     <lastmod>2025-11-26</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/american-dad/12027</loc>
-    <lastmod>2026-07-17</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/let-the-world-see/1260103861</loc>
     <lastmod>2025-11-26</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/hotel-del-luna/1260143503</loc>
     <lastmod>2023-09-08</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/lion/1271660571</loc>
-    <lastmod>2026-07-24</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/faraway-downs/1260122640</loc>
@@ -5795,10 +5799,6 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/disney-animation-s-songs-in-sign-language/1271614070</loc>
     <lastmod>2026-07-16</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/miraculous-tales-of-ladybug-cat-noir/1260066163</loc>
-    <lastmod>2026-07-24</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/watching-you/1271520647</loc>
@@ -5857,6 +5857,10 @@
     <lastmod>2026-07-22</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/furious/1271648108</loc>
+    <lastmod>2026-07-27</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/memphis-to-the-mountain/1271441388</loc>
     <lastmod>2025-11-26</lastmod>
   </url>
@@ -5875,10 +5879,6 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/going-to-you-at-a-speed-of-493km/1260097539</loc>
     <lastmod>2024-10-15</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/theme-song-takeover/1271326555</loc>
-    <lastmod>2026-07-17</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/lego-star-wars-rebuild-the-galaxy/1271324723</loc>
@@ -6021,10 +6021,6 @@
     <lastmod>2025-11-26</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/topper-guild-creator-essentials/1271666609</loc>
-    <lastmod>2026-07-24</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/benefits-with-friends/1271328212</loc>
     <lastmod>2025-01-22</lastmod>
   </url>
@@ -6101,12 +6097,20 @@
     <lastmod>2025-11-26</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/empire/8573</loc>
+    <lastmod>2026-07-30</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/tierra-incognita/1260107781</loc>
     <lastmod>2025-01-07</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/kingdom-of-the-mummies/1260052964</loc>
     <lastmod>2023-09-08</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/flex-x-cop/1260166028</loc>
+    <lastmod>2026-07-29</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-wonder-years/1260068898</loc>
@@ -6139,10 +6143,6 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-book-of-pooh/1260059012</loc>
     <lastmod>2024-08-02</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/the-proud-family-louder-and-prouder/1260096262</loc>
-    <lastmod>2026-07-23</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-ghost-and-molly-mcgee/1260078475</loc>
@@ -6211,10 +6211,6 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/hitler-s-last-year/1260094190</loc>
     <lastmod>2025-06-01</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/percy-jackson-and-the-olympians/1260111156</loc>
-    <lastmod>2026-06-11</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/muppets-now/1260038622</loc>
@@ -6357,6 +6353,10 @@
     <lastmod>2026-03-20</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/the-husband/1271641634</loc>
+    <lastmod>2026-08-01</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/lilo-stitch-the-series/1260015293</loc>
     <lastmod>2025-06-26</lastmod>
   </url>
@@ -6433,6 +6433,10 @@
     <lastmod>2026-05-01</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/futurama/11005</loc>
+    <lastmod>2026-07-31</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/friends-like-these-the-murder-of-skylar-neese/1271534038</loc>
     <lastmod>2026-03-04</lastmod>
   </url>
@@ -6469,6 +6473,10 @@
     <lastmod>2025-11-26</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/9-11-reunited/1271671229</loc>
+    <lastmod>2026-07-31</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-judge-from-hell/1271327143</loc>
     <lastmod>2025-10-31</lastmod>
   </url>
@@ -6489,10 +6497,6 @@
     <lastmod>2026-06-18</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/jesser-test-the-limits/1271666507</loc>
-    <lastmod>2026-07-21</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/port-protection-alaska/1260113803</loc>
     <lastmod>2026-05-22</lastmod>
   </url>
@@ -6503,10 +6507,6 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/witness-to-disaster/1260067790</loc>
     <lastmod>2025-01-14</lastmod>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/car-sos/1260004372</loc>
-    <lastmod>2026-07-24</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-nightmare-upstairs-what-happened-to-ty-and-bryn/1271635141</loc>
@@ -6601,10 +6601,6 @@
     <lastmod>2026-04-15</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/the-rookie/1271397188</loc>
-    <lastmod>2026-07-21</lastmod>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/angel/4281</loc>
     <lastmod>2025-11-26</lastmod>
   </url>
@@ -6629,6 +6625,10 @@
     <lastmod>2024-11-02</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/bluey-tunes/1271660991</loc>
+    <lastmod>2026-07-29</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/terra-nova/10263</loc>
     <lastmod>2024-12-19</lastmod>
   </url>
@@ -6639,6 +6639,10 @@
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-fable/1271275887</loc>
     <lastmod>2025-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/mackenzie-turner-ultimate-mishmash/1271670646</loc>
+    <lastmod>2026-07-27</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/rudra-the-edge-of-darkness/1260081024</loc>
@@ -6725,12 +6729,20 @@
     <lastmod>2024-11-01</lastmod>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/espn-jeopardy/1271664421</loc>
+    <lastmod>2026-07-30</lastmod>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-wonderful-world-of-mickey-mouse/1260048185</loc>
     <lastmod>2025-01-14</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/the-golden-spoon/1260116207</loc>
     <lastmod>2025-11-26</lastmod>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/tn/shows/the-simpsons/1260023404</loc>
+    <lastmod>2026-08-01</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/kiff/1260133072</loc>
@@ -6749,12 +6761,12 @@
     <lastmod>2025-11-28</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/the-voice/1260072924</loc>
-    <lastmod>2024-06-26</lastmod>
+    <loc>https://www.apps.disneyplus.com/tn/shows/dear-killer-nannies/1271531165</loc>
+    <lastmod>2026-07-14</lastmod>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/tn/shows/house-of-stassi/1271667852</loc>
-    <lastmod>2026-07-24</lastmod>
+    <loc>https://www.apps.disneyplus.com/tn/shows/the-voice/1260072924</loc>
+    <lastmod>2024-06-26</lastmod>
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/tn/shows/tell-me-lies/1260110453</loc>

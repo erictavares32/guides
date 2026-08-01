@@ -1571,6 +1571,16 @@
     </video:video>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/sa/movies/the-devil-wears-prada-2/1271506598</loc>
+    <lastmod>2026-07-29</lastmod>
+    <video:video>
+      <video:title>The Devil Wears Prada 2</video:title>
+      <video:description>Miranda, Andy, Emily, and Nigel reunite at a now vulnerable Runway in this smashing sequel.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/sa/movies/the-devil-wears-prada-2/1271506598/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2265/1782452912265-i</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/sa/movies/building-the-world-of-pandora-inside-pandora-s-box-avatar-the-way-of-water/1260142607</loc>
     <lastmod>2025-11-26</lastmod>
     <video:video>
@@ -2698,6 +2708,16 @@
       <video:description>A group of violent and deadly cons seizes control of a plane.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/sa/movies/con-air/1260017289/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7935/1237935-i-5c7b37651b44</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/sa/movies/the-lord-of-the-rings-the-fellowship-of-the-ring/1271665327</loc>
+    <lastmod>2026-08-01</lastmod>
+    <video:video>
+      <video:title>The Lord of the Rings: The Fellowship of the Ring</video:title>
+      <video:description>The Lord of the Rings, a shy young hobbit named Frodo Baggins inherits a simple gold ring.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/sa/movies/the-lord-of-the-rings-the-fellowship-of-the-ring/1271665327/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/5067/1783944285067-i</video:thumbnail_loc>
     </video:video>
   </url>
   <url>
@@ -3878,6 +3898,16 @@
       <video:description>Cody learns he can communicate with fish as he nears his 13th birthday.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/sa/movies/the-thirteenth-year/1260037315/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8805/1228805-i-2a726a395052</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/sa/movies/mickey-mouse-clubhouse-mickey-s-country-farm/1271664382</loc>
+    <lastmod>2026-07-31</lastmod>
+    <video:video>
+      <video:title>Mickey Mouse Clubhouse+: Mickey&#39;s Country Farm</video:title>
+      <video:description>Mickey builds a farm fair for Daisy’s cowgirl hero.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/sa/movies/mickey-mouse-clubhouse-mickey-s-country-farm/1271664382/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6463/1784635536463-i</video:thumbnail_loc>
     </video:video>
   </url>
   <url>
@@ -5062,7 +5092,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/sa/movies/little-big-men/1260071239</loc>
-    <lastmod>2026-05-07</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <video:video>
       <video:title>Little Big Men</video:title>
       <video:description>In 1982, a Kirkland, Wash. team played in the Little League World Series as America faced hardship.</video:description>
@@ -5962,7 +5992,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/sa/movies/the-x-files-i-want-to-believe/1770000679</loc>
-    <lastmod>2026-07-23</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <video:video>
       <video:title>The X-Files: I Want to Believe</video:title>
       <video:description>Fox Mulder and Dana Scully return for a sequel to the original X-Files and the hit TV Series.</video:description>
@@ -7691,6 +7721,16 @@
     </video:video>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/sa/movies/the-lego-movie-2-the-second-part/1271670633</loc>
+    <lastmod>2026-08-01</lastmod>
+    <video:video>
+      <video:title>The Lego Movie 2: The Second Part</video:title>
+      <video:description>When Lego Duplo invaders threaten his city, Emmet must save the day.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/sa/movies/the-lego-movie-2-the-second-part/1271670633/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2721/1785408482721-i</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/sa/movies/squanto-a-warrior-s-tale/1260091462</loc>
     <lastmod>2026-04-23</lastmod>
     <video:video>
@@ -9052,7 +9092,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/sa/movies/who/1271647004</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <video:video>
       <video:title>WHO</video:title>
       <video:description>Nine criminals, one traitor. One rule: survive.</video:description>
@@ -9671,6 +9711,16 @@
     </video:video>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/sa/movies/the-lego-ninjago-movie/1271670634</loc>
+    <lastmod>2026-08-01</lastmod>
+    <video:video>
+      <video:title>The Lego Ninjago Movie</video:title>
+      <video:description>Master Wu leads a team of secret ninja warriors to save Ninjago City.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/sa/movies/the-lego-ninjago-movie/1271670634/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/3424/1785406043424-i</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/sa/movies/aaron-carter-the-little-prince-of-pop/1260148942</loc>
     <lastmod>2025-11-26</lastmod>
     <video:video>
@@ -9941,6 +9991,16 @@
     </video:video>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/sa/movies/time-and-water/1271650822</loc>
+    <lastmod>2026-08-01</lastmod>
+    <video:video>
+      <video:title>Time and Water</video:title>
+      <video:description>A writer says goodbye to Iceland’s glaciers and his beloved grandparents.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/sa/movies/time-and-water/1271650822/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2359/1783513552359-i</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/sa/movies/jaws-50-the-definitive-inside-story/1271423066</loc>
     <lastmod>2026-03-06</lastmod>
     <video:video>
@@ -10108,6 +10168,16 @@
       <video:description>Ronny is secretly in love with Cindy, the most popular girl on campus.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/sa/movies/can-t-buy-me-love/1260092129/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2896/1232896-i-efff1eafa241</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/sa/movies/the-lego-movie/1271670632</loc>
+    <lastmod>2026-08-01</lastmod>
+    <video:video>
+      <video:title>The Lego Movie</video:title>
+      <video:description>A Lego figure leads a screwball quest to save his city from its evil ruler.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/sa/movies/the-lego-movie/1271670632/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6145/1785408346145-i</video:thumbnail_loc>
     </video:video>
   </url>
   <url>
@@ -10972,7 +11042,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/sa/movies/diary-of-a-wimpy-kid-the-last-straw/1271460112</loc>
-    <lastmod>2026-06-22</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <video:video>
       <video:title>Diary of a Wimpy Kid: The Last Straw</video:title>
       <video:description>Greg’s dad presents him with an ultimatum that just might challenge his wimpy ways for good.</video:description>
@@ -13498,6 +13568,16 @@
       <video:description>Check out &#34;Platypus Walk&#34; performed by Swampy and the Platypus Singers!</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/sa/movies/platypus-walk-phineas-and-ferb-rockin-and-rollin-music-video/1271418499/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1541/1748602921541-i</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/sa/movies/the-lord-of-the-rings-the-return-of-the-king/1271665328</loc>
+    <lastmod>2026-08-01</lastmod>
+    <video:video>
+      <video:title>The Lord of the Rings: The Return of the King</video:title>
+      <video:description>The conclusion of J.R.R. Tolkien&#39;s epic masterpiece, The Lord of the Rings.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/sa/movies/the-lord-of-the-rings-the-return-of-the-king/1271665328/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6823/1783944586823-i</video:thumbnail_loc>
     </video:video>
   </url>
   <url>
@@ -16952,7 +17032,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/sa/movies/the-book-of-manning/1260091948</loc>
-    <lastmod>2025-10-22</lastmod>
+    <lastmod>2026-07-30</lastmod>
     <video:video>
       <video:title>The Book of Manning</video:title>
       <video:description>It can be argued that no family has had more influence on football than the Manning’s.</video:description>
@@ -16998,6 +17078,16 @@
       <video:description>Now in color, Marvel Studios’ “Werewolf by Night in Color” finds monster hunters in a deadly game.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/sa/movies/werewolf-by-night-in-color/1260153465/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/5075/1615075-i-35d8aa92dd21</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/sa/movies/the-lord-of-the-rings-the-two-towers/1271665329</loc>
+    <lastmod>2026-08-01</lastmod>
+    <video:video>
+      <video:title>The Lord of the Rings: The Two Towers</video:title>
+      <video:description>Frodo Baggins and members of the Fellowship continue on their sacred quest to destroy the One Ring.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/sa/movies/the-lord-of-the-rings-the-two-towers/1271665329/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6052/1783944836052-i</video:thumbnail_loc>
     </video:video>
   </url>
   <url>
@@ -18862,7 +18952,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/sa/movies/nightbitch/1271342284</loc>
-    <lastmod>2026-04-26</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <video:video>
       <video:title>Nightbitch</video:title>
       <video:description>A woman pauses her career to be a stay-at-home mom, but her new domesticity takes a surreal turn.</video:description>
@@ -19611,16 +19701,6 @@
     </video:video>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/sa/movies/bridesmaids/1271515793</loc>
-    <lastmod>2026-05-11</lastmod>
-    <video:video>
-      <video:title>Bridesmaids</video:title>
-      <video:description>Maid of Honor Annie leads four wild bridesmaids on a hilarious ride to their friend&#39;s wedding.</video:description>
-      <video:player_loc>https://www.apps.disneyplus.com/sa/movies/bridesmaids/1271515793/watch</video:player_loc>
-      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8613/1777339988613-i</video:thumbnail_loc>
-    </video:video>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/sa/movies/youngstown-boys/1260091876</loc>
     <lastmod>2025-10-26</lastmod>
     <video:video>
@@ -20341,33 +20421,13 @@
     </video:video>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/sa/movies/the-devil-wears-prada-2/1271506598</loc>
-    <lastmod>2026-07-22</lastmod>
-    <video:video>
-      <video:title>The Devil Wears Prada 2</video:title>
-      <video:description>Miranda, Andy, Emily, and Nigel reunite at a now vulnerable Runway in this smashing sequel.</video:description>
-      <video:player_loc>https://www.apps.disneyplus.com/sa/movies/the-devil-wears-prada-2/1271506598/watch</video:player_loc>
-      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2265/1782452912265-i</video:thumbnail_loc>
-    </video:video>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/sa/movies/camp-rock-3/1271647020</loc>
-    <lastmod>2026-07-24</lastmod>
+    <lastmod>2026-07-29</lastmod>
     <video:video>
       <video:title>Camp Rock 3</video:title>
       <video:description>Connect 3 returns to Camp Rock to find an opening act.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/sa/movies/camp-rock-3/1271647020/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1729/1784531491729-i</video:thumbnail_loc>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/sa/movies/time-and-water/1271650822</loc>
-    <lastmod>2026-07-27</lastmod>
-    <video:video>
-      <video:title>Time and Water</video:title>
-      <video:description>A writer says goodbye to Iceland’s glaciers and his beloved grandparents.</video:description>
-      <video:player_loc>https://www.apps.disneyplus.com/sa/movies/time-and-water/1271650822/watch</video:player_loc>
-      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2359/1783513552359-i</video:thumbnail_loc>
     </video:video>
   </url>
 </urlset>
