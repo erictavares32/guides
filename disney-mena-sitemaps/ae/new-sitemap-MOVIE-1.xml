@@ -7361,16 +7361,6 @@
     </video:video>
   </url>
   <url>
-    <loc>https://www.apps.disneyplus.com/ae/movies/simpsley/1271650896</loc>
-    <lastmod>2026-07-15</lastmod>
-    <video:video>
-      <video:title>Simpsley</video:title>
-      <video:description>A crafty Marge cons her way into wealth, intrigue and murder in this Disney+ exclusive noir episode.</video:description>
-      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/simpsley/1271650896/watch</video:player_loc>
-      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/5707/1783045685707-i</video:thumbnail_loc>
-    </video:video>
-  </url>
-  <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/america-s-greatest-animals/1260032283</loc>
     <lastmod>2025-10-28</lastmod>
     <video:video>
@@ -9092,7 +9082,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/who/1271647004</loc>
-    <lastmod>2026-07-30</lastmod>
+    <lastmod>2026-08-04</lastmod>
     <video:video>
       <video:title>WHO</video:title>
       <video:description>Nine criminals, one traitor. One rule: survive.</video:description>
@@ -20422,7 +20412,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/camp-rock-3/1271647020</loc>
-    <lastmod>2026-07-29</lastmod>
+    <lastmod>2026-08-03</lastmod>
     <video:video>
       <video:title>Camp Rock 3</video:title>
       <video:description>Connect 3 returns to Camp Rock to find an opening act.</video:description>
