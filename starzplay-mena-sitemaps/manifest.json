@@ -1,37 +1,37 @@
 ﻿{
-    "generatedAt":  "2026-08-06T13:31:20.2122808Z",
+    "generatedAt":  "2026-08-16T10:51:10.7648468Z",
     "source":  "https://starzplay.com",
     "rawBaseUrl":  "https://raw.githubusercontent.com/erictavares32/guides/main/starzplay-mena-sitemaps",
     "items":  [
                   {
                       "file":  "starzplay-mena-sitemaps/movies-sitemap-en.xml",
                       "sourceUrl":  "https://starzplay.com/movies-sitemap-en.xml",
-                      "urlCount":  1000
+                      "urlCount":  6687
                   },
                   {
                       "file":  "starzplay-mena-sitemaps/movies-sitemap-ar.xml",
                       "sourceUrl":  "https://starzplay.com/movies-sitemap-ar.xml",
-                      "urlCount":  1000
+                      "urlCount":  6687
                   },
                   {
                       "file":  "starzplay-mena-sitemaps/tv-shows-sitemap-en.xml",
                       "sourceUrl":  "https://starzplay.com/tv-shows-sitemap-en.xml",
-                      "urlCount":  1000
+                      "urlCount":  1438
                   },
                   {
                       "file":  "starzplay-mena-sitemaps/tv-shows-sitemap-ar.xml",
                       "sourceUrl":  "https://starzplay.com/tv-shows-sitemap-ar.xml",
-                      "urlCount":  1000
+                      "urlCount":  1438
                   },
                   {
                       "file":  "starzplay-mena-sitemaps/kids-movies-shows-sitemap-en.xml",
                       "sourceUrl":  "https://starzplay.com/kids-movies-shows-sitemap-en.xml",
-                      "urlCount":  177
+                      "urlCount":  174
                   },
                   {
                       "file":  "starzplay-mena-sitemaps/kids-movies-shows-sitemap-ar.xml",
                       "sourceUrl":  "https://starzplay.com/kids-movies-shows-sitemap-ar.xml",
-                      "urlCount":  177
+                      "urlCount":  174
                   }
               ]
 }
