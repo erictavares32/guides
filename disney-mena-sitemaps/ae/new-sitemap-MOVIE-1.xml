@@ -12,7 +12,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/road-to-el-dorado/1271641968</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <video:video>
       <video:title>Road to El Dorado</video:title>
       <video:description>Upon landing on the shores of El Dorado - our unlikely heroes must make the decision of their lives.</video:description>
@@ -182,7 +182,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/madagascar-escape-2-africa/1271416724</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <video:video>
       <video:title>Madagascar: Escape 2 Africa</video:title>
       <video:description>Your favorite zoo animals find themselves on a hilarious adventure in Africa.</video:description>
@@ -502,7 +502,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/repo-men/1271683162</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <video:video>
       <video:title>Repo Men</video:title>
       <video:description>The hunter becomes the hunted when a former organ repossession man finds himself on the run.</video:description>
@@ -1832,7 +1832,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/jurassic-world/1271683459</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Jurassic World</video:title>
       <video:description>Owen and Claire race to restore order at Jurassic World theme park when a dinosaur escapes.</video:description>
@@ -2072,7 +2072,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/j-hope-in-the-box/1260129166</loc>
-    <lastmod>2025-11-26</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>j-hope IN THE BOX</video:title>
       <video:description>This documentary features artist j-hope&#39;s production activities of solo album, &#34;Jack in the Box.&#34;</video:description>
@@ -2548,6 +2548,16 @@
       <video:description>“A Haunting in Venice” is a supernatural thriller based on a novel by Agatha Christie.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/ae/movies/a-haunting-in-venice/1260153471/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7786/1627786-i-a41a25d8ef08</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/ae/movies/taylor-swift-i-knew-it-i-knew-you-piano-version-toy-story-5-music-video/1271686075</loc>
+    <lastmod>2026-08-27</lastmod>
+    <video:video>
+      <video:title>Taylor Swift “I Knew It, I Knew You” Piano Version Toy Story 5 Music Video</video:title>
+      <video:description>The music video for the Piano Version of Taylor Swift’s &#34;I Knew It, I Knew You&#34; from &#34;Toy Story 5&#34;.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/taylor-swift-i-knew-it-i-knew-you-piano-version-toy-story-5-music-video/1271686075/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8549/1787725218549-i</video:thumbnail_loc>
     </video:video>
   </url>
   <url>
@@ -3052,7 +3062,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/the-art-of-self-defense/1271683134</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>The Art of Self-Defense</video:title>
       <video:description>An off-beat comedy about a man beaten down by society, who joins a mysterious karate group.</video:description>
@@ -3138,6 +3148,16 @@
       <video:description>A man-cub who’s been raised by a family of wolves eludes a dangerous tiger.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/ae/movies/the-jungle-book/1260018310/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/9953/1239953-i-ebf828ce58d2</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/ae/movies/the-last-scene/1271675152</loc>
+    <lastmod>2026-08-28</lastmod>
+    <video:video>
+      <video:title>The Last Scene</video:title>
+      <video:description>Selen foresaw danger—not love. But when Kemal appears, fate and feeling blur into one.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/the-last-scene/1271675152/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/1371/1787819921371-i</video:thumbnail_loc>
     </video:video>
   </url>
   <url>
@@ -3742,7 +3762,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/curious-george/1271683142</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Curious George</video:title>
       <video:description>The Man in the Yellow Hat and Curious George set off on a fun-filled adventure through the big city.</video:description>
@@ -3932,7 +3952,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/forgetting-sarah-marshall/1271683460</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Forgetting Sarah Marshall</video:title>
       <video:description>A heartbroken musician unknowingly checks into the same hotel in Oahu as his ex and her new man.</video:description>
@@ -4082,7 +4102,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/curious-george-5-go-west-go-wild/1271683145</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Curious George 5: Go West, Go Wild</video:title>
       <video:description>Curious George is back in the saddle and ready for adventure in his exciting movie—Go West, Go Wild.</video:description>
@@ -4512,7 +4532,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/the-prince-of-egypt/1271416780</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <video:video>
       <video:title>The Prince of Egypt</video:title>
       <video:description>The final confrontation of two brothers will forever change their lives—and the world.</video:description>
@@ -4982,10 +5002,10 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/deadpool-wolverine/1271305185</loc>
-    <lastmod>2026-06-24</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <video:video>
       <video:title>Deadpool &amp; Wolverine</video:title>
-      <video:description>Marvel Studios&#39; &#34;Deadpool &amp; Wolverine&#34; finds Wade Wilson in the ultimate team-up with Wolverine.</video:description>
+      <video:description>Marvel Studios’ “Deadpool &amp; Wolverine” finds Wade Wilson in the ultimate team-up with Wolverine.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/ae/movies/deadpool-wolverine/1271305185/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8300/1731393358300-i</video:thumbnail_loc>
     </video:video>
@@ -5032,7 +5052,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/the-boss-baby/1271510272</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <video:video>
       <video:title>The Boss Baby</video:title>
       <video:description>A baby pairs up with his older brother to stop the plot of the CEO of Puppy Co.</video:description>
@@ -5392,7 +5412,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/trolls/1271419578</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <video:video>
       <video:title>Trolls</video:title>
       <video:description>When their village is invaded by the Bergens, Poppy and Branch must work together to save the day.</video:description>
@@ -5702,7 +5722,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/curious-george-6-cape-ahoy/1271683146</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Curious George 6: Cape Ahoy</video:title>
       <video:description>George embarks on a quest in search of the long-lost shipwreck of sea captain Trumpet Tooter.</video:description>
@@ -5802,7 +5822,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/journey-to-shark-eden/1260032347</loc>
-    <lastmod>2025-10-23</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Journey to Shark Eden</video:title>
       <video:description>A team of scientists explores pristine coral reefs around five remote islands near Tahiti.</video:description>
@@ -6242,7 +6262,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/the-boss-baby-family-business/1271683139</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>The Boss Baby: Family Business</video:title>
       <video:description>How many Boss Babies can one family hold?</video:description>
@@ -6662,7 +6682,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/the-lorax/1271683161</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <video:video>
       <video:title>The Lorax</video:title>
       <video:description>Ted embarks on a search for The Lorax: a grumpy, but charming creature who speaks for the trees.</video:description>
@@ -6902,7 +6922,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/the-croods/1271510278</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>The Croods</video:title>
       <video:description>When their cave is destroyed, the Croods set out to explore a spectacular landscape!</video:description>
@@ -7442,7 +7462,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/the-fate-of-the-furious/1271683463</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>The Fate of the Furious</video:title>
       <video:description>Dom is ensnared in a ruthless cyberterrorist’s plan to topple the world’s power structures.</video:description>
@@ -7562,7 +7582,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/kung-fu-panda-2/1271413458</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <video:video>
       <video:title>Kung Fu Panda 2</video:title>
       <video:description>Po faces his biggest challenge since becoming the Dragon Warrior.</video:description>
@@ -7632,7 +7652,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/dragonheart/1271416756</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Dragonheart</video:title>
       <video:description>A knight comes face to face and heart to heart with the most remarkable creature that ever existed.</video:description>
@@ -7692,7 +7712,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/girls-trip/1271683156</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Girls Trip</video:title>
       <video:description>Four lifelong friends travel to New Orleans for the annual Essence Festival.</video:description>
@@ -7872,7 +7892,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/bee-movie/1271400601</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <video:video>
       <video:title>Bee Movie</video:title>
       <video:description>Disillusioned bee, Barry B. Benson, discovers humans eat honey and decides to sue them.</video:description>
@@ -7942,7 +7962,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/the-dead-don-t-die/1271683148</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>The Dead Don&#39;t Die</video:title>
       <video:description>A sleepy town has a slow-moving nightmare on their hands after the dead rise from their graves.</video:description>
@@ -8212,7 +8232,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/national-treasure/1260017703</loc>
-    <lastmod>2025-12-31</lastmod>
+    <lastmod>2026-08-29</lastmod>
     <video:video>
       <video:title>National Treasure</video:title>
       <video:description>A treasure hunter must steal America&#39;s most sacred and guarded document.</video:description>
@@ -8972,7 +8992,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/2-fast-2-furious/1271683132</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>2 Fast 2 Furious</video:title>
       <video:description>Ex-cop turned fugitive Brian O’Conner is strong-armed into infiltrating a drug lord’s operation.</video:description>
@@ -9262,7 +9282,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/abominable/1271683133</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Abominable</video:title>
       <video:description>Three friends set out on an adventure across China to reunite a yeti with its family.</video:description>
@@ -9332,7 +9352,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/jurassic-park-iii/1271683159</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Jurassic Park III</video:title>
       <video:description>Dr. Grant is persuaded to return to the infamous Isla Sonora under false pretenses.</video:description>
@@ -9672,7 +9692,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/fast-five/1271683155</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Fast Five</video:title>
       <video:description>Vin Diesel, Paul Walker and a reunion of franchise all-stars are hunted across Rio de Janeiro.</video:description>
@@ -9842,7 +9862,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/evan-almighty/1271683150</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Evan Almighty</video:title>
       <video:description>When God instructs him to build an ark, Evan’s life goes from overnight success to almighty mess!</video:description>
@@ -10312,7 +10332,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/tomorrow-x-together-our-lost-summer/1260142706</loc>
-    <lastmod>2025-11-02</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>TOMORROW X TOGETHER: Our Lost Summer</video:title>
       <video:description>TOMORROW X TOGETHER embark on their first world tour post-pandemic.</video:description>
@@ -10332,7 +10352,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/puss-in-boots/1271413489</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Puss in Boots</video:title>
       <video:description>Puss in Boots teams up with Kitty Softpaws and Humpty Dumpty for an ultimate showdown.</video:description>
@@ -10432,7 +10452,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/pitch-black/1271683454</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Pitch Black</video:title>
       <video:description>Marooned passengers on a planet learn that the convict Riddick isn’t the only thing to be feared.</video:description>
@@ -10662,7 +10682,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/the-change-up/1271683140</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>The Change-Up</video:title>
       <video:description>Two friends must navigate the other’s lives after a magical fountain and alcohol causes a body swap.</video:description>
@@ -10672,7 +10692,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/curious-george-royal-monkey/1271683147</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Curious George: Royal Monkey</video:title>
       <video:description>Curious George takes on his most regal role yet, trading places with a royal monkey!</video:description>
@@ -10932,7 +10952,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/shrek-forever-after-the-final-chapter-fka-goes-fourth-3d/1271413515</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <video:video>
       <video:title>Shrek Forever After: The Final Chapter (Fka: Goes Fourth 3d)</video:title>
       <video:description>Shrek signs a deal with Rumpelstiltskin that turns his world upside down.</video:description>
@@ -11152,7 +11172,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/shark-tale/1271683163</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <video:video>
       <video:title>Shark Tale</video:title>
       <video:description>A lowly fish teams up with an outcast shark to stand up to the most feared fish in the sea.</video:description>
@@ -11212,7 +11232,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/babe-pig-in-the-city/1271416491</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <video:video>
       <video:title>Babe: Pig in the City</video:title>
       <video:description>Babe, Ferdy, and Mrs. Hoggett travel to the city to raise money to save the farm.</video:description>
@@ -11682,7 +11702,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/the-lost-world-jurassic-park/1271683457</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>The Lost World: Jurassic Park</video:title>
       <video:description>Isla Sorna’s dinosaurs are on the hunt after a corporate plan to exploit the predators goes awry.</video:description>
@@ -11932,7 +11952,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/the-croods-a-new-age/1271683141</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <video:video>
       <video:title>The Croods: A New Age</video:title>
       <video:description>The Croods will face their biggest challenge of all: another family.</video:description>
@@ -12252,7 +12272,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/sing-2/1271683453</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Sing 2</video:title>
       <video:description>All your favorite singing and dancing all-stars from Illumination&#39;s Sing return.</video:description>
@@ -12382,7 +12402,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/jurassic-world-fallen-kingdom/1271683458</loc>
-    <lastmod>2026-08-18</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Jurassic World: Fallen Kingdom</video:title>
       <video:description>Owen and Claire return to the ruins of the Jurassic World theme park.</video:description>
@@ -12642,7 +12662,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/the-fast-and-the-furious/1271683154</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>The Fast and the Furious</video:title>
       <video:description>An undercover cop and an infamous street racer are set on a collision course on the streets of LA.</video:description>
@@ -12912,7 +12932,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/baby-mama/1271683136</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Baby Mama</video:title>
       <video:description>Kate is a single, successful career woman who hires Angie, a free spirit, to be her surrogate.</video:description>
@@ -13062,7 +13082,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/back-to-the-future-iii/1271413432</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Back to the Future III</video:title>
       <video:description>Marty McFly travels to 1885 to rescue Doc and put the past, present and future on track.</video:description>
@@ -13222,7 +13242,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/descendants-wicked-wonderland/1271643996</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Descendants: Wicked Wonderland</video:title>
       <video:description>When a villain traps the Queen of Hearts, Red and Chloe must work with unlikely allies to save her.</video:description>
@@ -14042,7 +14062,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/fast-furious-presents-hobbs-shaw/1271683153</loc>
-    <lastmod>2026-08-19</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <video:video>
       <video:title>Fast &amp; Furious Presents: Hobbs &amp; Shaw</video:title>
       <video:description>Hobbs and Shaw join forces to take down a dangerous anarchist.</video:description>
@@ -14222,7 +14242,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/big-time-adolescence/1271683138</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Big Time Adolescence</video:title>
       <video:description>A teenager comes of age under the destructive guidance of his best friend, a college dropout.</video:description>
@@ -14782,7 +14802,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/curious-george-3-back-to-the-jungle/1271683144</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Curious George 3: Back to the Jungle</video:title>
       <video:description>When George joins a space mission, a little monkeying around forces him to crash-land in Africa.</video:description>
@@ -14892,7 +14912,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/madagascar/1271510239</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Madagascar</video:title>
       <video:description>Shipwrecked on Madagascar, animals from Central Park Zoo discover it really IS a jungle out there!</video:description>
@@ -15042,7 +15062,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/fast-furious-7/1271683461</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Fast &amp; Furious 7</video:title>
       <video:description>Danger follows Dom and Brian to the US when a vengeful assassin declares war on the crew.</video:description>
@@ -16482,7 +16502,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/d23-horizons-disney-experiences-showcase/1271685647</loc>
-    <lastmod>2026-08-22</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <video:video>
       <video:title>D23 Horizons: Disney Experiences Showcase</video:title>
       <video:description>Neil Patrick Harris talks the future of Disney Experiences at “D23: The Ultimate Disney Fan Event.”</video:description>
@@ -17002,7 +17022,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/hop/1271683157</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <video:video>
       <video:title>Hop</video:title>
       <video:description>E.B., the Easter Bunny&#39;s teenage son, heads to Hollywood in pursuit to become a rockstar drummer.</video:description>
@@ -17042,7 +17062,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/destino/1260092304</loc>
-    <lastmod>2025-10-28</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <video:video>
       <video:title>Destino</video:title>
       <video:description>A collaboration begun in 1945 by Salvador Dalí and Walt Disney.</video:description>
@@ -17281,6 +17301,16 @@
     </video:video>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/ae/movies/yellow-mirror/1271650895</loc>
+    <lastmod>2026-08-26</lastmod>
+    <video:video>
+      <video:title>Yellow Mirror</video:title>
+      <video:description>The Simpsons struggle to find the light through two dark, curious tales in this Disney+ exclusive.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/yellow-mirror/1271650895/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8852/1787724878852-i</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/cypher/1260165088</loc>
     <lastmod>2025-11-26</lastmod>
     <video:video>
@@ -17492,7 +17522,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/big-fat-liar/1271683137</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Big Fat Liar</video:title>
       <video:description>Jason and best friend Kaylee set off on a cross-country adventure to confront a Hollywood producer.</video:description>
@@ -17672,7 +17702,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/back-to-the-future-ii/1271413424</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Back to the Future II</video:title>
       <video:description>Marty McFly and Doc Brown launch themselves to 2015  and disrupt the space-time continuum.</video:description>
@@ -18412,7 +18442,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/babe/1271683135</loc>
-    <lastmod>2026-08-15</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <video:video>
       <video:title>Babe</video:title>
       <video:description>Babe is a shy piglet who discovers that he can be anything he wants to be.</video:description>
@@ -18772,7 +18802,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/kung-fu-panda/1271683160</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <video:video>
       <video:title>Kung Fu Panda</video:title>
       <video:description>Po (Jack Black) is a dreamer who must embrace his true self in order to become the Dragon Warrior.</video:description>
@@ -18872,7 +18902,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/bono-the-edge-a-sort-of-homecoming-with-dave-letterman/1260131112</loc>
-    <lastmod>2025-10-20</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Bono &amp; The Edge: A Sort of Homecoming, with Dave Letterman</video:title>
       <video:description>Bono and the Edge invite Dave Letterman to Dublin for a unique performance of their songs.</video:description>
@@ -18942,7 +18972,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/sing/1271683164</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Sing</video:title>
       <video:description>An optimistic koala hosts the world&#39;s greatest singing competition to save his crumbling theater.</video:description>
@@ -19242,7 +19272,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/curious-george-2-follow-that-monkey/1271683143</loc>
-    <lastmod>2026-08-17</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <video:video>
       <video:title>Curious George 2: Follow That Monkey</video:title>
       <video:description>Join George and The Man with The Yellow Hat to reunite Kayla, the elephant, with her family.</video:description>
@@ -19412,7 +19442,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/the-hunchback-of-notre-dame-ii/1260027293</loc>
-    <lastmod>2025-10-16</lastmod>
+    <lastmod>2026-08-27</lastmod>
     <video:video>
       <video:title>The Hunchback of Notre Dame II</video:title>
       <video:description>It&#39;s Quasimodo&#39;s turn to look past appearances when seeking true love.</video:description>
@@ -19592,7 +19622,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/jurassic-park/1271683158</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Jurassic Park</video:title>
       <video:description>Genetically engineered dinosaurs run amok at a tycoon&#39;s island amusement park.</video:description>
@@ -20012,7 +20042,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/2026-disney-legends-awards-ceremony-live/1271685512</loc>
-    <lastmod>2026-08-21</lastmod>
+    <lastmod>2026-08-24</lastmod>
     <video:video>
       <video:title>2026 Disney Legends Awards Ceremony Live!</video:title>
       <video:description>Ryan Seacrest hosts Disney’s highest honor as a new class of Disney Legends is celebrated.</video:description>
@@ -20232,7 +20262,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/fast-furious-6/1271683152</loc>
-    <lastmod>2026-08-24</lastmod>
+    <lastmod>2026-08-28</lastmod>
     <video:video>
       <video:title>Fast &amp; Furious 6</video:title>
       <video:description>Seeking to fight fire with fire, Hobbs enlist Dom and his team to bring down a team of mercenaries.</video:description>
@@ -20802,7 +20832,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/dolittle/1271683149</loc>
-    <lastmod>2026-08-20</lastmod>
+    <lastmod>2026-08-26</lastmod>
     <video:video>
       <video:title>Dolittle</video:title>
       <video:description>Grief stricken Dr. Dolittle sets out on an epic adventure to heal a young queen, as well as himself.</video:description>
@@ -21232,12 +21262,22 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/star-wars-the-mandalorian-and-grogu/1271500187</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-08-30</lastmod>
     <video:video>
       <video:title>Star Wars: The Mandalorian and Grogu</video:title>
       <video:description>Get ready for &#34;Star Wars: The Mandalorian and Grogu,&#34; exclusively in theaters in 2026.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/ae/movies/star-wars-the-mandalorian-and-grogu/1271500187/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/6281/1786716686281-i</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/ae/movies/toy-story-5/1271506603</loc>
+    <lastmod>2026-08-28</lastmod>
+    <video:video>
+      <video:title>Toy Story 5</video:title>
+      <video:description>The toys are back in Disney and Pixar’s “Toy Story 5,” and this time it’s Toy meets Tech.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/toy-story-5/1271506603/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/9468/1787737999468-i</video:thumbnail_loc>
     </video:video>
   </url>
 </urlset>
