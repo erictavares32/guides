@@ -1,5 +1,5 @@
 ﻿{
-    "generatedAt":  "2026-09-09T15:22:34.3032723Z",
+    "generatedAt":  "2026-09-13T08:23:42.7099988Z",
     "source":  "https://www.apps.disneyplus.com",
     "rawBaseUrl":  "https://raw.githubusercontent.com/erictavares32/guides/main/disney-mena-sitemaps",
     "items":  [
@@ -15,7 +15,7 @@
                       "mediaType":  "tv",
                       "file":  "disney-mena-sitemaps/ae/new-sitemap-SHOWS-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/ae/new-sitemap-SHOWS-1.xml",
-                      "urlCount":  1754
+                      "urlCount":  1756
                   },
                   {
                       "country":  "BH",
@@ -29,7 +29,7 @@
                       "mediaType":  "tv",
                       "file":  "disney-mena-sitemaps/bh/new-sitemap-SHOWS-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/bh/new-sitemap-SHOWS-1.xml",
-                      "urlCount":  1754
+                      "urlCount":  1756
                   },
                   {
                       "country":  "DZ",
@@ -43,7 +43,7 @@
                       "mediaType":  "tv",
                       "file":  "disney-mena-sitemaps/dz/new-sitemap-SHOWS-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/dz/new-sitemap-SHOWS-1.xml",
-                      "urlCount":  1754
+                      "urlCount":  1756
                   },
                   {
                       "country":  "EG",
@@ -57,7 +57,7 @@
                       "mediaType":  "tv",
                       "file":  "disney-mena-sitemaps/eg/new-sitemap-SHOWS-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/eg/new-sitemap-SHOWS-1.xml",
-                      "urlCount":  1754
+                      "urlCount":  1756
                   },
                   {
                       "country":  "IQ",
@@ -71,7 +71,7 @@
                       "mediaType":  "tv",
                       "file":  "disney-mena-sitemaps/iq/new-sitemap-SHOWS-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/iq/new-sitemap-SHOWS-1.xml",
-                      "urlCount":  1754
+                      "urlCount":  1756
                   },
                   {
                       "country":  "JO",
@@ -85,7 +85,7 @@
                       "mediaType":  "tv",
                       "file":  "disney-mena-sitemaps/jo/new-sitemap-SHOWS-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/jo/new-sitemap-SHOWS-1.xml",
-                      "urlCount":  1754
+                      "urlCount":  1756
                   },
                   {
                       "country":  "KW",
@@ -99,7 +99,7 @@
                       "mediaType":  "tv",
                       "file":  "disney-mena-sitemaps/kw/new-sitemap-SHOWS-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/kw/new-sitemap-SHOWS-1.xml",
-                      "urlCount":  1754
+                      "urlCount":  1756
                   },
                   {
                       "country":  "LB",
@@ -113,7 +113,7 @@
                       "mediaType":  "tv",
                       "file":  "disney-mena-sitemaps/lb/new-sitemap-SHOWS-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/lb/new-sitemap-SHOWS-1.xml",
-                      "urlCount":  1754
+                      "urlCount":  1756
                   },
                   {
                       "country":  "LY",
@@ -127,7 +127,7 @@
                       "mediaType":  "tv",
                       "file":  "disney-mena-sitemaps/ly/new-sitemap-SHOWS-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/ly/new-sitemap-SHOWS-1.xml",
-                      "urlCount":  1754
+                      "urlCount":  1756
                   },
                   {
                       "country":  "MA",
@@ -141,7 +141,7 @@
                       "mediaType":  "tv",
                       "file":  "disney-mena-sitemaps/ma/new-sitemap-SHOWS-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/ma/new-sitemap-SHOWS-1.xml",
-                      "urlCount":  1754
+                      "urlCount":  1756
                   },
                   {
                       "country":  "OM",
@@ -155,7 +155,7 @@
                       "mediaType":  "tv",
                       "file":  "disney-mena-sitemaps/om/new-sitemap-SHOWS-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/om/new-sitemap-SHOWS-1.xml",
-                      "urlCount":  1755
+                      "urlCount":  1757
                   },
                   {
                       "country":  "PS",
@@ -169,7 +169,7 @@
                       "mediaType":  "tv",
                       "file":  "disney-mena-sitemaps/ps/new-sitemap-SHOWS-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/ps/new-sitemap-SHOWS-1.xml",
-                      "urlCount":  1754
+                      "urlCount":  1756
                   },
                   {
                       "country":  "QA",
@@ -183,21 +183,21 @@
                       "mediaType":  "tv",
                       "file":  "disney-mena-sitemaps/qa/new-sitemap-SHOWS-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/qa/new-sitemap-SHOWS-1.xml",
-                      "urlCount":  1754
+                      "urlCount":  1756
                   },
                   {
                       "country":  "SA",
                       "mediaType":  "movie",
                       "file":  "disney-mena-sitemaps/sa/new-sitemap-MOVIE-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/sa/new-sitemap-MOVIE-1.xml",
-                      "urlCount":  2124
+                      "urlCount":  2125
                   },
                   {
                       "country":  "SA",
                       "mediaType":  "tv",
                       "file":  "disney-mena-sitemaps/sa/new-sitemap-SHOWS-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/sa/new-sitemap-SHOWS-1.xml",
-                      "urlCount":  1755
+                      "urlCount":  1757
                   },
                   {
                       "country":  "TN",
@@ -211,7 +211,7 @@
                       "mediaType":  "tv",
                       "file":  "disney-mena-sitemaps/tn/new-sitemap-SHOWS-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/tn/new-sitemap-SHOWS-1.xml",
-                      "urlCount":  1754
+                      "urlCount":  1756
                   },
                   {
                       "country":  "YE",
@@ -225,7 +225,7 @@
                       "mediaType":  "tv",
                       "file":  "disney-mena-sitemaps/ye/new-sitemap-SHOWS-1.xml",
                       "sourceUrl":  "https://www.apps.disneyplus.com/ye/new-sitemap-SHOWS-1.xml",
-                      "urlCount":  1755
+                      "urlCount":  1757
                   }
               ]
 }

@@ -1502,7 +1502,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/sa/movies/is-this-thing-on/1271546699</loc>
-    <lastmod>2026-06-10</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <video:video>
       <video:title>Is This Thing On?</video:title>
       <video:description>A husband facing a mid-life crossroads finds unexpected purpose in the New York comedy scene.</video:description>
@@ -1622,7 +1622,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/sa/movies/the-devil-wears-prada-2/1271506598</loc>
-    <lastmod>2026-08-05</lastmod>
+    <lastmod>2026-09-09</lastmod>
     <video:video>
       <video:title>The Devil Wears Prada 2</video:title>
       <video:description>Miranda, Andy, Emily, and Nigel reunite at a now vulnerable Runway in this smashing sequel.</video:description>
@@ -5672,7 +5672,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/sa/movies/star-wars-the-mandalorian-and-grogu/1271500187</loc>
-    <lastmod>2026-09-09</lastmod>
+    <lastmod>2026-09-10</lastmod>
     <video:video>
       <video:title>Star Wars: The Mandalorian and Grogu</video:title>
       <video:description>The Mandalorian (Pedro Pascal) and his apprentice Grogu embark on a mission to protect the galaxy.</video:description>
@@ -9972,7 +9972,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/sa/movies/x-men-the-last-stand/1770000804</loc>
-    <lastmod>2025-10-30</lastmod>
+    <lastmod>2026-09-11</lastmod>
     <video:video>
       <video:title>X-Men: The Last Stand</video:title>
       <video:description>When Professor X clashes with Magneto, the battle lines are drawn for the war to end all wars.</video:description>
@@ -12618,6 +12618,16 @@
       <video:description>Reunite with the beloved bear and his silly but steadfast friends.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/sa/movies/winnie-the-pooh/1260020572/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/4438/1234438-i-57b4ba7f86df</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
+    <loc>https://www.apps.disneyplus.com/sa/movies/psycho-killer/1271644011</loc>
+    <lastmod>2026-09-09</lastmod>
+    <video:video>
+      <video:title>Psycho Killer</video:title>
+      <video:description>When her husband is brutally murdered, a woman goes after the sadistic serial killer responsible.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/sa/movies/psycho-killer/1271644011/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/2175/1788898172175-i</video:thumbnail_loc>
     </video:video>
   </url>
   <url>
