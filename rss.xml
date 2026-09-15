@@ -3,14 +3,14 @@
   <channel>
     <title>WhereToWatch Streaming Guides</title>
     <description>2026 streaming guides from WhereToWatch, including Turkish series, Ramadan Arabic dramas, similar-show recommendations, platform picks, franchise watch orders, and pricing analysis.</description>
-    <link>https://www.wheretowatch.stream/guides</link>
+    <link>https://www.wheretowatch.stream/guides/index</link>
     <atom:link href="https://www.wheretowatch.stream/guides/rss" rel="self" type="application/rss+xml"/>
     <language>en-us</language>
     <lastBuildDate>Wed, 01 Jul 2026 00:00:00 +0000</lastBuildDate>
     <image>
       <url>https://www.wheretowatch.stream/guides/guides-og.jpg</url>
       <title>WhereToWatch Streaming Guides</title>
-      <link>https://www.wheretowatch.stream/guides</link>
+      <link>https://www.wheretowatch.stream/guides/index</link>
     </image>
 
     <!-- Guide Items -->
