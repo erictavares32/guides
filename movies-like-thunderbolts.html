@@ -367,6 +367,13 @@
     }
   </style>
 
+<!-- WTW-ADS-CSS -->
+<style>
+.wtw-gad{display:flex;width:100%;align-items:center;justify-content:center;margin:1.5rem auto;min-height:100px}
+.wtw-gad-rect{min-height:280px}
+.wtw-gad-atf{height:100px;overflow:hidden}
+.wtw-gad ins.adsbygoogle{display:block;width:100%}
+</style>
   </head>
 <body>
   <div class="container">
@@ -380,6 +387,13 @@
     <h1>5 Action-Packed Movies Like Thunderbolts (2025)</h1>
     
     <p class="intro">If you're excited for Thunderbolts' team of complex antiheroes and morally gray missions, you'll love these similar films featuring unconventional teams, high-stakes action, and surprising heart. From DC's Task Force X to Marvel's cosmic misfits, these movies deliver the same blend of humor and heroism that makes Thunderbolts so anticipated.</p>
+<!-- WTW-ADS:ATF -->
+<div class="wtw-gad wtw-gad-atf" style="height:100px;overflow:hidden">
+  <div style="display:flex;width:100%;align-items:center;justify-content:center">
+    <ins class="adsbygoogle" style="display:block;width:100%" data-wtw="atf" data-ad-client="ca-pub-2167344122409975" data-ad-slot="7706521584" data-ad-format="horizontal" data-full-width-responsive="false"></ins>
+  </div>
+</div>
+
 
     <div class="movie">
       <img src="/api/images/tmdb/t/p/w500/q61qEyssk2ku3okWICKArlAdhBn.jpg" alt="The Suicide Squad movie poster" loading="lazy">
@@ -420,6 +434,11 @@
         <p>James Gunn's <strong>Guardians of the Galaxy</strong> provides the blueprint for Thunderbolts' likely character dynamics. The film's "found family" among misfits (a thief, assassin, warrior, and genetically enhanced creatures) mirrors how Thunderbolts might unite its disparate members. Star-Lord's leadership struggles preview Bucky Barnes' potential arc, while Gamora and Nebula's rivalry-turned-alliance suggests how Thunderbolts could develop complex relationships among former enemies.</p>
       </div>
     </div>
+<!-- WTW-ADS:RECT -->
+<div class="wtw-gad wtw-gad-rect" style="min-height:280px">
+  <ins class="adsbygoogle" style="display:block;width:100%" data-wtw="rect" data-ad-client="ca-pub-2167344122409975" data-ad-slot="5136198567" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
+</div>
+
 
     <div class="movie">
       <img src="/api/images/tmdb/t/p/w500/h4VB6m0RwcicVEZvzftYZyKXs6K.jpg" alt="Birds of Prey movie poster" loading="lazy">
@@ -764,11 +783,67 @@
       }
     }
   </style>
+<!-- WTW-ADS:RECT -->
+<div class="wtw-gad wtw-gad-rect" style="min-height:280px">
+  <ins class="adsbygoogle" style="display:block;width:100%" data-wtw="rect" data-ad-client="ca-pub-2167344122409975" data-ad-slot="1141113238" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
+</div>
     <footer>
       <p><strong>WhereToWatch.stream</strong> - Your trusted guide to streaming platforms across the globe.</p>
       <p>© 2025 WhereToWatch.stream. All rights reserved. All images are property of their respective owners.</p>
     </footer>
   </div>
+<!-- WTW-ADS -->
+<!-- WTW-ADS-LOADER -->
+<script>
+(function(){
+  var KEY='wheretowatch-cookie-consent',cons=null;
+  try{cons=JSON.parse(localStorage.getItem(KEY)||'null');}catch(e){}
+  var adv=cons?(typeof cons.advertising==='boolean'?cons.advertising:true):null;
+  if(adv===false){
+    try{document.querySelectorAll('.wtw-gad').forEach(function(w){w.remove();});}catch(e){}
+    return;
+  }
+  var npa=(adv!==true);
+  var q=(window.adsbygoogle=window.adsbygoogle||[]);
+  if(npa){try{q.requestNonPersonalizedAds=1;}catch(e){}}
+  function pushOne(ins){
+    if(!ins||ins.getAttribute('data-pushed'))return;
+    ins.setAttribute('data-pushed','1');
+    try{q.push({});}catch(e){}
+  }
+  function sweep(){
+    document.querySelectorAll('.wtw-gad').forEach(function(w){
+      if(!w.querySelector('iframe')){
+        var r=w.getBoundingClientRect();
+        if(!(r.bottom>0&&r.top<window.innerHeight)){w.style.display='none';}
+      }
+    });
+  }
+  function lazy(){
+    var units=Array.prototype.slice.call(document.querySelectorAll('ins.adsbygoogle[data-wtw]'));
+    if(!('IntersectionObserver' in window)){units.forEach(pushOne);setTimeout(sweep,2500);return;}
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(en){
+        if(en.isIntersecting){
+          var box=en.target;
+          pushOne(box.querySelector('ins.adsbygoogle'));
+          try{io.unobserve(box);}catch(e){}
+        }
+      });
+    },{rootMargin:'300px 0px'});
+    units.forEach(function(u){io.observe(u.closest('.wtw-gad')||u);});
+    setTimeout(sweep,4000);setTimeout(sweep,9000);
+  }
+  function boot(){
+    var s=document.createElement('script');
+    s.async=true;s.crossOrigin='anonymous';
+    s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2167344122409975';
+    s.onload=lazy;s.onerror=function(){};
+    document.head.appendChild(s);
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',boot);}else{boot();}
+})();
+</script>
 </body>
 </html>
 

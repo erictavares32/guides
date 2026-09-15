@@ -389,6 +389,13 @@
     }
   }
   </script>
+<!-- WTW-ADS-CSS -->
+<style>
+.wtw-gad{display:flex;width:100%;align-items:center;justify-content:center;margin:1.5rem auto;min-height:100px}
+.wtw-gad-rect{min-height:280px}
+.wtw-gad-atf{height:100px;overflow:hidden}
+.wtw-gad ins.adsbygoogle{display:block;width:100%}
+</style>
 </head>
 <body>
   <div class="container">
@@ -402,6 +409,13 @@
     <h1>Hidden Gems on HBO Max You Can Only Watch Abroad (2025 Edition)</h1>
     
     <p class="intro">Looking for something critically acclaimed but not visible in your HBO Max library? You're not alone. HBO Max's catalog varies dramatically by country, creating a global treasure trove of hidden gems. From The Spanish Princess in France to Gladiator II in Singapore, these 10 underrated titles represent the best of HBO Max's regional exclusives this year.</p>
+<!-- WTW-ADS:ATF -->
+<div class="wtw-gad wtw-gad-atf" style="height:100px;overflow:hidden">
+  <div style="display:flex;width:100%;align-items:center;justify-content:center">
+    <ins class="adsbygoogle" style="display:block;width:100%" data-wtw="atf" data-ad-client="ca-pub-2167344122409975" data-ad-slot="7706521584" data-ad-format="horizontal" data-full-width-responsive="false"></ins>
+  </div>
+</div>
+
 
     <h2 class="section-title">Top 10 Regional HBO Max Exclusives</h2>
 
@@ -482,6 +496,11 @@
         </div>
       </div>
     </div>
+<!-- WTW-ADS:RECT -->
+<div class="wtw-gad wtw-gad-rect" style="min-height:280px">
+  <ins class="adsbygoogle" style="display:block;width:100%" data-wtw="rect" data-ad-client="ca-pub-2167344122409975" data-ad-slot="5136198567" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
+</div>
+
 
     <div class="content-item">
       <img src="/api/images/tmdb/t/p/w500/qrpIpzbwoAZJTegfKSTlmz15jbf.jpg" alt="The Serpent Queen historical drama" loading="lazy" />
@@ -548,11 +567,67 @@
       <p>Check out our guides to <a href="https://www.wheretowatch.stream/guides/prime-video-hidden-gems" style="font-weight: bold; color: rgba(34, 211, 238, 1);">Prime Video hidden gems</a> and <a href="https://www.wheretowatch.stream/guides/best-netflix-shows-2025" style="font-weight: bold; color: rgba(34, 211, 238, 1);">underrated Netflix shows</a> for more overlooked treasures.</p>
     </div>
 
+<!-- WTW-ADS:RECT -->
+<div class="wtw-gad wtw-gad-rect" style="min-height:280px">
+  <ins class="adsbygoogle" style="display:block;width:100%" data-wtw="rect" data-ad-client="ca-pub-2167344122409975" data-ad-slot="1141113238" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
+</div>
     <footer>
       <p>© 2025 WhereToWatch.stream. All rights reserved.</p>
       <p>All images are property of their respective owners and used under fair use guidelines for editorial purposes.</p>
       <p style="margin-top: 1rem;"><a href="https://www.wheretowatch.stream/privacy">Privacy Policy</a> | <a href="https://www.wheretowatch.stream/terms">Terms of Service</a> | <a href="https://www.wheretowatch.stream/contact">Contact Us</a></p>
     </footer>
   </div>
+<!-- WTW-ADS -->
+<!-- WTW-ADS-LOADER -->
+<script>
+(function(){
+  var KEY='wheretowatch-cookie-consent',cons=null;
+  try{cons=JSON.parse(localStorage.getItem(KEY)||'null');}catch(e){}
+  var adv=cons?(typeof cons.advertising==='boolean'?cons.advertising:true):null;
+  if(adv===false){
+    try{document.querySelectorAll('.wtw-gad').forEach(function(w){w.remove();});}catch(e){}
+    return;
+  }
+  var npa=(adv!==true);
+  var q=(window.adsbygoogle=window.adsbygoogle||[]);
+  if(npa){try{q.requestNonPersonalizedAds=1;}catch(e){}}
+  function pushOne(ins){
+    if(!ins||ins.getAttribute('data-pushed'))return;
+    ins.setAttribute('data-pushed','1');
+    try{q.push({});}catch(e){}
+  }
+  function sweep(){
+    document.querySelectorAll('.wtw-gad').forEach(function(w){
+      if(!w.querySelector('iframe')){
+        var r=w.getBoundingClientRect();
+        if(!(r.bottom>0&&r.top<window.innerHeight)){w.style.display='none';}
+      }
+    });
+  }
+  function lazy(){
+    var units=Array.prototype.slice.call(document.querySelectorAll('ins.adsbygoogle[data-wtw]'));
+    if(!('IntersectionObserver' in window)){units.forEach(pushOne);setTimeout(sweep,2500);return;}
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(en){
+        if(en.isIntersecting){
+          var box=en.target;
+          pushOne(box.querySelector('ins.adsbygoogle'));
+          try{io.unobserve(box);}catch(e){}
+        }
+      });
+    },{rootMargin:'300px 0px'});
+    units.forEach(function(u){io.observe(u.closest('.wtw-gad')||u);});
+    setTimeout(sweep,4000);setTimeout(sweep,9000);
+  }
+  function boot(){
+    var s=document.createElement('script');
+    s.async=true;s.crossOrigin='anonymous';
+    s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2167344122409975';
+    s.onload=lazy;s.onerror=function(){};
+    document.head.appendChild(s);
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',boot);}else{boot();}
+})();
+</script>
 </body>
 </html>

@@ -588,6 +588,13 @@
       .ranking-table th, .ranking-table td { white-space: nowrap; }
     }
   </style>
+<!-- WTW-ADS-CSS -->
+<style>
+.wtw-gad{display:flex;width:100%;align-items:center;justify-content:center;margin:1.5rem auto;min-height:100px}
+.wtw-gad-rect{min-height:280px}
+.wtw-gad-atf{height:100px;overflow:hidden}
+.wtw-gad ins.adsbygoogle{display:block;width:100%}
+</style>
 </head>
 
 <body>
@@ -620,6 +627,13 @@
       <span data-i18n="ar">لا تسير الدراما التركية في 2026 في اتجاه واحد. أقوى الأعمال تمتد من التاريخ العثماني واسع النطاق والميلودراما العائلية إلى الكوميديا الرومانسية الخفيفة وحكايات إسطنبول الجماعية وقصص الهوية الأكثر حميمية. هذا الدليل يرتب المسلسلات الأكثر جدارة بالبداية الآن، مع النظر إلى حضورها الجماهيري، حداثتها، قوة طاقمها، جاذبية نوعها، وقدرتها على الوصول إلى جمهور خارج سوقها الأصلي.</span>
       <span data-i18n="fr">Les séries turques de 2026 ne suivent pas une seule voie. Les titres les plus solides vont de la fresque ottomane au mélodrame familial, de la comédie romantique légère aux récits choraux d'Istanbul et aux histoires plus intimes sur l'identité. Ce guide classe les séries les plus intéressantes à commencer maintenant, en tenant compte de l'intérêt du public, de la fraîcheur, du casting, de la force du genre et de leur capacité à voyager au-delà de leur marché d'origine.</span>
     </p>
+<!-- WTW-ADS:ATF -->
+<div class="wtw-gad wtw-gad-atf" style="height:100px;overflow:hidden">
+  <div style="display:flex;width:100%;align-items:center;justify-content:center">
+    <ins class="adsbygoogle" style="display:block;width:100%" data-wtw="atf" data-ad-client="ca-pub-2167344122409975" data-ad-slot="7706521584" data-ad-format="horizontal" data-full-width-responsive="false"></ins>
+  </div>
+</div>
+
 
     <section class="ranking-criteria">
       <h2>
@@ -785,6 +799,11 @@
         <div class="why-watch"><span data-i18n="en" class="active">Family secrets are the engine here. The coma mystery gives the plot a clean hook, while the moral question is harder: how much truth can a family survive?</span><span data-i18n="fr">Les secrets de famille sont le moteur. Le coma donne une accroche claire, mais la vraie question est plus dure : quelle dose de vérité une famille peut-elle supporter ?</span><span data-i18n="tr">Motoru aile sırları. Koma gizemi hikayeye net bir kanca veriyor; asıl soru daha sert: bir aile ne kadar gerçeği kaldırabilir?</span><span data-i18n="ar">أسرار العائلة هي المحرك هنا. لغز الغيبوبة يمنح القصة مدخلاً واضحاً، لكن السؤال الأصعب هو: كم من الحقيقة تستطيع العائلة احتمالها؟</span></div>
       </div>
     </div>
+<!-- WTW-ADS:RECT -->
+<div class="wtw-gad wtw-gad-rect" style="min-height:280px">
+  <ins class="adsbygoogle" style="display:block;width:100%" data-wtw="rect" data-ad-client="ca-pub-2167344122409975" data-ad-slot="5136198567" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
+</div>
+
 
     <div class="content-item">
       <a href="https://www.wheretowatch.stream/shows/300030/niran-al-hassad/in/eg"><img src="https://www.wheretowatch.stream/api/images/tmdb/t/p/w300/aPIguEjmV7fjJhBQBkoMew5poHX.jpg" alt="Envy poster" loading="lazy"></a>
@@ -1207,6 +1226,10 @@
       <a href="/" class="guides-button">WhereToWatch Home</a>
     </div>
 
+<!-- WTW-ADS:RECT -->
+<div class="wtw-gad wtw-gad-rect" style="min-height:280px">
+  <ins class="adsbygoogle" style="display:block;width:100%" data-wtw="rect" data-ad-client="ca-pub-2167344122409975" data-ad-slot="1141113238" data-ad-format="rectangle" data-full-width-responsive="true"></ins>
+</div>
     <footer>
       © 2026 WhereToWatch.stream - All rights reserved.<br>
       <small>Last updated: July 2026</small>
@@ -1770,3 +1793,55 @@
   </script>
 </body>
 </html>
+<!-- WTW-ADS -->
+<!-- WTW-ADS-LOADER -->
+<script>
+(function(){
+  var KEY='wheretowatch-cookie-consent',cons=null;
+  try{cons=JSON.parse(localStorage.getItem(KEY)||'null');}catch(e){}
+  var adv=cons?(typeof cons.advertising==='boolean'?cons.advertising:true):null;
+  if(adv===false){
+    try{document.querySelectorAll('.wtw-gad').forEach(function(w){w.remove();});}catch(e){}
+    return;
+  }
+  var npa=(adv!==true);
+  var q=(window.adsbygoogle=window.adsbygoogle||[]);
+  if(npa){try{q.requestNonPersonalizedAds=1;}catch(e){}}
+  function pushOne(ins){
+    if(!ins||ins.getAttribute('data-pushed'))return;
+    ins.setAttribute('data-pushed','1');
+    try{q.push({});}catch(e){}
+  }
+  function sweep(){
+    document.querySelectorAll('.wtw-gad').forEach(function(w){
+      if(!w.querySelector('iframe')){
+        var r=w.getBoundingClientRect();
+        if(!(r.bottom>0&&r.top<window.innerHeight)){w.style.display='none';}
+      }
+    });
+  }
+  function lazy(){
+    var units=Array.prototype.slice.call(document.querySelectorAll('ins.adsbygoogle[data-wtw]'));
+    if(!('IntersectionObserver' in window)){units.forEach(pushOne);setTimeout(sweep,2500);return;}
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(en){
+        if(en.isIntersecting){
+          var box=en.target;
+          pushOne(box.querySelector('ins.adsbygoogle'));
+          try{io.unobserve(box);}catch(e){}
+        }
+      });
+    },{rootMargin:'300px 0px'});
+    units.forEach(function(u){io.observe(u.closest('.wtw-gad')||u);});
+    setTimeout(sweep,4000);setTimeout(sweep,9000);
+  }
+  function boot(){
+    var s=document.createElement('script');
+    s.async=true;s.crossOrigin='anonymous';
+    s.src='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2167344122409975';
+    s.onload=lazy;s.onerror=function(){};
+    document.head.appendChild(s);
+  }
+  if(document.readyState==='loading'){document.addEventListener('DOMContentLoaded',boot);}else{boot();}
+})();
+</script>
