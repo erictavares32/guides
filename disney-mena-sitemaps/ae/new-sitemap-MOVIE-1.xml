@@ -132,7 +132,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/play-my-music-camp-rock-3-music-video/1271669679</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <video:video>
       <video:title>&#34;Play My Music&#34; | Camp Rock 3 Music Video</video:title>
       <video:description>Sing along to &#34;Play My Music&#34; from Camp Rock 3, performed by the Camp Rock 3 Cast!</video:description>
@@ -572,10 +572,10 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/toy-story-2/1660000051</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <video:video>
       <video:title>Toy Story 2</video:title>
-      <video:description>Join Woody, Buzz, Jessie and the gang to boldly rescue  one of their own.</video:description>
+      <video:description>Join Woody, Buzz, Jessie and the gang to boldly rescue one of their own.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/ae/movies/toy-story-2/1660000051/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/3311/1233311-i-934191a9e36f</video:thumbnail_loc>
     </video:video>
@@ -3852,7 +3852,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/dancing-with-the-enemy-descendants-wicked-wonderland-music-video/1271664383</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-09-24</lastmod>
     <video:video>
       <video:title>&#34;Dancing with the Enemy&#34; | Descendants: Wicked Wonderland Music Video</video:title>
       <video:description>Watch &#34;Dancing with the Enemy&#34; from Descendants: Wicked Wonderland.</video:description>
@@ -4912,7 +4912,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/perfect-princess-descendants-wicked-wonderland-music-video/1271664384</loc>
-    <lastmod>2026-07-17</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <video:video>
       <video:title>&#34;Perfect Princess&#34; | Descendants: Wicked Wonderland Music Video</video:title>
       <video:description>Watch &#34;Perfect Princess&#34; from Descendants: Wicked Wonderland.</video:description>
@@ -5262,7 +5262,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/toy-story-3/1660000056</loc>
-    <lastmod>2026-06-11</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <video:video>
       <video:title>Toy Story 3</video:title>
       <video:description>Woody, Buzz and the gang return for more adventures with new friends.</video:description>
@@ -8552,10 +8552,10 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/messi-the-forgotten-tape/1271648103</loc>
-    <lastmod>2026-07-15</lastmod>
+    <lastmod>2026-09-22</lastmod>
     <video:video>
       <video:title>Messi: The Forgotten Tape</video:title>
-      <video:description>A VHS of Lionel Messi sparks a tug-of-war between Spain-Argentina for his allegiance.</video:description>
+      <video:description>A VHS of Lionel Messi sparks a silent tug-of-war between Spain-Argentina for his allegiance.</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/ae/movies/messi-the-forgotten-tape/1271648103/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/8595/1780977028595-i</video:thumbnail_loc>
     </video:video>
@@ -14401,6 +14401,16 @@
     </video:video>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/ae/movies/becoming-her/1271683451</loc>
+    <lastmod>2026-09-21</lastmod>
+    <video:video>
+      <video:title>BECOMING HER</video:title>
+      <video:description>There is an age when anything feels possible and everything can change.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/becoming-her/1271683451/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/7563/1789540057563-i</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/a-ring-of-endless-light/1260091952</loc>
     <lastmod>2025-10-24</lastmod>
     <video:video>
@@ -18471,6 +18481,16 @@
     </video:video>
   </url>
   <url>
+    <loc>https://www.apps.disneyplus.com/ae/movies/toy-story-5/1271506603</loc>
+    <lastmod>2026-09-24</lastmod>
+    <video:video>
+      <video:title>Toy Story 5</video:title>
+      <video:description>The toys are back in Disney and Pixar’s “Toy Story 5,” and this time it’s Toy meets Tech.</video:description>
+      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/toy-story-5/1271506603/watch</video:player_loc>
+      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/9468/1787737999468-i</video:thumbnail_loc>
+    </video:video>
+  </url>
+  <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/unstoppable/1770000702</loc>
     <lastmod>2026-04-23</lastmod>
     <video:video>
@@ -18952,7 +18972,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/toy-story-4/1260015326</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <video:video>
       <video:title>Toy Story 4</video:title>
       <video:description>Pixar Animation Studios proudly presents the adventure of a lifetime!</video:description>
@@ -20502,7 +20522,7 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/toy-story/1660010197</loc>
-    <lastmod>2026-07-01</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <video:video>
       <video:title>Toy Story</video:title>
       <video:description>Meet Woody, Buzz and the gang in an adventure full of humor and heart.</video:description>
@@ -21232,22 +21252,12 @@
   </url>
   <url>
     <loc>https://www.apps.disneyplus.com/ae/movies/one-beat-away-camp-rock-3-music-video/1271669680</loc>
-    <lastmod>2026-08-14</lastmod>
+    <lastmod>2026-09-23</lastmod>
     <video:video>
       <video:title>&#34;One Beat Away&#34; | Camp Rock 3 Music Video</video:title>
       <video:description>Rock out to &#34;One Beat Away&#34; from Camp Rock 3 performed by Liamani and the Camp Rock 3 Cast!</video:description>
       <video:player_loc>https://www.apps.disneyplus.com/ae/movies/one-beat-away-camp-rock-3-music-video/1271669680/watch</video:player_loc>
       <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/477/1786654950477-i</video:thumbnail_loc>
-    </video:video>
-  </url>
-  <url>
-    <loc>https://www.apps.disneyplus.com/ae/movies/toy-story-5/1271506603</loc>
-    <lastmod>2026-09-16</lastmod>
-    <video:video>
-      <video:title>Toy Story 5</video:title>
-      <video:description>The toys are back in Disney and Pixar’s “Toy Story 5,” and this time it’s Toy meets Tech.</video:description>
-      <video:player_loc>https://www.apps.disneyplus.com/ae/movies/toy-story-5/1271506603/watch</video:player_loc>
-      <video:thumbnail_loc>https://img10.hotstar.com/image/upload/f_auto/sources/r1/cms/prod/9468/1787737999468-i</video:thumbnail_loc>
     </video:video>
   </url>
 </urlset>
